@@ -1,0 +1,229 @@
+{
+  "Metadata": {
+    "title": "Regal Billiards — Long Island's Game Room Destination",
+    "description": "Family-owned for over 40 years. Visit Long Island's premier pool table showroom in Hicksville, NY. Pool tables, game room furniture, accessories, and expert service."
+  },
+  "Nav": {
+    "poolTables": "Pool tables",
+    "buyingGuide": "Buying a pool table",
+    "newTables": "New pool tables",
+    "usedTables": "Used pool tables",
+    "gameRoomFurniture": "Game room furniture",
+    "gameTables": "Game tables",
+    "darts": "Darts",
+    "accessories": "Accessories",
+    "cueSticks": "Cue sticks",
+    "services": "Service center",
+    "about": "About",
+    "contact": "Contact us",
+    "gallery": "Gallery",
+    "callUs": "Call us",
+    "menu": "Menu",
+    "close": "Close"
+  },
+  "Hero": {
+    "headline": "Your game room starts here",
+    "subheadline": "Family-owned for over 40 years. Visit Long Island's premier pool table showroom.",
+    "cta": "Browse our tables"
+  },
+  "TrustStrip": {
+    "years": "40+ years",
+    "veteran": "Veteran-owned",
+    "service": "Factory-trained service",
+    "consultations": "Free consultations"
+  },
+  "CategoryGrid": {
+    "heading": "Browse by category",
+    "poolTables": "Pool tables",
+    "poolTablesDesc": "New tables from Presidential, C.L. Bailey, and Imperial",
+    "usedPoolTables": "Used pool tables",
+    "usedPoolTablesDesc": "Quality pre-owned tables, inspected and ready to play",
+    "gameRoomFurniture": "Game room furniture",
+    "gameRoomFurnitureDesc": "Bars, barstools, pub tables, and storage",
+    "gameTables": "Game tables",
+    "gameTablesDesc": "Shuffleboard, foosball, air hockey, and more",
+    "darts": "Darts",
+    "dartsDesc": "Dartboards, cabinets, and accessories",
+    "accessories": "Accessories",
+    "accessoriesDesc": "Cues, racks, lighting, and table covers",
+    "cueSticks": "Cue sticks",
+    "cueSticksDesc": "Quality cues for every level of play",
+    "serviceCenter": "Service center",
+    "serviceCenterDesc": "Moves, re-felting, repairs, and leveling"
+  },
+  "StoryTeaser": {
+    "heading": "Over 40 years of doing it right",
+    "text": "Regal Billiards started as a pool table manufacturer right here on Long Island. Today, Mike Walsh and his team bring that same builder's knowledge to every table they sell, deliver, and service. When you buy from Regal, you're not just getting a table — you're getting a team that knows it inside and out.",
+    "cta": "Read our story"
+  },
+  "Testimonials": {
+    "heading": "What our customers say"
+  },
+  "CTA": {
+    "heading": "Not sure where to start?",
+    "text": "Visit the showroom or give Mike a call. No pressure, just good advice from people who've been doing this for over 40 years.",
+    "directions": "Get directions",
+    "call": "Call (516) 938-6832"
+  },
+  "PoolTables": {
+    "title": "Pool tables",
+    "metaTitle": "Pool Tables | Regal Billiards — Long Island's Game Room Destination",
+    "metaDescription": "Browse new pool tables from Presidential, C.L. Bailey, and Imperial. Visit our Hicksville, NY showroom to see them in person.",
+    "intro": "We hand-pick every table we carry. After 40 years in the business — including years as manufacturers ourselves — we know what makes a table worth owning. Browse our selection from Presidential, C.L. Bailey, and Imperial, then come see them in person.",
+    "filterAll": "All",
+    "filterManufacturer": "Manufacturer",
+    "filterStyle": "Style",
+    "bottomCta": "Can't decide? Visit the showroom and see them in person."
+  },
+  "Category": {
+    "bottomCta": "Have questions? Give us a call or stop by the showroom."
+  },
+  "BuyingGuide": {
+    "title": "What to know before you buy",
+    "metaTitle": "Buying a Pool Table | Regal Billiards — Long Island's Game Room Destination",
+    "metaDescription": "Everything you need to know before buying a pool table. Room size, construction quality, and why buying local matters.",
+    "intro": "A pool table is a big purchase — and it should be. It's the centerpiece of your game room, and if you buy the right one, it'll last a lifetime. Here's what we think matters most.",
+    "challengeHeading": "Choosing a pool table isn't simple",
+    "challengeText": "There are hundreds of tables on the market at every price point. The challenge isn't finding one — it's knowing which one will hold up, play well, and fit your room. That's where we come in.",
+    "manufacturerHeading": "We started as manufacturers",
+    "manufacturerText": "Regal Billiards began as a pool table manufacturer right here on Long Island. That experience taught us exactly what separates a well-built table from one that looks good in a catalog but won't last. We use that knowledge to choose every table we carry.",
+    "serviceHeading": "We don't just sell — we service",
+    "serviceText": "Every table we sell, we deliver, assemble, and level ourselves. And if anything needs attention down the road, our factory-trained technicians handle it. That's why we only sell locally — so we can stand behind every table.",
+    "resourcesHeading": "Learn more",
+    "dimensionsCard": "Table dimensions and room size requirements",
+    "dimensionsDesc": "Make sure your room is ready before you buy.",
+    "constructionCard": "Table construction features",
+    "constructionDesc": "What to look for in slate, frame, cushions, and cloth.",
+    "warrantyCard": "Lifetime warranty",
+    "warrantyDesc": "Our manufacturers stand behind their work — and so do we.",
+    "bottomCta": "Not sure where to start? Come walk the showroom."
+  },
+  "Dimensions": {
+    "title": "Table dimensions and room size requirements",
+    "metaTitle": "Pool Table Dimensions & Room Size Guide | Regal Billiards",
+    "metaDescription": "Pool table sizes and minimum room dimensions. Use our guide to make sure your space is ready for a new table."
+  },
+  "Construction": {
+    "title": "Table construction features",
+    "metaTitle": "Pool Table Construction Guide | Regal Billiards",
+    "metaDescription": "Learn about slate, hardwood frames, cushion rubber, and cloth — the features that separate a quality pool table from the rest."
+  },
+  "Warranty": {
+    "title": "Lifetime warranty",
+    "metaTitle": "Lifetime Warranty | Regal Billiards",
+    "metaDescription": "Our manufacturers back their tables with a lifetime warranty. Learn what's covered and why it matters."
+  },
+  "ServiceCenter": {
+    "title": "Your table deserves expert care",
+    "metaTitle": "Pool Table Service Center | Regal Billiards — Long Island",
+    "metaDescription": "Pool table moves, re-felting, cushion replacement, repairs, and leveling. Factory-trained technicians serving Nassau County, Suffolk County, Brooklyn, and Queens.",
+    "intro": "Whether you bought your table from us or somewhere else, our factory-trained technicians are here to help.",
+    "serviceEveryone": "We service everyone",
+    "serviceEveryoneText": "You don't need to have bought your table from us. If it needs work, we're happy to help.",
+    "processHeading": "How it works",
+    "step1": "Call for a quote",
+    "step1Desc": "Tell us what you need and we'll give you an honest estimate.",
+    "step2": "Schedule a visit",
+    "step2Desc": "We'll find a time that works for you.",
+    "step3": "Work completed",
+    "step3Desc": "Our technicians handle everything on-site.",
+    "areaHeading": "Service area",
+    "areaText": "Serving Nassau County, Suffolk County, Brooklyn, and Queens.",
+    "quoteHeading": "Get a service quote",
+    "formName": "Your name",
+    "formEmail": "Email address",
+    "formPhone": "Phone number",
+    "formServiceType": "Service needed",
+    "formTableSize": "Table size",
+    "formCity": "City or zip code",
+    "formMessage": "Tell us more about what you need",
+    "formSubmit": "Request a quote",
+    "formSuccess": "Thank you! We'll get back to you within one business day.",
+    "formError": "Something went wrong. Please call us at (516) 938-6832."
+  },
+  "About": {
+    "title": "40 years. One family. Every table done right.",
+    "metaTitle": "About Regal Billiards — Long Island's Game Room Destination",
+    "metaDescription": "Family-owned and veteran-operated for over 40 years. Learn the story of Regal Billiards and why Long Island trusts us with their game rooms.",
+    "originHeading": "We started by building tables",
+    "originText": "Regal Billiards didn't start as a showroom. It started as a manufacturer. For years, we built pool tables by hand right here on Long Island. That hands-on experience with every joint, every slate, every pocket gave us a deep understanding of what makes a table worth owning — and what doesn't.",
+    "mikeHeading": "Meet Mike Walsh",
+    "mikeText": "Mike Walsh has been running Regal Billiards for over four decades. He knows every table in the showroom inside and out — because he's been building, selling, delivering, and servicing them his entire career. When you walk in, you're not getting a sales pitch. You're getting honest advice from someone who genuinely loves what he does.",
+    "veteranHeading": "Veteran-owned. Family-operated.",
+    "veteranText": "Regal Billiards is proud to be a veteran-owned business. The same values that define service to country — integrity, dedication, doing the job right — define how we run our shop.",
+    "philosophyHeading": "Why we do things differently",
+    "philosophyText": "We only sell to customers we can personally serve. That means Long Island and the surrounding boroughs. We handle every delivery, every installation, every service call ourselves. No subcontractors, no third-party shippers, no strangers in your home. Just our team — the same people who helped you choose the table in the first place.",
+    "showroomHeading": "Come see the showroom",
+    "showroomText": "Our Hicksville showroom has pool tables, game room furniture, darts, accessories, and more — all set up so you can see, touch, and play before you buy. No appointment needed during regular hours.",
+    "ctaHeading": "Come see us",
+    "address": "952 S Broadway, Hicksville, NY 11801",
+    "hours": "Monday–Saturday 10am–5pm",
+    "hoursAppointment": "Sundays and evenings by appointment"
+  },
+  "Contact": {
+    "title": "Come see the showroom",
+    "metaTitle": "Contact Us | Regal Billiards — Long Island's Game Room Destination",
+    "metaDescription": "Visit our Hicksville, NY showroom or contact us for pool table sales and service. Open Monday–Saturday, 10am–5pm.",
+    "formHeading": "Send us a message",
+    "formName": "Your name",
+    "formEmail": "Email address",
+    "formPhone": "Phone number",
+    "formInterest": "What are you interested in?",
+    "interestNewTable": "New pool table",
+    "interestUsedTable": "Used pool table",
+    "interestFurniture": "Game room furniture",
+    "interestService": "Service",
+    "interestGeneral": "General inquiry",
+    "formMessage": "Your message",
+    "formSubmit": "Send message",
+    "formSuccess": "Thank you! We'll get back to you within one business day.",
+    "formError": "Something went wrong. Please call us at (516) 938-6832.",
+    "infoHeading": "Visit us",
+    "address": "952 S Broadway, Hicksville, NY 11801",
+    "phone": "(516) 938-6832",
+    "email": "regalbilliards@gmail.com",
+    "hoursHeading": "Hours",
+    "hours": "Monday–Saturday: 10am–5pm",
+    "hoursAppointment": "Sundays and evenings by appointment",
+    "appointmentNote": "Can't make it during the week? We're happy to schedule a Sunday or evening visit — just give us a call."
+  },
+  "Gallery": {
+    "title": "Gallery",
+    "metaTitle": "Photo Gallery | Regal Billiards — Long Island's Game Room Destination",
+    "metaDescription": "Browse photos of our showroom, customer installations, and game room setups.",
+    "all": "All",
+    "showroom": "Showroom",
+    "installations": "Installations",
+    "gameRooms": "Game rooms"
+  },
+  "Footer": {
+    "about": "Long Island's most trusted name in pool tables and game rooms for over 40 years. Veteran-owned, family-operated.",
+    "quickLinks": "Quick links",
+    "services": "Services",
+    "contactInfo": "Contact info",
+    "veteranOwned": "Veteran-owned business",
+    "bcaMember": "Proud member of the Billiards Congress of America",
+    "privacy": "Privacy policy",
+    "terms": "Terms of service",
+    "copyright": "© {year} Regal Billiards. All rights reserved."
+  },
+  "Common": {
+    "learnMore": "Learn more",
+    "viewDetails": "View details",
+    "backToTop": "Back to top",
+    "loading": "Loading...",
+    "skipToContent": "Skip to main content",
+    "chatComingSoon": "Chat coming soon",
+    "switchToSpanish": "Español",
+    "switchToEnglish": "English"
+  },
+  "Validation": {
+    "nameRequired": "Name is required",
+    "emailRequired": "Email is required",
+    "emailInvalid": "Please enter a valid email address",
+    "messageRequired": "Message is required",
+    "messageTooShort": "Message must be at least 10 characters",
+    "interestRequired": "Please select an option",
+    "serviceTypeRequired": "Please select a service type"
+  }
+}

@@ -1,7 +1,20 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
+import createNextIntlPlugin from 'next-intl/plugin';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  redirects: async () => [
+    {
+      source: '/pool-table-gallery',
+      destination: '/gallery',
+      permanent: true,
+    },
+    {
+      source: '/es/pool-table-gallery',
+      destination: '/es/gallery',
+      permanent: true,
+    },
+  ],
 };
 
-export default nextConfig;
+const withNextIntl = createNextIntlPlugin();
+export default withNextIntl(nextConfig);
