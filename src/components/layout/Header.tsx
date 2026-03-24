@@ -7,7 +7,6 @@ import { Phone, Menu } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { BUSINESS } from '@/lib/utils';
 import Container from '@/components/ui/Container';
-import Button from '@/components/ui/Button';
 import Navigation from '@/components/layout/Navigation';
 import MobileNav from '@/components/layout/MobileNav';
 import LocaleSwitcher from '@/components/layout/LocaleSwitcher';
@@ -36,54 +35,73 @@ const Header = () => {
     <>
       <header
         className={cn(
-          'fixed top-0 left-0 right-0 z-30 transition-all duration-300',
+          'fixed top-0 left-0 right-0 z-30 transition-all duration-500',
           scrolled
-            ? 'bg-surface/95 backdrop-blur-md shadow-sm'
-            : 'bg-surface',
+            ? 'bg-primary/95 backdrop-blur-md shadow-lg'
+            : 'bg-transparent',
         )}
       >
         <Container>
-          <div className="flex items-center justify-between h-16 lg:h-20">
+          <div className="flex items-center justify-between h-18 lg:h-22">
             <Link
               href="/"
-              className="font-heading text-xl lg:text-2xl text-primary hover:text-accent transition-colors"
+              className={cn(
+                'font-heading text-2xl lg:text-[1.65rem] tracking-tight transition-colors duration-300',
+                scrolled ? 'text-surface' : 'text-surface',
+              )}
               aria-label={BUSINESS.name}
             >
               Regal Billiards
             </Link>
 
-            <Navigation />
+            <Navigation scrolled={scrolled} />
 
-            <div className="hidden lg:flex items-center gap-4">
+            <div className="hidden lg:flex items-center gap-5">
               <a
                 href={BUSINESS.phoneHref}
-                className="flex items-center gap-2 text-sm font-medium font-body text-primary hover:text-accent transition-colors"
+                className={cn(
+                  'flex items-center gap-2 text-sm font-medium font-body transition-colors duration-300',
+                  scrolled
+                    ? 'text-surface/80 hover:text-accent'
+                    : 'text-surface/80 hover:text-surface',
+                )}
                 aria-label={`${t('callUs')}: ${BUSINESS.phone}`}
               >
                 <Phone className="h-4 w-4" />
                 <span>{BUSINESS.phone}</span>
               </a>
 
-              <LocaleSwitcher />
+              <LocaleSwitcher scrolled={scrolled} />
 
-              <Button as="a" href="/contact" size="sm">
-                Visit showroom
-              </Button>
+              <Link
+                href="/contact-us"
+                className={cn(
+                  'inline-flex items-center px-5 py-2.5 text-sm font-semibold font-body rounded-full transition-all duration-300',
+                  scrolled
+                    ? 'bg-accent text-surface hover:bg-accent-hover'
+                    : 'bg-surface/15 text-surface backdrop-blur-sm border border-surface/30 hover:bg-surface/25',
+                )}
+              >
+                {t('visitShowroom') || 'Visit Showroom'}
+              </Link>
             </div>
 
             <button
               type="button"
               onClick={() => setMobileNavOpen(true)}
               aria-label={t('menu')}
-              className="p-2 -mr-2 text-primary hover:text-accent transition-colors lg:hidden"
+              className={cn(
+                'p-2 -mr-2 transition-colors lg:hidden',
+                scrolled
+                  ? 'text-surface hover:text-accent'
+                  : 'text-surface hover:text-surface/70',
+              )}
             >
               <Menu className="h-6 w-6" />
             </button>
           </div>
         </Container>
       </header>
-
-      <div className="h-16 lg:h-20" aria-hidden="true" />
 
       <MobileNav isOpen={mobileNavOpen} onClose={closeMobileNav} />
     </>

@@ -17,14 +17,22 @@
     "about": "Nosotros",
     "contact": "Contáctenos",
     "gallery": "Galería",
+    "gameRoom": "Salón de Juegos",
     "callUs": "Llámenos",
+    "visitShowroom": "Visitar Showroom",
     "menu": "Menú",
     "close": "Cerrar"
   },
   "Hero": {
     "headline": "Tu salón de juegos empieza aquí",
     "subheadline": "Negocio familiar por más de 40 años. Visite la sala de exhibición premier de mesas de billar de Long Island.",
-    "cta": "Ver nuestras mesas"
+    "cta": "Ver nuestras mesas",
+    "headline2": "Servicio experto, cada mesa",
+    "subheadline2": "Técnicos capacitados en fábrica para mudanzas, retapizado, reparaciones y nivelación.",
+    "cta2": "Explorar servicios",
+    "headline3": "40 años haciéndolo bien",
+    "subheadline3": "Propiedad de veterano y operado en familia. Conocemos cada mesa por dentro y por fuera.",
+    "cta3": "Nuestra historia"
   },
   "TrustStrip": {
     "years": "40+ años",

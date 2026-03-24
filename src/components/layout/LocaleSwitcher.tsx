@@ -6,9 +6,10 @@ import { cn } from '@/lib/utils';
 
 interface LocaleSwitcherProps {
   className?: string;
+  scrolled?: boolean;
 }
 
-const LocaleSwitcher = ({ className }: LocaleSwitcherProps) => {
+const LocaleSwitcher = ({ className, scrolled }: LocaleSwitcherProps) => {
   const locale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
@@ -26,7 +27,10 @@ const LocaleSwitcher = ({ className }: LocaleSwitcherProps) => {
       onClick={switchLocale}
       aria-label={`Switch to ${nextLocale === 'en' ? 'English' : 'Spanish'}`}
       className={cn(
-        'px-2 py-1 text-xs font-semibold font-body uppercase tracking-wide rounded border border-border text-text-muted hover:text-primary hover:border-primary transition-colors',
+        'px-2.5 py-1 text-xs font-semibold font-body uppercase tracking-wider rounded-full border transition-colors duration-300 cursor-pointer',
+        scrolled
+          ? 'border-surface/30 text-surface/70 hover:text-surface hover:border-surface/60'
+          : 'border-surface/30 text-surface/70 hover:text-surface hover:border-surface/60',
         className,
       )}
     >

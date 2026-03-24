@@ -8,10 +8,15 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
+interface NavChild {
+  key: string;
+  href: string;
+}
+
 interface NavItem {
   key: string;
   href: string;
-  children?: { key: string; href: string }[];
+  children?: NavChild[];
 }
 
 const navItems: NavItem[] = [
@@ -19,27 +24,37 @@ const navItems: NavItem[] = [
     key: 'poolTables',
     href: '/pool-tables',
     children: [
-      { key: 'buyingGuide', href: '/pool-tables/buying-guide' },
       { key: 'newTables', href: '/pool-tables/new' },
       { key: 'usedTables', href: '/pool-tables/used' },
+      { key: 'buyingGuide', href: '/pool-tables/buying-guide' },
     ],
   },
-  { key: 'gameRoomFurniture', href: '/game-room-furniture' },
-  { key: 'gameTables', href: '/game-tables' },
-  { key: 'darts', href: '/darts' },
-  { key: 'accessories', href: '/accessories' },
-  { key: 'services', href: '/services' },
+  {
+    key: 'gameRoom',
+    href: '/category/game-room-furniture',
+    children: [
+      { key: 'gameRoomFurniture', href: '/category/game-room-furniture' },
+      { key: 'gameTables', href: '/category/game-tables' },
+      { key: 'darts', href: '/category/darts' },
+      { key: 'accessories', href: '/category/accessories' },
+    ],
+  },
+  { key: 'services', href: '/service-center' },
   { key: 'about', href: '/about' },
-  { key: 'contact', href: '/contact' },
+  { key: 'contact', href: '/contact-us' },
 ];
 
 const dropdownVariants = {
-  hidden: { opacity: 0, y: -4, scale: 0.97 },
+  hidden: { opacity: 0, y: -8, scale: 0.96 },
   visible: { opacity: 1, y: 0, scale: 1 },
-  exit: { opacity: 0, y: -4, scale: 0.97 },
+  exit: { opacity: 0, y: -8, scale: 0.96 },
 };
 
-const Navigation = () => {
+interface NavigationProps {
+  scrolled?: boolean;
+}
+
+const Navigation = ({ scrolled }: NavigationProps) => {
   const t = useTranslations('Nav');
   const pathname = usePathname();
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
@@ -64,6 +79,15 @@ const Navigation = () => {
     }, 150);
   };
 
+  const linkColor = cn(
+    'transition-colors duration-300',
+    scrolled
+      ? 'text-surface/80 hover:text-surface'
+      : 'text-surface/80 hover:text-surface',
+  );
+
+  const activeLinkColor = 'text-surface';
+
   return (
     <nav aria-label={t('menu')} className="hidden lg:flex items-center gap-1">
       {navItems.map((item) => {
@@ -80,10 +104,9 @@ const Navigation = () => {
               <Link
                 href={item.href}
                 className={cn(
-                  'inline-flex items-center gap-1 px-3 py-2 text-sm font-medium font-body transition-colors rounded-md',
-                  active
-                    ? 'text-accent'
-                    : 'text-primary hover:text-accent',
+                  'inline-flex items-center gap-1 px-3.5 py-2 text-sm font-medium font-body rounded-full',
+                  linkColor,
+                  active && activeLinkColor,
                 )}
                 aria-expanded={openDropdown === item.key}
                 aria-haspopup="true"
@@ -105,9 +128,9 @@ const Navigation = () => {
                     animate="visible"
                     exit="exit"
                     transition={{ duration: 0.15, ease: 'easeOut' }}
-                    className="absolute left-0 top-full pt-1 z-50"
+                    className="absolute left-0 top-full pt-2 z-50"
                   >
-                    <div className="w-56 rounded-lg bg-surface shadow-lg ring-1 ring-border py-2">
+                    <div className="w-56 rounded-xl bg-primary-light/95 backdrop-blur-lg shadow-2xl ring-1 ring-white/10 py-2">
                       {item.children.map((child) => (
                         <Link
                           key={child.key}
@@ -115,8 +138,8 @@ const Navigation = () => {
                           className={cn(
                             'block px-4 py-2.5 text-sm font-body transition-colors',
                             isActive(child.href)
-                              ? 'text-accent bg-background'
-                              : 'text-primary hover:text-accent hover:bg-background',
+                              ? 'text-accent bg-white/5'
+                              : 'text-surface/70 hover:text-surface hover:bg-white/5',
                           )}
                         >
                           {t(child.key)}
@@ -126,37 +149,22 @@ const Navigation = () => {
                   </motion.div>
                 )}
               </AnimatePresence>
-
-              {active && (
-                <motion.div
-                  layoutId="nav-underline"
-                  className="absolute bottom-0 left-3 right-3 h-0.5 bg-accent rounded-full"
-                />
-              )}
             </div>
           );
         }
 
         return (
-          <div key={item.key} className="relative">
-            <Link
-              href={item.href}
-              className={cn(
-                'inline-flex items-center px-3 py-2 text-sm font-medium font-body transition-colors rounded-md',
-                active
-                  ? 'text-accent'
-                  : 'text-primary hover:text-accent',
-              )}
-            >
-              {t(item.key)}
-            </Link>
-            {active && (
-              <motion.div
-                layoutId="nav-underline"
-                className="absolute bottom-0 left-3 right-3 h-0.5 bg-accent rounded-full"
-              />
+          <Link
+            key={item.key}
+            href={item.href}
+            className={cn(
+              'inline-flex items-center px-3.5 py-2 text-sm font-medium font-body rounded-full',
+              linkColor,
+              active && activeLinkColor,
             )}
-          </div>
+          >
+            {t(item.key)}
+          </Link>
         );
       })}
     </nav>

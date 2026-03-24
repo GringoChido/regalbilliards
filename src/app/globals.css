@@ -1,19 +1,21 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-primary: #0F2337;
-  --color-primary-light: #1A2E4A;
-  --color-background: #FAF8F5;
-  --color-surface: #FFFFFF;
-  --color-accent: #C5A55A;
-  --color-accent-hover: #B8952E;
-  --color-secondary: #2D6A4F;
-  --color-text: #1A1A2E;
-  --color-text-muted: #6B7280;
-  --color-border: #E5E2DB;
+  --color-primary: #1a2e1a;
+  --color-primary-light: #2d3a2d;
+  --color-background: #f5f0e8;
+  --color-surface: #faf6f0;
+  --color-accent: #7a8c6e;
+  --color-accent-hover: #5f7353;
+  --color-secondary: #3d5a3d;
+  --color-text: #1a1a1a;
+  --color-text-muted: #6b6b60;
+  --color-border: #ddd8cc;
+  --color-cream: #f5f0e8;
+  --color-dark: #1c1c1c;
 
-  --font-heading: 'DM Serif Display', serif;
-  --font-body: 'DM Sans', sans-serif;
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
 }
 
 html {
@@ -34,7 +36,7 @@ h1, h2, h3, h4, h5, h6 {
 
 ::selection {
   background-color: var(--color-accent);
-  color: var(--color-primary);
+  color: white;
 }
 
 /* Skip to main content */
@@ -51,4 +53,14 @@ h1, h2, h3, h4, h5, h6 {
 .skip-to-main:focus {
   left: 0;
   top: 0;
+}
+
+/* Marquee animation */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 25s linear infinite;
 }

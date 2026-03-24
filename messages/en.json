@@ -17,14 +17,22 @@
     "about": "About",
     "contact": "Contact us",
     "gallery": "Gallery",
+    "gameRoom": "Game Room",
     "callUs": "Call us",
+    "visitShowroom": "Visit Showroom",
     "menu": "Menu",
     "close": "Close"
   },
   "Hero": {
     "headline": "Your game room starts here",
     "subheadline": "Family-owned for over 40 years. Visit Long Island's premier pool table showroom.",
-    "cta": "Browse our tables"
+    "cta": "Browse our tables",
+    "headline2": "Expert service, every table",
+    "subheadline2": "Factory-trained technicians for moves, re-felting, repairs, and leveling.",
+    "cta2": "Explore services",
+    "headline3": "40 years of doing it right",
+    "subheadline3": "Veteran-owned and family-operated. We know every table inside and out.",
+    "cta3": "Our story"
   },
   "TrustStrip": {
     "years": "40+ years",

@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, ChevronDown, Phone } from 'lucide-react';
+import { X, ChevronDown, Phone, MapPin } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { BUSINESS } from '@/lib/utils';
 import LocaleSwitcher from '@/components/layout/LocaleSwitcher';
@@ -26,18 +26,24 @@ const navItems: NavItem[] = [
     key: 'poolTables',
     href: '/pool-tables',
     children: [
-      { key: 'buyingGuide', href: '/pool-tables/buying-guide' },
       { key: 'newTables', href: '/pool-tables/new' },
       { key: 'usedTables', href: '/pool-tables/used' },
+      { key: 'buyingGuide', href: '/pool-tables/buying-guide' },
     ],
   },
-  { key: 'gameRoomFurniture', href: '/game-room-furniture' },
-  { key: 'gameTables', href: '/game-tables' },
-  { key: 'darts', href: '/darts' },
-  { key: 'accessories', href: '/accessories' },
-  { key: 'services', href: '/services' },
+  {
+    key: 'gameRoom',
+    href: '/category/game-room-furniture',
+    children: [
+      { key: 'gameRoomFurniture', href: '/category/game-room-furniture' },
+      { key: 'gameTables', href: '/category/game-tables' },
+      { key: 'darts', href: '/category/darts' },
+      { key: 'accessories', href: '/category/accessories' },
+    ],
+  },
+  { key: 'services', href: '/service-center' },
   { key: 'about', href: '/about' },
-  { key: 'contact', href: '/contact' },
+  { key: 'contact', href: '/contact-us' },
 ];
 
 const overlayVariants = {
@@ -95,7 +101,7 @@ const MobileNav = ({ isOpen, onClose }: MobileNavProps) => {
             animate="visible"
             exit="hidden"
             transition={{ duration: 0.2 }}
-            className="fixed inset-0 z-40 bg-primary/50 backdrop-blur-sm lg:hidden"
+            className="fixed inset-0 z-40 bg-dark/60 backdrop-blur-sm lg:hidden"
             onClick={onClose}
             aria-hidden="true"
           />
@@ -106,27 +112,27 @@ const MobileNav = ({ isOpen, onClose }: MobileNavProps) => {
             animate="visible"
             exit="exit"
             transition={{ type: 'spring', damping: 30, stiffness: 300 }}
-            className="fixed inset-y-0 right-0 z-50 w-full max-w-sm bg-surface shadow-2xl lg:hidden"
+            className="fixed inset-0 z-50 bg-primary lg:hidden"
             role="dialog"
             aria-modal="true"
             aria-label={t('menu')}
           >
             <div className="flex flex-col h-full">
-              <div className="flex items-center justify-between px-6 py-4 border-b border-border">
-                <span className="font-heading text-lg text-primary">
-                  {t('menu')}
+              <div className="flex items-center justify-between px-6 py-5">
+                <span className="font-heading text-2xl text-surface">
+                  Regal Billiards
                 </span>
                 <button
                   type="button"
                   onClick={onClose}
                   aria-label={t('close')}
-                  className="p-2 -mr-2 text-text-muted hover:text-primary transition-colors rounded-md"
+                  className="p-2 -mr-2 text-surface/60 hover:text-surface transition-colors rounded-md"
                 >
                   <X className="h-6 w-6" />
                 </button>
               </div>
 
-              <nav className="flex-1 overflow-y-auto px-6 py-4">
+              <nav className="flex-1 overflow-y-auto px-6 py-6">
                 <ul className="space-y-1">
                   {navItems.map((item) => {
                     const active = isActive(item.href);
@@ -138,8 +144,8 @@ const MobileNav = ({ isOpen, onClose }: MobileNavProps) => {
                             <Link
                               href={item.href}
                               className={cn(
-                                'flex-1 py-3 text-lg font-medium font-body transition-colors',
-                                active ? 'text-accent' : 'text-primary',
+                                'flex-1 py-3 text-2xl font-heading transition-colors',
+                                active ? 'text-accent' : 'text-surface',
                               )}
                             >
                               {t(item.key)}
@@ -149,7 +155,7 @@ const MobileNav = ({ isOpen, onClose }: MobileNavProps) => {
                               onClick={() => toggleSection(item.key)}
                               aria-expanded={expandedSection === item.key}
                               aria-label={`${t(item.key)} submenu`}
-                              className="p-2 text-text-muted hover:text-primary transition-colors"
+                              className="p-2 text-surface/50 hover:text-surface transition-colors"
                             >
                               <ChevronDown
                                 className={cn(
@@ -167,17 +173,17 @@ const MobileNav = ({ isOpen, onClose }: MobileNavProps) => {
                                 animate={{ height: 'auto', opacity: 1 }}
                                 exit={{ height: 0, opacity: 0 }}
                                 transition={{ duration: 0.2, ease: 'easeInOut' }}
-                                className="overflow-hidden pl-4 border-l-2 border-border ml-2"
+                                className="overflow-hidden pl-4 border-l border-surface/20 ml-2"
                               >
                                 {item.children.map((child) => (
                                   <li key={child.key}>
                                     <Link
                                       href={child.href}
                                       className={cn(
-                                        'block py-2.5 text-base font-body transition-colors',
+                                        'block py-2.5 text-lg font-body transition-colors',
                                         isActive(child.href)
                                           ? 'text-accent'
-                                          : 'text-text-muted hover:text-primary',
+                                          : 'text-surface/60 hover:text-surface',
                                       )}
                                     >
                                       {t(child.key)}
@@ -196,8 +202,8 @@ const MobileNav = ({ isOpen, onClose }: MobileNavProps) => {
                         <Link
                           href={item.href}
                           className={cn(
-                            'block py-3 text-lg font-medium font-body transition-colors',
-                            active ? 'text-accent' : 'text-primary hover:text-accent',
+                            'block py-3 text-2xl font-heading transition-colors',
+                            active ? 'text-accent' : 'text-surface hover:text-accent',
                           )}
                         >
                           {t(item.key)}
@@ -208,15 +214,24 @@ const MobileNav = ({ isOpen, onClose }: MobileNavProps) => {
                 </ul>
               </nav>
 
-              <div className="px-6 py-4 border-t border-border space-y-4">
+              <div className="px-6 py-6 border-t border-surface/10 space-y-4">
                 <a
                   href={BUSINESS.phoneHref}
-                  className="flex items-center gap-3 text-primary font-medium font-body"
+                  className="flex items-center gap-3 text-surface font-medium font-body"
                 >
                   <Phone className="h-5 w-5 text-accent" />
                   {BUSINESS.phone}
                 </a>
-                <div className="flex items-center justify-between">
+                <a
+                  href={BUSINESS.googleMapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 text-surface/70 font-body text-sm"
+                >
+                  <MapPin className="h-5 w-5 text-accent" />
+                  {BUSINESS.address}
+                </a>
+                <div className="flex items-center justify-between pt-2">
                   <LocaleSwitcher />
                 </div>
               </div>
