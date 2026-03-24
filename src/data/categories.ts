@@ -35,7 +35,7 @@ export const categories: CategoryInfo[] = [
       en: 'Complete your game room with spectator chairs, cue racks, pub tables, and bar stools. Designed to match and complement your pool table.',
       es: 'Complete su sala de juegos con sillas de espectador, porta-tacos, mesas de pub y taburetes de bar. Disenados para combinar y complementar su mesa de billar.',
     },
-    image: '/images/categories/game-room-furniture.jpg',
+    image: '/images/categories/game-room-furniture.webp',
   },
   {
     slug: 'game-tables',

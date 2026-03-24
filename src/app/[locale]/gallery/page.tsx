@@ -7,11 +7,20 @@ import SectionHeading from '@/components/ui/SectionHeading';
 import GalleryGrid from '@/components/gallery/GalleryGrid';
 import { cn } from '@/lib/utils';
 
-const galleryImages = Array.from({ length: 12 }, (_, i) => ({
-  src: '/images/placeholder-showroom.jpg',
-  alt: `Gallery image ${i + 1}`,
-  category: (['showroom', 'installations', 'game-rooms'] as const)[i % 3],
-}));
+const galleryImages = [
+  { src: '/images/gallery/install-kariba.jpg', alt: 'Presidential Kariba installation', category: 'installations' as const },
+  { src: '/images/gallery/install-pierce.jpg', alt: 'Presidential Pierce installation', category: 'installations' as const },
+  { src: '/images/gallery/install-kruger.jpg', alt: 'Presidential Kruger installation', category: 'installations' as const },
+  { src: '/images/hero-showroom-install.jpg', alt: 'Showroom installation', category: 'showroom' as const },
+  { src: '/images/gallery/install-resolute.jpg', alt: 'Imperial Resolute installation', category: 'installations' as const },
+  { src: '/images/gallery/install-skylar.jpg', alt: 'Customer game room', category: 'game-rooms' as const },
+  { src: '/images/showroom-capetown.jpg', alt: 'Showroom Capetown display', category: 'showroom' as const },
+  { src: '/images/gallery/install-silverton.jpg', alt: 'Presidential Silverton installation', category: 'installations' as const },
+  { src: '/images/gallery/install-turnbridge.jpg', alt: 'Customer game room setup', category: 'game-rooms' as const },
+  { src: '/images/gallery/install-carter.jpg', alt: 'Presidential Carter installation', category: 'installations' as const },
+  { src: '/images/hero-game-room.jpg', alt: 'Game room setup', category: 'game-rooms' as const },
+  { src: '/images/hero-pool-balls.jpg', alt: 'Pool table close-up', category: 'showroom' as const },
+];
 
 const filters = ['all', 'showroom', 'installations', 'game-rooms'] as const;
 

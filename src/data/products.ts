@@ -14,7 +14,7 @@ export const products: Product[] = [
     },
     features: ['Solid hardwood construction', '1" Brazilian slate', 'Genuine leather pockets', 'K-66 rubber cushions', 'Available in 7\' and 8\''],
     style: 'rustic',
-    images: ['/images/placeholder-table.jpg'],
+    images: ['/images/products/kruger.jpg'],
     priceRange: '$3,500 - $5,000',
   },
   {
@@ -29,7 +29,7 @@ export const products: Product[] = [
     },
     features: ['Maple hardwood frame', '1" Italian slate', 'Shield pockets', 'K-66 rubber cushions', 'Available in 7\', 8\', and 9\''],
     style: 'contemporary',
-    images: ['/images/placeholder-table.jpg'],
+    images: ['/images/products/hamilton.jpg'],
     priceRange: '$3,000 - $4,500',
   },
   {
@@ -44,7 +44,7 @@ export const products: Product[] = [
     },
     features: ['Cherry hardwood construction', '1" Brazilian slate', 'Leather fringe pockets', 'K-66 rubber cushions', 'Ball & claw legs', 'Available in 8\' and 9\''],
     style: 'traditional',
-    images: ['/images/placeholder-table.jpg'],
+    images: ['/images/products/vienna.jpg'],
     priceRange: '$4,000 - $6,000',
   },
   {
@@ -59,7 +59,7 @@ export const products: Product[] = [
     },
     features: ['Oak hardwood frame', '1" Italian slate', 'Drop pockets', 'K-66 rubber cushions', 'Available in 7\' and 8\''],
     style: 'traditional',
-    images: ['/images/placeholder-table.jpg'],
+    images: ['/images/products/carter.jpg'],
     priceRange: '$3,200 - $4,800',
   },
   {
@@ -74,7 +74,7 @@ export const products: Product[] = [
     },
     features: ['Maple and metal construction', '1" Brazilian slate', 'Metal shield pockets', 'K-66 rubber cushions', 'Pedestal legs', 'Available in 8\''],
     style: 'modern',
-    images: ['/images/placeholder-table.jpg'],
+    images: ['/images/products/monroe.jpg'],
     priceRange: '$3,800 - $5,200',
   },
   {
@@ -89,7 +89,7 @@ export const products: Product[] = [
     },
     features: ['Mahogany hardwood frame', '1" Brazilian slate', 'Leather fringe pockets', 'K-66 rubber cushions', 'Hand-turned legs', 'Available in 8\' and 9\''],
     style: 'traditional',
-    images: ['/images/placeholder-table.jpg'],
+    images: ['/images/products/capetown.jpg'],
     priceRange: '$4,500 - $6,500',
   },
   {
@@ -104,7 +104,7 @@ export const products: Product[] = [
     },
     features: ['Select hardwood construction', '3-piece matched 1" slate', 'Genuine leather pockets', 'K-66 rubber cushions', 'Dovetail joinery', 'Available in 8\' and 9\''],
     style: 'traditional',
-    images: ['/images/placeholder-table.jpg'],
+    images: ['/images/products/pierce.jpg'],
     priceRange: '$5,000 - $7,500',
   },
 
@@ -121,7 +121,7 @@ export const products: Product[] = [
     },
     features: ['Hardwood and veneer construction', '1" slate bed', 'Leather drop pockets', 'K-66 rubber cushions', 'Available in 7\' and 8\''],
     style: 'traditional',
-    images: ['/images/placeholder-table.jpg'],
+    images: ['/images/products/addison.jpg'],
     priceRange: '$2,500 - $3,500',
   },
   {
@@ -136,7 +136,7 @@ export const products: Product[] = [
     },
     features: ['Solid hardwood legs', '1" slate bed', 'Shield pockets', 'K-66 rubber cushions', 'Leg levelers', 'Available in 7\' and 8\''],
     style: 'contemporary',
-    images: ['/images/placeholder-table.jpg'],
+    images: ['/images/products/duke.jpg'],
     priceRange: '$2,000 - $3,000',
   },
   {
@@ -151,7 +151,7 @@ export const products: Product[] = [
     },
     features: ['Birch hardwood frame', '1" Italian slate', 'Leather drop pockets', 'K-66 rubber cushions', 'Turned legs with decorative foot', 'Available in 8\''],
     style: 'traditional',
-    images: ['/images/placeholder-table.jpg'],
+    images: ['/images/products/elayna.jpg'],
     priceRange: '$2,800 - $3,800',
   },
   {
@@ -166,7 +166,7 @@ export const products: Product[] = [
     },
     features: ['Engineered hardwood frame', '1" slate bed', 'Concealed drop pockets', 'K-66 rubber cushions', 'Modern pedestal base', 'Available in 7\' and 8\''],
     style: 'modern',
-    images: ['/images/placeholder-table.jpg'],
+    images: ['/images/products/teak-addison.jpg'],
     priceRange: '$2,600 - $3,600',
   },
   {
@@ -181,7 +181,7 @@ export const products: Product[] = [
     },
     features: ['Pine hardwood construction', '1" slate bed', 'Iron shield pockets', 'K-66 rubber cushions', 'Distressed finish', 'Available in 7\' and 8\''],
     style: 'rustic',
-    images: ['/images/placeholder-table.jpg'],
+    images: ['/images/products/silverton.jpg'],
     priceRange: '$2,400 - $3,400',
   },
   {
@@ -196,7 +196,7 @@ export const products: Product[] = [
     },
     features: ['Walnut hardwood frame', '1" Brazilian slate', 'Leather fringe pockets', 'K-66 rubber cushions', 'Heavy-duty leg levelers', 'Available in 8\''],
     style: 'traditional',
-    images: ['/images/placeholder-table.jpg'],
+    images: ['/images/products/carmel.jpg'],
     priceRange: '$2,800 - $4,000',
   },
 
@@ -213,7 +213,7 @@ export const products: Product[] = [
     },
     features: ['Hardwood and MDF construction', '1" slate bed', 'Drop pockets', 'K-66 rubber cushions', 'Tapered legs', 'Available in 7\' and 8\''],
     style: 'contemporary',
-    images: ['/images/placeholder-table.jpg'],
+    images: ['/images/products/barnstable.jpg'],
     priceRange: '$2,200 - $3,200',
   },
   {
@@ -228,7 +228,7 @@ export const products: Product[] = [
     },
     features: ['Solid wood and metal construction', '1" slate bed', 'Metal corner pockets', 'K-66 rubber cushions', 'Art Deco legs', 'Available in 8\''],
     style: 'modern',
-    images: ['/images/placeholder-table.jpg'],
+    images: ['/images/products/resolute.jpg'],
     priceRange: '$2,600 - $3,800',
   },
   {
@@ -243,7 +243,7 @@ export const products: Product[] = [
     },
     features: ['Hardwood construction', '1" slate bed', 'Leather drop pockets', 'K-66 rubber cushions', 'Post legs', 'Available in 7\', 8\', and 9\''],
     style: 'traditional',
-    images: ['/images/placeholder-table.jpg'],
+    images: ['/images/products/dauphine.jpg'],
     priceRange: '$2,000 - $3,000',
   },
   {
@@ -258,7 +258,7 @@ export const products: Product[] = [
     },
     features: ['Hardwood frame', '1" slate bed', 'Dining top included', 'Drop pockets', 'K-66 rubber cushions', 'Seats 6-8 as dining table', 'Available in 7\' and 8\''],
     style: 'contemporary',
-    images: ['/images/placeholder-table.jpg'],
+    images: ['/images/products/penelope.jpg'],
     priceRange: '$3,000 - $4,500',
   },
   {
@@ -273,7 +273,7 @@ export const products: Product[] = [
     },
     features: ['Heavy-duty hardwood frame', '1" premium slate', 'Leather fringe pockets', 'K-66 rubber cushions', 'Extra-thick rails', 'Available in 8\' and 9\''],
     style: 'traditional',
-    images: ['/images/placeholder-table.jpg'],
+    images: ['/images/products/kariba.jpg'],
     priceRange: '$2,800 - $4,200',
   },
   {
@@ -288,7 +288,7 @@ export const products: Product[] = [
     },
     features: ['Mesquite-finished hardwood', '1" slate bed', 'Iron drop pockets', 'K-66 rubber cushions', 'Rustic hardware', 'Available in 7\' and 8\''],
     style: 'rustic',
-    images: ['/images/placeholder-table.jpg'],
+    images: ['/images/products/esterno-outdoor.jpg'],
     priceRange: '$2,400 - $3,400',
   },
 
@@ -305,7 +305,7 @@ export const products: Product[] = [
     },
     features: ['Refurbished with new felt', 'Re-leveled 1" slate', 'Inspected cushions', 'Minor cosmetic wear'],
     style: 'contemporary',
-    images: ['/images/placeholder-table.jpg'],
+    images: ['/images/categories/used-pool-tables.jpg'],
     priceRange: '$1,800 - $2,200',
     isUsed: true,
   },
@@ -321,7 +321,7 @@ export const products: Product[] = [
     },
     features: ['Original 1" slate', 'Cushions play true', 'Light finish wear', 'Includes basic accessory kit'],
     style: 'traditional',
-    images: ['/images/placeholder-table.jpg'],
+    images: ['/images/categories/used-pool-tables.jpg'],
     priceRange: '$1,200 - $1,600',
     isUsed: true,
   },
@@ -337,7 +337,7 @@ export const products: Product[] = [
     },
     features: ['New Simonis cloth', '1" slate in excellent condition', 'Cushions recently tested', 'Some frame touch-up needed'],
     style: 'contemporary',
-    images: ['/images/placeholder-table.jpg'],
+    images: ['/images/categories/used-pool-tables.jpg'],
     priceRange: '$1,500 - $2,000',
     isUsed: true,
   },
@@ -355,7 +355,7 @@ export const products: Product[] = [
     },
     features: ['Padded swivel seat', 'Built-in cue holder', 'Foot rail', 'Available in multiple finishes'],
     style: 'traditional',
-    images: ['/images/placeholder-furniture.jpg'],
+    images: ['/images/products/game-chair.webp'],
     priceRange: '$350 - $600',
   },
   {
@@ -370,7 +370,7 @@ export const products: Product[] = [
     },
     features: ['Holds 8 cues', 'Ball storage shelf', 'Chalk holders', 'Wall-mount hardware included'],
     style: 'traditional',
-    images: ['/images/placeholder-furniture.jpg'],
+    images: ['/images/products/game-table-set.webp'],
     priceRange: '$150 - $300',
   },
   {
@@ -385,7 +385,7 @@ export const products: Product[] = [
     },
     features: ['42" table height', 'Two matching stools', 'Solid wood construction', 'Multiple finish options'],
     style: 'contemporary',
-    images: ['/images/placeholder-furniture.jpg'],
+    images: ['/images/products/pub-table.webp'],
     priceRange: '$400 - $700',
   },
 
@@ -402,7 +402,7 @@ export const products: Product[] = [
     },
     features: ['Solid steel rods', 'Counterbalanced players', 'Adjustable leg levelers', 'Side ball return'],
     style: 'contemporary',
-    images: ['/images/placeholder-game-table.jpg'],
+    images: ['/images/products/foosball.webp'],
     priceRange: '$800 - $1,500',
   },
   {
@@ -417,7 +417,7 @@ export const products: Product[] = [
     },
     features: ['Powerful blower motor', 'Electronic scoring', 'Sound effects', 'Leg levelers', 'Includes pucks and pushers'],
     style: 'modern',
-    images: ['/images/placeholder-game-table.jpg'],
+    images: ['/images/products/air-hockey.jpg'],
     priceRange: '$1,000 - $2,000',
   },
   {
@@ -432,7 +432,7 @@ export const products: Product[] = [
     },
     features: ['Butcher-block playfield', 'Climate adjusters', 'Powder-coated pucks included', 'Adjustable leg levelers'],
     style: 'rustic',
-    images: ['/images/placeholder-game-table.jpg'],
+    images: ['/images/products/shuffleboard.jpg'],
     priceRange: '$2,000 - $4,000',
   },
 
@@ -449,7 +449,7 @@ export const products: Product[] = [
     },
     features: ['Sisal fiber construction', 'Staple-free bullseye', 'Razor-thin spider wire', 'Regulation size 18"'],
     style: 'traditional',
-    images: ['/images/placeholder-darts.jpg'],
+    images: ['/images/products/dartboard.jpg'],
     priceRange: '$50 - $100',
   },
   {
@@ -464,7 +464,7 @@ export const products: Product[] = [
     },
     features: ['Solid wood cabinet', 'Bristle dartboard included', '6 steel-tip darts', 'Chalkboard scorers', 'Wall-mount ready'],
     style: 'traditional',
-    images: ['/images/placeholder-darts.jpg'],
+    images: ['/images/products/dart-cabinet.jpg'],
     priceRange: '$100 - $250',
   },
 
@@ -481,7 +481,7 @@ export const products: Product[] = [
     },
     features: ['Phenolic resin construction', 'Regulation 2-1/4" size', 'High-gloss finish', 'Full 16-ball set'],
     style: 'traditional',
-    images: ['/images/placeholder-accessory.jpg'],
+    images: ['/images/products/aramith-balls.jpg'],
     priceRange: '$150 - $300',
   },
   {
@@ -496,7 +496,7 @@ export const products: Product[] = [
     },
     features: ['Heavy-duty Naugahyde', 'Elasticized corners', 'Available for 7\', 8\', and 9\' tables', 'Multiple colors'],
     style: 'contemporary',
-    images: ['/images/placeholder-accessory.jpg'],
+    images: ['/images/products/accessory-package.jpg'],
     priceRange: '$50 - $120',
   },
   {
@@ -511,7 +511,7 @@ export const products: Product[] = [
     },
     features: ['Three glass shades', 'Even table illumination', 'Adjustable chain height', 'Multiple finish options'],
     style: 'traditional',
-    images: ['/images/placeholder-accessory.jpg'],
+    images: ['/images/products/accessory-package.jpg'],
     priceRange: '$200 - $500',
   },
 
@@ -528,7 +528,7 @@ export const products: Product[] = [
     },
     features: ['Solid maple shaft', '13mm tip', 'Irish linen wrap', 'Stainless steel joint'],
     style: 'traditional',
-    images: ['/images/placeholder-cue.jpg'],
+    images: ['/images/products/viper-cue.jpg'],
     priceRange: '$30 - $80',
   },
   {
@@ -543,7 +543,7 @@ export const products: Product[] = [
     },
     features: ['Zero-flex slim taper shaft', 'Tiger Everest tip', 'Intricate inlay design', 'Lifetime warranty'],
     style: 'contemporary',
-    images: ['/images/placeholder-cue.jpg'],
+    images: ['/images/products/valhalla-cues.jpg'],
     priceRange: '$200 - $500',
   },
 ];

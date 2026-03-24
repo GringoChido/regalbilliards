@@ -14,7 +14,7 @@ const CTASection = () => {
     <section className="relative py-28 md:py-40 overflow-hidden">
       {/* Background image */}
       <Image
-        src="/images/placeholder-showroom.jpg"
+        src="/images/showroom-capetown.jpg"
         alt=""
         fill
         className="object-cover"

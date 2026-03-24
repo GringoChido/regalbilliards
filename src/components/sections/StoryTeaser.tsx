@@ -22,7 +22,7 @@ const StoryTeaser = () => {
           >
             <div className="relative h-80 lg:h-[32rem] rounded-2xl overflow-hidden">
               <Image
-                src="/images/placeholder-showroom.jpg"
+                src="/images/hero-showroom-install.jpg"
                 alt="Regal Billiards showroom"
                 fill
                 className="object-cover"

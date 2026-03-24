@@ -46,7 +46,7 @@ export default function AboutContent() {
               className="relative h-80 rounded-xl overflow-hidden"
             >
               <Image
-                src="/images/placeholder-showroom.jpg"
+                src="/images/hero-showroom-install.jpg"
                 alt="Regal Billiards showroom"
                 fill
                 className="object-cover"
@@ -68,7 +68,7 @@ export default function AboutContent() {
               className="relative h-80 rounded-xl overflow-hidden order-2 lg:order-1"
             >
               <Image
-                src="/images/placeholder-showroom.jpg"
+                src="/images/hero-showroom-install.jpg"
                 alt="Mike Walsh, owner of Regal Billiards"
                 fill
                 className="object-cover"
@@ -130,7 +130,7 @@ export default function AboutContent() {
             {[1, 2, 3].map((i) => (
               <div key={i} className="relative h-64 rounded-xl overflow-hidden">
                 <Image
-                  src="/images/placeholder-showroom.jpg"
+                  src="/images/hero-showroom-install.jpg"
                   alt={`Regal Billiards showroom ${i}`}
                   fill
                   className="object-cover"

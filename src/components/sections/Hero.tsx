@@ -8,21 +8,21 @@ import Image from 'next/image';
 
 const slides = [
   {
-    image: '/images/placeholder-hero.jpg',
+    image: '/images/hero-pool-balls.jpg',
     headlineKey: 'headline',
     subKey: 'subheadline',
     ctaKey: 'cta',
     ctaHref: '/pool-tables',
   },
   {
-    image: '/images/placeholder-showroom.jpg',
+    image: '/images/service-hero.jpg',
     headlineKey: 'headline2',
     subKey: 'subheadline2',
     ctaKey: 'cta2',
     ctaHref: '/service-center',
   },
   {
-    image: '/images/placeholder-table.jpg',
+    image: '/images/hero-game-room.jpg',
     headlineKey: 'headline3',
     subKey: 'subheadline3',
     ctaKey: 'cta3',

@@ -30,7 +30,7 @@ export default function PoolTablesPage() {
       {/* Hero */}
       <section className="relative h-[50vh] min-h-[400px] max-h-[600px] flex items-end overflow-hidden">
         <Image
-          src="/images/placeholder-table.jpg"
+          src="/images/categories/pool-tables.jpg"
           alt="Pool tables"
           fill
           priority

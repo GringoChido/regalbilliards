@@ -38,7 +38,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
       <div className="bg-surface rounded-2xl border border-border overflow-hidden transition-all duration-500 group-hover:shadow-xl group-hover:-translate-y-1">
         <div className="relative h-64 md:h-72 overflow-hidden">
           <Image
-            src={product.images[0] || '/images/placeholder-table.jpg'}
+            src={product.images[0] || '/images/categories/pool-tables.jpg'}
             alt={product.name}
             fill
             className="object-cover transition-transform duration-700 group-hover:scale-105"

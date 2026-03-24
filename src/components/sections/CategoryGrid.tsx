@@ -8,14 +8,14 @@ import Container from '@/components/ui/Container';
 import { ArrowUpRight } from 'lucide-react';
 
 const categories = [
-  { key: 'poolTables', href: '/pool-tables', image: '/images/placeholder-table.jpg', size: 'large' },
-  { key: 'gameRoomFurniture', href: '/category/game-room-furniture', image: '/images/placeholder-table.jpg', size: 'medium' },
-  { key: 'gameTables', href: '/category/game-tables', image: '/images/placeholder-table.jpg', size: 'medium' },
-  { key: 'darts', href: '/category/darts', image: '/images/placeholder-table.jpg', size: 'small' },
-  { key: 'accessories', href: '/category/accessories', image: '/images/placeholder-table.jpg', size: 'small' },
-  { key: 'cueSticks', href: '/category/cue-sticks', image: '/images/placeholder-table.jpg', size: 'small' },
-  { key: 'usedPoolTables', href: '/category/used-pool-tables', image: '/images/placeholder-table.jpg', size: 'medium' },
-  { key: 'serviceCenter', href: '/service-center', image: '/images/placeholder-service.jpg', size: 'medium' },
+  { key: 'poolTables', href: '/pool-tables', image: '/images/categories/pool-tables.jpg', size: 'large' },
+  { key: 'gameRoomFurniture', href: '/category/game-room-furniture', image: '/images/categories/game-room-furniture.webp', size: 'medium' },
+  { key: 'gameTables', href: '/category/game-tables', image: '/images/categories/game-tables.jpg', size: 'medium' },
+  { key: 'darts', href: '/category/darts', image: '/images/categories/darts.jpg', size: 'small' },
+  { key: 'accessories', href: '/category/accessories', image: '/images/categories/accessories.jpg', size: 'small' },
+  { key: 'cueSticks', href: '/category/cue-sticks', image: '/images/categories/cue-sticks.jpg', size: 'small' },
+  { key: 'usedPoolTables', href: '/category/used-pool-tables', image: '/images/categories/used-pool-tables.jpg', size: 'medium' },
+  { key: 'serviceCenter', href: '/service-center', image: '/images/service-hero.jpg', size: 'medium' },
 ] as const;
 
 const CategoryGrid = () => {
