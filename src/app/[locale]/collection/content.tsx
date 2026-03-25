@@ -22,6 +22,16 @@ const getCategoryHref = (slug: ProductCategory): string =>
 const getProductCount = (slug: ProductCategory): number =>
   products.filter((p) => p.category === slug).length;
 
+const categoryKeys: Record<string, string> = {
+  'pool-tables': 'poolTables',
+  'used-pool-tables': 'usedPoolTables',
+  'game-room-furniture': 'gameRoomFurniture',
+  'game-tables': 'gameTables',
+  'darts': 'darts',
+  'accessories': 'accessories',
+  'cue-sticks': 'cueSticks',
+};
+
 export default function CollectionContent() {
   const t = useTranslations('Collection');
   const tCat = useTranslations('CategoryGrid');
@@ -61,156 +71,57 @@ export default function CollectionContent() {
         </div>
       </section>
 
-      {/* Category Bento Grid */}
-      <section className="py-24 md:py-40">
-        <Container>
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6">
-            {/* Pool Tables — hero card */}
-            <motion.div {...fadeUp} className="md:col-span-8 md:row-span-2">
-              <CollectionCard
-                slug="pool-tables"
-                name={categories.find((c) => c.slug === 'pool-tables')?.name[locale as 'en' | 'es'] || 'Pool Tables'}
-                description={tCat('poolTablesDesc')}
-                image={categories.find((c) => c.slug === 'pool-tables')?.image || ''}
-                count={getProductCount('pool-tables')}
-                countLabel={t('productCount', { count: getProductCount('pool-tables') })}
-                viewLabel={t('viewCategory')}
-                className="h-80 md:h-full md:min-h-[560px]"
-                sizes="(max-width: 768px) 100vw, 66vw"
-              />
-            </motion.div>
+      {/* Category Blocks — alternating left/right */}
+      {categories.map((category, index) => {
+        const imageLeft = index % 2 === 0;
+        const count = getProductCount(category.slug);
+        const catKey = categoryKeys[category.slug] || category.slug;
+        const bgClass = index % 2 === 0 ? 'bg-surface' : 'bg-surface-container-low';
 
-            {/* Used Pool Tables */}
-            <motion.div
-              {...fadeUp}
-              transition={{ duration: 0.6, ease: 'easeOut' as const, delay: 0.1 }}
-              className="md:col-span-4"
-            >
-              <CollectionCard
-                slug="used-pool-tables"
-                name={categories.find((c) => c.slug === 'used-pool-tables')?.name[locale as 'en' | 'es'] || 'Used Pool Tables'}
-                description={tCat('usedPoolTablesDesc')}
-                image={categories.find((c) => c.slug === 'used-pool-tables')?.image || ''}
-                count={getProductCount('used-pool-tables')}
-                countLabel={t('productCount', { count: getProductCount('used-pool-tables') })}
-                viewLabel={t('viewCategory')}
-                className="h-64 md:h-full"
-                sizes="(max-width: 768px) 100vw, 33vw"
-              />
-            </motion.div>
+        return (
+          <section key={category.slug} className={`py-20 md:py-32 ${bgClass}`}>
+            <Container>
+              <motion.div
+                {...fadeUp}
+                className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-20 items-center"
+              >
+                {/* Image */}
+                <div className={`lg:col-span-7 ${imageLeft ? 'lg:order-1' : 'lg:order-2'}`}>
+                  <Link href={getCategoryHref(category.slug)} className="block relative h-72 md:h-96 lg:h-[28rem] rounded-sm overflow-hidden group">
+                    <Image
+                      src={category.image}
+                      alt={category.name[locale as 'en' | 'es']}
+                      fill
+                      className="object-cover transition-transform duration-1000 group-hover:scale-105"
+                      sizes="(max-width: 1024px) 100vw, 58vw"
+                    />
+                  </Link>
+                </div>
 
-            {/* Game Room Furniture */}
-            <motion.div
-              {...fadeUp}
-              transition={{ duration: 0.6, ease: 'easeOut' as const, delay: 0.15 }}
-              className="md:col-span-4"
-            >
-              <CollectionCard
-                slug="game-room-furniture"
-                name={categories.find((c) => c.slug === 'game-room-furniture')?.name[locale as 'en' | 'es'] || 'Game Room Furniture'}
-                description={tCat('gameRoomFurnitureDesc')}
-                image={categories.find((c) => c.slug === 'game-room-furniture')?.image || ''}
-                count={getProductCount('game-room-furniture')}
-                countLabel={t('productCount', { count: getProductCount('game-room-furniture') })}
-                viewLabel={t('viewCategory')}
-                className="h-64 md:h-full"
-                sizes="(max-width: 768px) 100vw, 33vw"
-              />
-            </motion.div>
-
-            {/* Game Tables, Darts, Cue Sticks — row of 3 */}
-            {(['game-tables', 'darts', 'cue-sticks'] as const).map((slug, index) => {
-              const cat = categories.find((c) => c.slug === slug);
-              const catKey = slug === 'game-tables' ? 'gameTables' : slug === 'darts' ? 'darts' : 'cueSticks';
-              return (
-                <motion.div
-                  key={slug}
-                  {...fadeUp}
-                  transition={{ duration: 0.6, ease: 'easeOut' as const, delay: 0.2 + index * 0.05 }}
-                  className="md:col-span-4"
-                >
-                  <CollectionCard
-                    slug={slug}
-                    name={cat?.name[locale as 'en' | 'es'] || ''}
-                    description={tCat(`${catKey}Desc`)}
-                    image={cat?.image || ''}
-                    count={getProductCount(slug)}
-                    countLabel={t('productCount', { count: getProductCount(slug) })}
-                    viewLabel={t('viewCategory')}
-                    className="h-64 md:h-72"
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                  />
-                </motion.div>
-              );
-            })}
-
-            {/* Accessories — wider bottom */}
-            <motion.div
-              {...fadeUp}
-              transition={{ duration: 0.6, ease: 'easeOut' as const, delay: 0.35 }}
-              className="md:col-span-12"
-            >
-              <CollectionCard
-                slug="accessories"
-                name={categories.find((c) => c.slug === 'accessories')?.name[locale as 'en' | 'es'] || 'Accessories'}
-                description={tCat('accessoriesDesc')}
-                image={categories.find((c) => c.slug === 'accessories')?.image || ''}
-                count={getProductCount('accessories')}
-                countLabel={t('productCount', { count: getProductCount('accessories') })}
-                viewLabel={t('viewCategory')}
-                className="h-64 md:h-80"
-                sizes="100vw"
-              />
-            </motion.div>
-          </div>
-        </Container>
-      </section>
+                {/* Text + CTA */}
+                <div className={`lg:col-span-5 ${imageLeft ? 'lg:order-2' : 'lg:order-1'}`}>
+                  <p className="font-label text-xs tracking-[0.3em] uppercase text-on-surface-variant mb-4">
+                    {t('productCount', { count })}
+                  </p>
+                  <h2 className="font-headline text-3xl md:text-4xl lg:text-5xl text-primary -tracking-wide mb-6">
+                    {category.name[locale as 'en' | 'es']}
+                  </h2>
+                  <p className="text-on-surface-variant text-lg leading-[1.7] mb-10 font-body">
+                    {category.description[locale as 'en' | 'es']}
+                  </p>
+                  <Link
+                    href={getCategoryHref(category.slug)}
+                    className="group inline-flex items-center gap-4 px-10 py-4 bg-secondary text-on-secondary font-label text-xs uppercase tracking-widest rounded-sm hover:brightness-110 transition-all duration-300"
+                  >
+                    {t('viewCategory')}
+                    <span className="group-hover:translate-x-2 transition-transform duration-300">&rarr;</span>
+                  </Link>
+                </div>
+              </motion.div>
+            </Container>
+          </section>
+        );
+      })}
     </main>
   );
 }
-
-interface CollectionCardProps {
-  slug: ProductCategory;
-  name: string;
-  description: string;
-  image: string;
-  count: number;
-  countLabel: string;
-  viewLabel: string;
-  className?: string;
-  sizes?: string;
-}
-
-const CollectionCard = ({ slug, name, description, image, count, countLabel, viewLabel, className, sizes }: CollectionCardProps) => (
-  <Link href={getCategoryHref(slug)} className="group block relative overflow-hidden h-full rounded-sm">
-    <div className={className}>
-      <Image
-        src={image}
-        alt={name}
-        fill
-        className="object-cover transition-transform duration-1000 group-hover:scale-105"
-        sizes={sizes || '(max-width: 768px) 100vw, 40vw'}
-      />
-      <div className="absolute inset-0 bg-gradient-to-t from-primary/70 via-primary/10 to-transparent" />
-
-      {/* Hover reveal label */}
-      <div className="absolute top-6 right-6 bg-surface/90 backdrop-blur-sm px-4 py-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-        <span className="font-label text-[10px] uppercase tracking-[0.2em] text-primary">
-          {viewLabel}
-        </span>
-      </div>
-    </div>
-
-    <div className="absolute inset-0 flex flex-col justify-end p-6 md:p-8">
-      <p className="font-label text-[10px] uppercase tracking-[0.2em] text-secondary mb-2">
-        {countLabel}
-      </p>
-      <h2 className="font-headline text-2xl md:text-3xl text-surface mb-1 leading-tight">
-        {name}
-      </h2>
-      <p className="text-surface/50 text-sm font-body line-clamp-2 max-w-md">
-        {description}
-      </p>
-    </div>
-  </Link>
-);
