@@ -160,16 +160,20 @@ export default function AboutContent() {
             {t('showroomText')}
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-6xl mx-auto">
-            {[1, 2, 3].map((i) => (
+            {[
+              { src: '/images/showroom-tile-1.jpg', alt: 'Regal Billiards showroom interior' },
+              { src: '/images/showroom-tile-2.jpg', alt: 'Regal Billiards pool table display' },
+              { src: '/images/showroom-tile-3.jpg', alt: 'Regal Billiards game room setup' },
+            ].map((img, i) => (
               <motion.div
                 key={i}
                 {...fadeUp}
-                transition={{ duration: 0.6, ease: 'easeOut' as const, delay: i * 0.1 }}
-                className={`relative h-72 md:h-80 rounded-sm overflow-hidden group ${i === 2 ? 'md:mt-12' : ''}`}
+                transition={{ duration: 0.6, ease: 'easeOut' as const, delay: (i + 1) * 0.1 }}
+                className={`relative h-72 md:h-80 rounded-sm overflow-hidden group ${i === 1 ? 'md:mt-12' : ''}`}
               >
                 <Image
-                  src="/images/story-teaser.jpeg"
-                  alt={`Regal Billiards showroom ${i}`}
+                  src={img.src}
+                  alt={img.alt}
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                   sizes="(max-width: 768px) 100vw, 33vw"
