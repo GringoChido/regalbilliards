@@ -3,7 +3,25 @@ export interface BilingualContent {
   es: string;
 }
 
-export type Manufacturer = 'presidential' | 'cl-bailey' | 'imperial';
+export type Manufacturer =
+  | 'presidential'
+  | 'cl-bailey'
+  | 'imperial'
+  | 'ram'
+  | 'tornado'
+  | 'viper'
+  | 'cuetec'
+  | 'lucasi'
+  | 'players'
+  | 'viking'
+  | 'aramith'
+  | 'simonis'
+  | 'level-best'
+  | 'brunswick'
+  | 'olhausen'
+  | 'connelly'
+  | 'gandy'
+  | 'generic';
 
 export type ProductCategory =
   | 'pool-tables'
@@ -29,6 +47,8 @@ export interface Product {
   priceRange?: string;
   isOutdoor?: boolean;
   isUsed?: boolean;
+  subcategory?: string;
+  brand?: string;
 }
 
 export interface Service {

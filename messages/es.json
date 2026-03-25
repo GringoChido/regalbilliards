@@ -264,5 +264,74 @@
     "description": "Todo para su salón de juegos — desde mesas de billar premium hasta accesorios y muebles. Explore por categoría o visítenos en Hicksville para verlo todo en persona.",
     "productCount": "{count} productos",
     "viewCategory": "Ver Colección"
+  },
+  "PoolTablesPage": {
+    "manufacturerIntro": "Seleccionamos cada mesa que vendemos. Después de 40 años en el negocio — incluyendo años como fabricantes — sabemos lo que hace que una mesa valga la pena. Por eso solo trabajamos con fabricantes que combinan construcción de primera con diseño excepcional.",
+    "presidentialHeading": "Presidential Billiards",
+    "presidentialDesc": "Maderas macizas, soporte central de pizarra y acabados hechos a mano que hacen de cada mesa una pieza única. Las mesas Presidential están construidas para durar generaciones — y diseñadas para ser el centro de atención de cualquier sala.",
+    "clBaileyHeading": "The C.L. Bailey Company",
+    "clBaileyDesc": "Reconocidos por su atención al detalle y artesanía de calidad, las mesas C.L. Bailey ofrecen un valor excepcional sin escatimar. Construcción sólida, acabados hermosos y jugabilidad suave.",
+    "imperialHeading": "Imperial International",
+    "imperialDesc": "Desde diseños clásicos hasta estéticas modernas, Imperial ofrece una amplia gama de mesas construidas con materiales de calidad y componentes de grado profesional. Excelentes opciones en todos los rangos de precio.",
+    "constructionHeading": "Construidas para Durar",
+    "constructionPoint1": "Construcción en madera maciza",
+    "constructionPoint2": "Soporte central de pizarra",
+    "constructionPoint3": "Juntas y herrajes de metal sólido",
+    "constructionPoint4": "Bandas profesionales K-66"
+  },
+  "UsedPoolTables": {
+    "introHeading": "Mesas Usadas en las que Puedes Confiar",
+    "introText": "En Regal Billiards típicamente mantenemos un inventario diverso de mesas de billar usadas de calidad. Cada mesa usada que vendemos ha sido personalmente inspeccionada por nuestro equipo y cumple con nuestros estándares de jugabilidad y condición.",
+    "pitfallsHeading": "Qué vigilar al comprar usada",
+    "pitfallsText": "Cuando buscas comprar una mesa de billar usada, recuerda que incluso con una mesa 'buena', hay costos ocultos. Necesitarás pagar por la mudanza — desarmar, transportar y reensamblar no es barato. El paño puede necesitar reemplazo. Las bandas podrían estar muertas. Y probablemente necesitarás accesorios nuevos. Esos costos se acumulan rápido.",
+    "differenceHeading": "La diferencia Regal",
+    "differenceText": "En Regal Billiards nos hemos encargado de estos problemas. Cada mesa que vendemos ha sido verificada en calidad — la pizarra está nivelada, las bandas son funcionales, y la mesa ya ha sido profesionalmente desarmada y transportada.",
+    "includesHeading": "Qué incluye nuestro precio",
+    "includesList": "Nuestro precio incluye entrega, instalación profesional, la opción de paño nuevo y accesorios. Sabes exactamente lo que estás obteniendo al precio exacto. Sin sorpresas.",
+    "brandsHeading": "Marcas que típicamente tenemos",
+    "brandsText": "Brunswick, Olhausen, Connelly, Gandy, AMF y más. El inventario cambia frecuentemente — llámanos o visítanos para ver qué hay disponible."
+  },
+  "GameRoomFurniture": {
+    "introText": "Completa tu sala de juegos con muebles diseñados para complementar tu mesa de billar. Desde sillas de espectador hasta configuraciones completas de bar, vendemos piezas construidas para igualar la calidad y el estilo de tu mesa.",
+    "presidentialHeading": "La Colección Presidential",
+    "presidentialText": "Muebles de madera maciza con increíbles detalles artesanales. Muchos de los diseños y tintes de madera están específicamente creados para combinar con las mesas de billar Presidential — para que toda tu sala de juegos tenga un aspecto cohesivo y personalizado.",
+    "levelBestHeading": "La Colección Level Best",
+    "levelBestText": "Producida por C.L. Bailey, los muebles Level Best son conocidos por su alta calidad y durabilidad. Sus mesas de juego multifunción son de las favoritas del showroom — perfectas para hogares donde el espacio es limitado.",
+    "ramHeading": "La Colección RAM",
+    "ramText": "Muebles modernos de bar y sala de juegos con líneas limpias y construcción sólida. RAM ofrece desde barras completas hasta bancos, mesas de pub y mesas de juego — todo diseñado para crear el espacio de entretenimiento definitivo."
+  },
+  "GameTables": {
+    "introText": "Desde piezas sencillas pero bien construidas que ofrecen una gran experiencia de juego hasta mesas de calidad mueblería que funcionan como centro de atención de la sala — tenemos mesas de juego para cada espacio y presupuesto.",
+    "foosball": "Mesas de Futbolito",
+    "airHockey": "Mesas de Hockey de Aire",
+    "shuffleboard": "Mesas de Shuffleboard",
+    "tableTennis": "Tenis de Mesa"
+  },
+  "DartsPage": {
+    "introText": "Dianas profesionales de cerdas, tableros electrónicos, sets de gabinete y juegos de dardos de punta de acero y punta suave para todos los niveles. Ya sea que estés montando un rincón casual o una línea de tiro seria, tenemos lo que necesitas.",
+    "cabinets": "Gabinetes de Dardos",
+    "dartboards": "Dianas",
+    "dartSets": "Dardos",
+    "dartAccessories": "Accesorios de Dardos"
+  },
+  "AccessoriesPage": {
+    "introText": "Todo lo que necesitas para tu mesa — y algunas cosas que no sabías que necesitabas. Desde sets de bolas Aramith premium hasta paño Simonis, iluminación adecuada y paquetes completos de accesorios. Vendemos las marcas que usan los profesionales.",
+    "ballSets": "Sets de Bolas de Billar",
+    "cueRacks": "Porta Tacos",
+    "pockets": "Bolsillos de Mesa",
+    "covers": "Cubiertas de Mesa",
+    "cloth": "Paño de Billar",
+    "lightFixtures": "Lámparas",
+    "otherAccessories": "Otros Accesorios"
+  },
+  "CueSticksPage": {
+    "introText": "Con más de 90 tacos en exhibición y acceso a cientos más, vendemos desde tacos de una pieza básicos hasta tacos de dos piezas de alta calidad para jugadores serios. Pasa a probar antes de comprar.",
+    "brandsText": "Distribuidor autorizado de Players, Lucasi, Predator, Cuetec, Viper, Viking y más.",
+    "beginnerHeading": "Para Empezar",
+    "beginnerText": "¿Nuevo en el juego? Un taco de una pieza sólido o un taco de dos piezas económico de Players o Viper es un gran punto de partida. Invierte $30-$80 y enfócate en aprender tu golpe.",
+    "intermediateHeading": "Subiendo de Nivel",
+    "intermediateText": "¿Listo para invertir en tu juego? Los tacos Cuetec, Dufferin y Valhalla ofrecen excelente rendimiento en el rango de $60-$200. Sentirás la diferencia en balance y calidad de golpe.",
+    "advancedHeading": "Jugadores Serios",
+    "advancedText": "Para jugadores competitivos, los tacos Lucasi, Viking y Predator ofrecen rendimiento de grado profesional. Empuñaduras personalizadas, ejes de baja deflexión y puntas premium. $200 en adelante."
   }
 }

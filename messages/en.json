@@ -264,5 +264,74 @@
     "description": "Everything for your game room — from premium pool tables to accessories and game room furniture. Browse by category or visit us in Hicksville to see it all in person.",
     "productCount": "{count} products",
     "viewCategory": "View Collection"
+  },
+  "PoolTablesPage": {
+    "manufacturerIntro": "We hand-pick every table we carry. After 40 years in the business — including years as manufacturers ourselves — we know what makes a table worth owning. That's why we only work with manufacturers who combine world-class construction with eye-catching design.",
+    "presidentialHeading": "Presidential Billiards",
+    "presidentialDesc": "Solid hardwoods, center-beam slate support, and hand-finished details that make every table a showpiece. Presidential tables are built to last generations — and designed to be the centerpiece of any room.",
+    "clBaileyHeading": "The C.L. Bailey Company",
+    "clBaileyDesc": "Known for their attention to detail and quality craftsmanship, C.L. Bailey tables offer exceptional value without cutting corners. Solid construction, beautiful finishes, and smooth playability.",
+    "imperialHeading": "Imperial International",
+    "imperialDesc": "From classic designs to modern aesthetics, Imperial offers a wide range of tables built with quality materials and professional-grade components. Great options at every price point.",
+    "constructionHeading": "Built to Last",
+    "constructionPoint1": "Solid hardwood construction",
+    "constructionPoint2": "Center-beam slate support",
+    "constructionPoint3": "Solid metal joints and hardware",
+    "constructionPoint4": "Professional K-66 cushions"
+  },
+  "UsedPoolTables": {
+    "introHeading": "Pre-Owned Tables You Can Trust",
+    "introText": "At Regal Billiards we typically maintain a diverse inventory of quality pre-owned pool tables. Every used table we sell has been personally inspected by our team and meets our standards for playability and condition.",
+    "pitfallsHeading": "What to watch for when buying used",
+    "pitfallsText": "When looking to buy a used pool table, remember that even with a 'good' table, there are hidden costs. You'll need to pay for moving — disassembly, transport, and reassembly isn't cheap. The felt may need replacing. The cushions might be dead. And you'll likely need new accessories. Those costs add up fast.",
+    "differenceHeading": "The Regal difference",
+    "differenceText": "At Regal Billiards we've taken care of these pitfalls. Every table we sell has been verified for quality — the slate is true, the cushions are functional, and the table has already been properly disassembled and transported by professionals.",
+    "includesHeading": "What's included in our price",
+    "includesList": "Our price includes delivery, professional installation, the option for fresh cloth, and accessories. You know exactly what you're getting at exactly what price. No surprises.",
+    "brandsHeading": "Brands we typically stock",
+    "brandsText": "Brunswick, Olhausen, Connelly, Gandy, AMF, and more. Inventory changes frequently — call us or stop by to see what's available."
+  },
+  "GameRoomFurniture": {
+    "introText": "Complete your game room with furniture designed to complement your pool table. From spectator chairs to full bar setups, we carry pieces built to match the quality and style of your table.",
+    "presidentialHeading": "The Presidential Collection",
+    "presidentialText": "Solid wood constructed furniture with incredible hand-crafted details and flourishes. Many of the designs and wood stains are specifically crafted to match Presidential pool tables — so your entire game room has a cohesive, custom look.",
+    "levelBestHeading": "The Level Best Collection",
+    "levelBestText": "Produced by C.L. Bailey, Level Best furniture is known for high quality and durability. Their multi-function game tables are a showroom favorite — perfect for homes where space is at a premium.",
+    "ramHeading": "The RAM Collection",
+    "ramText": "Modern bar and game room furniture with clean lines and solid construction. RAM offers everything from full-size bars to barstools, pub tables, and game tables — all designed to create the ultimate entertainment space."
+  },
+  "GameTables": {
+    "introText": "From simple but well-constructed pieces that deliver a great playing experience to furniture-quality tables that double as room centerpieces — we carry game tables for every space and budget.",
+    "foosball": "Foosball Tables",
+    "airHockey": "Air Hockey Tables",
+    "shuffleboard": "Shuffleboard Tables",
+    "tableTennis": "Table Tennis"
+  },
+  "DartsPage": {
+    "introText": "Professional bristle dartboards, electronic boards, cabinet sets, and steel-tip and soft-tip dart sets for every skill level. Whether you're setting up a casual corner or a serious throw line, we have what you need.",
+    "cabinets": "Dart Cabinets",
+    "dartboards": "Dartboards",
+    "dartSets": "Darts",
+    "dartAccessories": "Dart Accessories"
+  },
+  "AccessoriesPage": {
+    "introText": "Everything you need for your table — and some things you didn't know you needed. From premium Aramith ball sets to Simonis cloth, proper lighting, and complete accessory packages. We carry the brands the pros use.",
+    "ballSets": "Billiard Ball Sets",
+    "cueRacks": "Cue Racks",
+    "pockets": "Table Pockets",
+    "covers": "Table Covers",
+    "cloth": "Billiard Cloth",
+    "lightFixtures": "Light Fixtures",
+    "otherAccessories": "Other Accessories"
+  },
+  "CueSticksPage": {
+    "introText": "With over 90 cue sticks on display and access to hundreds more, we carry everything from basic one-piece house cues to high-quality two-piece cues for serious players. Stop in to try before you buy.",
+    "brandsText": "Authorized dealer for Players, Lucasi, Predator, Cuetec, Viper, Viking, and more.",
+    "beginnerHeading": "Getting Started",
+    "beginnerText": "New to the game? A solid one-piece house cue or an affordable two-piece cue from Players or Viper is a great starting point. Spend $30-$80 and focus on learning your stroke.",
+    "intermediateHeading": "Stepping Up",
+    "intermediateText": "Ready to invest in your game? Cuetec, Dufferin, and Valhalla cues offer excellent performance in the $60-$200 range. You'll feel the difference in balance and hit quality.",
+    "advancedHeading": "Serious Players",
+    "advancedText": "For competitive players, Lucasi, Viking, and Predator cues deliver professional-grade performance. Custom wraps, low-deflection shafts, and premium tips. $200 and up."
   }
 }
