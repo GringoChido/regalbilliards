@@ -72,7 +72,7 @@ export default function CollectionContent() {
       </section>
 
       {/* Category Blocks — alternating left/right */}
-      {categories.map((category, index) => {
+      {(['pool-tables', 'game-tables', 'cue-sticks', 'accessories', 'darts', 'used-pool-tables'] as const).map((slug) => categories.find((c) => c.slug === slug)!).map((category, index) => {
         const imageLeft = index % 2 === 0;
         const count = getProductCount(category.slug);
         const catKey = categoryKeys[category.slug] || category.slug;
