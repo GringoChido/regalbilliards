@@ -29,32 +29,17 @@ const CategoryGrid = () => {
 
   return (
     <section className="py-24 md:py-40">
-      {/* Marquee ticker */}
-      <div className="overflow-hidden py-6 mb-20">
-        <div className="animate-marquee flex whitespace-nowrap">
-          {Array.from({ length: 2 }).map((_, dupeIndex) => (
-            <div key={dupeIndex} className="flex items-center gap-8 mr-8">
-              {['pool tables', 'game rooms', 'service', 'accessories', 'cue sticks', 'darts', 'game tables', 'used tables'].map((item) => (
-                <span key={`${dupeIndex}-${item}`} className="flex items-center gap-8">
-                  <span className="text-2xl md:text-3xl font-headline italic text-on-surface/10 uppercase tracking-wide">
-                    {item}
-                  </span>
-                  <span className="text-secondary/40 text-xl">&#10022;</span>
-                </span>
-              ))}
-            </div>
-          ))}
-        </div>
-      </div>
-
       <Container>
-        <motion.div {...fadeUp} className="mb-16">
+        <motion.div {...fadeUp} className="mb-16 max-w-3xl">
           <p className="font-label text-xs tracking-[0.3em] uppercase text-on-surface-variant mb-4">
             {t('heading')}
           </p>
-          <h2 className="font-headline text-4xl md:text-5xl lg:text-6xl text-primary -tracking-wide">
-            Everything for your <em>game room</em>
+          <h2 className="font-headline text-4xl md:text-5xl lg:text-6xl text-primary -tracking-wide mb-4">
+            The Long Island Pool Table <em>Superstore</em>
           </h2>
+          <p className="font-headline text-xl md:text-2xl text-secondary italic font-light">
+            Every Day Low Prices &mdash; We Are Here to Help
+          </p>
         </motion.div>
 
         {/* Asymmetric editorial grid */}
