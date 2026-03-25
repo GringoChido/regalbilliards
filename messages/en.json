@@ -91,7 +91,8 @@
     "bottomCta": "Can't decide? Visit the showroom and see them in person."
   },
   "Category": {
-    "bottomCta": "Have questions? Give us a call or stop by the showroom."
+    "bottomCta": "Have questions? Give us a call or stop by the showroom.",
+    "eyebrow": "Collection"
   },
   "BuyingGuide": {
     "title": "What to know before you buy",
@@ -254,5 +255,14 @@
     "messageTooShort": "Message must be at least 10 characters",
     "interestRequired": "Please select an option",
     "serviceTypeRequired": "Please select a service type"
+  },
+  "Collection": {
+    "metaTitle": "Our Collection | Regal Billiards — Pool Tables, Game Room Furniture & More",
+    "metaDescription": "Browse pool tables, game room furniture, darts, accessories, and more. Visit our Hicksville, NY showroom to see everything in person.",
+    "eyebrow": "Our Showroom",
+    "title": "Our Collection",
+    "description": "Everything for your game room — from premium pool tables to accessories and game room furniture. Browse by category or visit us in Hicksville to see it all in person.",
+    "productCount": "{count} products",
+    "viewCategory": "View Collection"
   }
 }

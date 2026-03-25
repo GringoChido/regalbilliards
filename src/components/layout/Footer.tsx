@@ -13,9 +13,9 @@ const quickLinks = [
 ];
 
 const serviceLinks = [
-  { key: 'buyingGuide', href: '/pool-tables/buying-guide' },
-  { key: 'newTables', href: '/pool-tables/new' },
-  { key: 'usedTables', href: '/pool-tables/used' },
+  { key: 'buyingGuide', href: '/buying-a-pool-table' },
+  { key: 'newTables', href: '/pool-tables' },
+  { key: 'usedTables', href: '/category/used-pool-tables' },
   { key: 'services', href: '/service-center' },
   { key: 'gallery', href: '/gallery' },
   { key: 'about', href: '/about' },

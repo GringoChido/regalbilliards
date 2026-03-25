@@ -91,7 +91,8 @@
     "bottomCta": "¿No puede decidir? Visite la sala de exhibición y véalas en persona."
   },
   "Category": {
-    "bottomCta": "¿Tiene preguntas? Llámenos o visite la sala de exhibición."
+    "bottomCta": "¿Tiene preguntas? Llámenos o visite la sala de exhibición.",
+    "eyebrow": "Colección"
   },
   "BuyingGuide": {
     "title": "Lo que debe saber antes de comprar",
@@ -254,5 +255,14 @@
     "messageTooShort": "El mensaje debe tener al menos 10 caracteres",
     "interestRequired": "Por favor seleccione una opción",
     "serviceTypeRequired": "Por favor seleccione un tipo de servicio"
+  },
+  "Collection": {
+    "metaTitle": "Nuestra Colección | Regal Billiards — Mesas de Billar, Muebles y Más",
+    "metaDescription": "Explore mesas de billar, muebles para salón de juegos, dardos, accesorios y más. Visite nuestro showroom en Hicksville, NY.",
+    "eyebrow": "Nuestro Showroom",
+    "title": "Nuestra Colección",
+    "description": "Todo para su salón de juegos — desde mesas de billar premium hasta accesorios y muebles. Explore por categoría o visítenos en Hicksville para verlo todo en persona.",
+    "productCount": "{count} productos",
+    "viewCategory": "Ver Colección"
   }
 }

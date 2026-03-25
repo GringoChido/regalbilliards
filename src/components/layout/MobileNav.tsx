@@ -24,10 +24,10 @@ interface NavItem {
 const navItems: NavItem[] = [
   {
     key: 'collection',
-    href: '/pool-tables',
+    href: '/collection',
     children: [
       { key: 'poolTables', href: '/pool-tables' },
-      { key: 'usedTables', href: '/pool-tables/used' },
+      { key: 'usedTables', href: '/category/used-pool-tables' },
       { key: 'gameTables', href: '/category/game-tables' },
       { key: 'gameRoomFurniture', href: '/category/game-room-furniture' },
       { key: 'darts', href: '/category/darts' },

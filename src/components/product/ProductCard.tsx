@@ -33,7 +33,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
   const locale = useLocale();
 
   return (
-    <Link href={`/pool-tables/${product.slug}`} className="group block">
+    <Link href={product.category === 'pool-tables' ? '/pool-tables' : `/category/${product.category}`} className="group block">
       <div className="overflow-hidden transition-all duration-500">
         <div className="relative h-64 md:h-72 overflow-hidden rounded-sm">
           <Image
