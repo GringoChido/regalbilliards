@@ -126,7 +126,7 @@ export default function ServiceCenterContent() {
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 max-w-6xl mx-auto">
             <motion.div {...fadeUp}>
-              <p className="font-label text-xs tracking-[0.3em] uppercase text-secondary mb-4">
+              <p className="font-label text-xs tracking-[0.3em] uppercase text-on-surface-variant mb-4">
                 Get a Quote
               </p>
               <h2 className="font-headline text-3xl md:text-4xl text-primary mb-6">

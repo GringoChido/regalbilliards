@@ -28,7 +28,7 @@ export default function ContactPageContent() {
             transition={{ duration: 0.7 }}
             className="max-w-3xl"
           >
-            <p className="font-label text-xs tracking-[0.3em] uppercase text-secondary mb-6">
+            <p className="font-label text-xs tracking-[0.3em] uppercase text-surface/50 mb-6">
               Get in Touch
             </p>
             <h1 className="font-headline text-5xl md:text-6xl lg:text-7xl text-surface -tracking-wide leading-[1.05]">
@@ -44,7 +44,7 @@ export default function ContactPageContent() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 max-w-6xl mx-auto">
             {/* Form */}
             <motion.div {...fadeUp}>
-              <p className="font-label text-xs tracking-[0.3em] uppercase text-secondary mb-4">
+              <p className="font-label text-xs tracking-[0.3em] uppercase text-on-surface-variant mb-4">
                 Send a Message
               </p>
               <h2 className="font-headline text-2xl md:text-3xl text-primary mb-8">{t('formHeading')}</h2>
@@ -56,7 +56,7 @@ export default function ContactPageContent() {
               {...fadeUp}
               transition={{ duration: 0.6, ease: 'easeOut' as const, delay: 0.15 }}
             >
-              <p className="font-label text-xs tracking-[0.3em] uppercase text-secondary mb-4">
+              <p className="font-label text-xs tracking-[0.3em] uppercase text-on-surface-variant mb-4">
                 Visit Our Showroom
               </p>
               <h2 className="font-headline text-2xl md:text-3xl text-primary mb-8">{t('infoHeading')}</h2>

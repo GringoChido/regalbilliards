@@ -82,7 +82,7 @@ const Hero = () => {
             className="max-w-4xl"
           >
             {/* Subtitle label */}
-            <p className="font-label text-xs uppercase tracking-[0.3em] text-secondary mb-6">
+            <p className="font-label text-xs uppercase tracking-[0.3em] text-surface/50 mb-6">
               {t('label') || 'Since 1983 · Hicksville, New York'}
             </p>
 

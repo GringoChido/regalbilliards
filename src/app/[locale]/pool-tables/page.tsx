@@ -45,7 +45,7 @@ export default function PoolTablesPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
           >
-            <p className="font-label text-xs tracking-[0.3em] uppercase text-secondary mb-4">
+            <p className="font-label text-xs tracking-[0.3em] uppercase text-surface/50 mb-4">
               Collection
             </p>
             <h1 className="font-headline text-6xl md:text-7xl lg:text-8xl text-surface -tracking-widest leading-[0.95] mb-6">

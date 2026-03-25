@@ -38,7 +38,7 @@ export default function GalleryPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
           >
-            <p className="font-label text-xs tracking-[0.3em] uppercase text-secondary mb-6">
+            <p className="font-label text-xs tracking-[0.3em] uppercase text-surface/50 mb-6">
               Our Work
             </p>
             <h1 className="font-headline text-5xl md:text-6xl lg:text-7xl text-surface -tracking-wide">

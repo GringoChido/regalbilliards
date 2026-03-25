@@ -47,12 +47,15 @@ const StoryTeaser = () => {
             transition={{ duration: 0.7, delay: 0.15 }}
             className="lg:col-span-5"
           >
-            <p className="font-label text-xs tracking-[0.3em] uppercase text-secondary mb-6">
+            <p className="font-label text-xs tracking-[0.3em] uppercase text-surface/50 mb-6">
               Our story
             </p>
-            <h2 className="font-headline text-4xl md:text-5xl text-surface leading-[1.1] mb-10">
+            <h2 className="font-headline text-3xl md:text-4xl lg:text-5xl text-surface leading-[1.1] mb-4">
               {t('heading')}
             </h2>
+            <p className="font-headline text-xl md:text-2xl text-secondary italic font-light mb-10">
+              {t('subheading')}
+            </p>
 
             {/* Pull quote */}
             <blockquote className="border-l border-secondary/30 pl-8 py-4 mb-10">

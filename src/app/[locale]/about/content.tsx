@@ -134,7 +134,7 @@ export default function AboutContent() {
             {...fadeUp}
             className="max-w-3xl mx-auto text-center"
           >
-            <p className="font-label text-xs tracking-[0.3em] uppercase text-secondary mb-6">
+            <p className="font-label text-xs tracking-[0.3em] uppercase text-surface/50 mb-6">
               Our Philosophy
             </p>
             <h2 className="font-headline text-4xl md:text-5xl lg:text-6xl italic font-light leading-[1.15] mb-8">
@@ -149,7 +149,7 @@ export default function AboutContent() {
       <section className="py-24 md:py-40">
         <Container>
           <motion.div {...fadeUp} className="text-center mb-16">
-            <p className="font-label text-xs tracking-[0.3em] uppercase text-secondary mb-4">
+            <p className="font-label text-xs tracking-[0.3em] uppercase text-on-surface-variant mb-4">
               Visit Us
             </p>
             <h2 className="font-headline text-4xl md:text-5xl text-primary -tracking-wide">

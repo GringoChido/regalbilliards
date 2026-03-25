@@ -49,7 +49,7 @@ const CategoryGrid = () => {
 
       <Container>
         <motion.div {...fadeUp} className="mb-16">
-          <p className="font-label text-xs tracking-[0.3em] uppercase text-secondary mb-4">
+          <p className="font-label text-xs tracking-[0.3em] uppercase text-on-surface-variant mb-4">
             {t('heading')}
           </p>
           <h2 className="font-headline text-4xl md:text-5xl lg:text-6xl text-primary -tracking-wide">
