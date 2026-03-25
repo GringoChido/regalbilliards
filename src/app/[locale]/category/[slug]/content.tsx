@@ -10,7 +10,7 @@ import ProductGrid from '@/components/product/ProductGrid';
 import { products } from '@/data/products';
 import { categories } from '@/data/categories';
 import { BUSINESS } from '@/lib/utils';
-import type { ProductCategory } from '@/types';
+import type { ProductCategory, Product } from '@/types';
 
 const fadeUp = {
   initial: { opacity: 0, y: 30 },
@@ -19,7 +19,7 @@ const fadeUp = {
   transition: { duration: 0.6, ease: 'easeOut' as const },
 };
 
-const subcategoryMap: Record<string, { namespace: string; subcategories: { key: string; value: string }[] }> = {
+const subcategoryMap: Record<string, { namespace: string; subcategories: { key: string; value: string; descKey?: string }[] }> = {
   'game-tables': {
     namespace: 'GameTables',
     subcategories: [
@@ -53,9 +53,9 @@ const subcategoryMap: Record<string, { namespace: string; subcategories: { key: 
   'game-room-furniture': {
     namespace: 'GameRoomFurniture',
     subcategories: [
-      { key: 'presidentialHeading', value: 'presidential-collection' },
-      { key: 'levelBestHeading', value: 'level-best-collection' },
-      { key: 'ramHeading', value: 'ram-collection' },
+      { key: 'presidentialHeading', value: 'presidential-collection', descKey: 'presidentialText' },
+      { key: 'levelBestHeading', value: 'level-best-collection', descKey: 'levelBestText' },
+      { key: 'ramHeading', value: 'ram-collection', descKey: 'ramText' },
     ],
   },
 };
@@ -79,7 +79,6 @@ export default function CategoryContent() {
   const categoryProducts = products.filter((p) => p.category === slug as ProductCategory);
   const namespace = categoryNamespaceMap[slug];
   const subcatConfig = subcategoryMap[slug];
-  const useCompact = slug === 'accessories' || slug === 'darts';
 
   if (!category) {
     return (
@@ -118,14 +117,14 @@ export default function CategoryContent() {
               {category.name[locale as 'en' | 'es']}
             </h1>
             <p className="text-on-primary-container text-lg max-w-2xl leading-relaxed font-body font-light">
-              {category.description[locale as 'en' | 'es']}
+              {namespace ? undefined : category.description[locale as 'en' | 'es']}
             </p>
           </motion.div>
         </div>
       </section>
 
-      {/* ── Category Intro ── */}
-      {namespace && <CategoryIntro namespace={namespace} slug={slug} />}
+      {/* ── Category Intro (in hero body for namespaced categories) ── */}
+      {namespace && <CategoryIntro namespace={namespace} />}
 
       {/* ── Used Pool Tables: Buyer Education ── */}
       {slug === 'used-pool-tables' && <UsedTableEducation />}
@@ -133,18 +132,17 @@ export default function CategoryContent() {
       {/* ── Cue Sticks: Skill Guide ── */}
       {slug === 'cue-sticks' && <CueStickGuide />}
 
-      {/* ── Subcategory Sections OR Full Grid ── */}
+      {/* ── Subcategory Blocks OR Full Grid ── */}
       {subcatConfig ? (
-        <SubcategorySections
+        <SubcategoryBlocks
           config={subcatConfig}
-          products={categoryProducts}
-          compact={useCompact}
-          slug={slug}
+          allProducts={categoryProducts}
+          categoryImage={category.image}
         />
       ) : (
         <section className="py-20 md:py-32">
           <Container>
-            <ProductGrid products={categoryProducts} compact={useCompact} />
+            <ProductGrid products={categoryProducts} />
           </Container>
         </section>
       )}
@@ -173,8 +171,8 @@ export default function CategoryContent() {
   );
 }
 
-/* ── Category Intro Section ── */
-const CategoryIntro = ({ namespace, slug }: { namespace: string; slug: string }) => {
+/* ── Category Intro ── */
+const CategoryIntro = ({ namespace }: { namespace: string }) => {
   const t = useTranslations(namespace);
 
   return (
@@ -278,44 +276,69 @@ const CueStickGuide = () => {
   );
 };
 
-/* ── Subcategory Sections ── */
-const SubcategorySections = ({
+/* ── Subcategory Blocks — editorial image/text split alternating ── */
+const SubcategoryBlocks = ({
   config,
-  products: categoryProducts,
-  compact,
-  slug,
+  allProducts,
+  categoryImage,
 }: {
-  config: { namespace: string; subcategories: { key: string; value: string }[] };
-  products: typeof products;
-  compact: boolean;
-  slug: string;
+  config: { namespace: string; subcategories: { key: string; value: string; descKey?: string }[] };
+  allProducts: Product[];
+  categoryImage: string;
 }) => {
   const t = useTranslations(config.namespace);
-  const isFurniture = slug === 'game-room-furniture';
+  const locale = useLocale();
 
   return (
     <>
-      {config.subcategories.map(({ key, value }, index) => {
-        const filtered = categoryProducts.filter((p) => p.subcategory === value);
+      {config.subcategories.map(({ key, value, descKey }, index) => {
+        const filtered = allProducts.filter((p) => p.subcategory === value);
         if (filtered.length === 0) return null;
 
+        const imageLeft = index % 2 === 0;
         const bgClass = index % 2 === 0 ? 'bg-surface' : 'bg-surface-container-low';
-        const descKey = isFurniture ? key.replace('Heading', 'Text') : undefined;
+        const blockImage = filtered[0]?.images[0] || categoryImage;
+        const description = descKey ? t(descKey) : filtered[0]?.description[locale as 'en' | 'es'] || '';
 
         return (
-          <section key={value} className={`py-16 md:py-24 ${bgClass}`}>
+          <section key={value} className={`py-20 md:py-32 ${bgClass}`}>
             <Container>
-              <motion.div {...fadeUp} className="mb-10">
-                <h2 className="font-headline text-2xl md:text-3xl text-primary -tracking-wide">
-                  {t(key)}
-                </h2>
-                {descKey && (
-                  <p className="text-on-surface-variant text-lg leading-[1.7] mt-4 max-w-3xl">
-                    {t(descKey)}
+              {/* Block Header — editorial split */}
+              <motion.div
+                {...fadeUp}
+                className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-20 items-center mb-16"
+              >
+                {/* Image side — 7 cols */}
+                <div className={`lg:col-span-7 ${imageLeft ? 'lg:order-1' : 'lg:order-2'}`}>
+                  <div className="relative h-72 md:h-96 lg:h-[28rem] rounded-sm overflow-hidden group">
+                    <Image
+                      src={blockImage}
+                      alt={t(key)}
+                      fill
+                      className="object-cover transition-transform duration-1000 group-hover:scale-105"
+                      sizes="(max-width: 1024px) 100vw, 58vw"
+                    />
+                  </div>
+                </div>
+
+                {/* Text side — 5 cols */}
+                <div className={`lg:col-span-5 ${imageLeft ? 'lg:order-2' : 'lg:order-1'}`}>
+                  <p className="font-label text-xs tracking-[0.3em] uppercase text-on-surface-variant mb-4">
+                    {filtered.length} {filtered.length === 1 ? 'product' : 'products'}
                   </p>
-                )}
+                  <h2 className="font-headline text-3xl md:text-4xl lg:text-5xl text-primary -tracking-wide mb-6">
+                    {t(key)}
+                  </h2>
+                  {description && (
+                    <p className="text-on-surface-variant text-lg leading-[1.7] font-body">
+                      {description}
+                    </p>
+                  )}
+                </div>
               </motion.div>
-              <ProductGrid products={filtered} compact={compact} />
+
+              {/* Product Grid */}
+              <ProductGrid products={filtered} compact={filtered.length > 6} />
             </Container>
           </section>
         );
