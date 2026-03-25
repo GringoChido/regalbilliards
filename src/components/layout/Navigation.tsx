@@ -21,11 +21,7 @@ interface NavItem {
 
 const navItems: NavItem[] = [
   {
-    key: 'heritage',
-    href: '/about',
-  },
-  {
-    key: 'collections',
+    key: 'collection',
     href: '/pool-tables',
     children: [
       { key: 'poolTables', href: '/pool-tables' },
@@ -37,15 +33,9 @@ const navItems: NavItem[] = [
       { key: 'cueSticks', href: '/category/cue-sticks' },
     ],
   },
-  { key: 'services', href: '/service-center' },
-  {
-    key: 'atelier',
-    href: '/contact-us',
-    children: [
-      { key: 'contact', href: '/contact-us' },
-      { key: 'gallery', href: '/gallery' },
-    ],
-  },
+  { key: 'heritage', href: '/about' },
+  { key: 'serviceCenter', href: '/service-center' },
+  { key: 'contact', href: '/contact-us' },
 ];
 
 const dropdownVariants = {
