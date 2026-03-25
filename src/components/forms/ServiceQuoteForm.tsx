@@ -6,7 +6,6 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { useTranslations } from 'next-intl';
 import { Send, CheckCircle, AlertCircle } from 'lucide-react';
-import Button from '@/components/ui/Button';
 
 const serviceQuoteSchema = z.object({
   name: z.string().min(1),
@@ -31,6 +30,8 @@ const serviceTypes = [
 ];
 
 const tableSizes = ['7ft', '8ft', '9ft', 'Other'];
+
+const inputClasses = 'w-full bg-transparent border-0 border-b border-outline-variant px-0 py-3 text-on-surface font-body focus:outline-none focus:border-secondary focus:ring-0 transition-colors';
 
 const ServiceQuoteForm = () => {
   const t = useTranslations('ServiceCenter');
@@ -63,96 +64,68 @@ const ServiceQuoteForm = () => {
 
   if (status === 'success') {
     return (
-      <div className="bg-secondary/10 rounded-xl p-8 text-center">
-        <CheckCircle className="w-12 h-12 text-secondary mx-auto mb-4" />
-        <p className="text-lg font-medium text-primary">{t('formSuccess')}</p>
+      <div className="bg-surface-container-low p-12 text-center">
+        <CheckCircle className="w-10 h-10 text-secondary mx-auto mb-4" />
+        <p className="text-lg font-headline text-primary">{t('formSuccess')}</p>
       </div>
     );
   }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+    <form onSubmit={handleSubmit(onSubmit)} className="space-y-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
         <div>
-          <label htmlFor="sq-name" className="block text-sm font-medium text-primary mb-1">
+          <label htmlFor="sq-name" className="block font-label text-xs uppercase tracking-widest text-on-surface-variant mb-2">
             {t('formName')} *
           </label>
-          <input
-            id="sq-name"
-            type="text"
-            {...register('name')}
-            className="w-full px-4 py-3 rounded-lg border border-border bg-surface text-text focus:outline-none focus:ring-2 focus:ring-accent"
-          />
-          {errors.name && <p className="mt-1 text-sm text-red-600">{tv('nameRequired')}</p>}
+          <input id="sq-name" type="text" {...register('name')} className={inputClasses} />
+          {errors.name && <p className="mt-2 text-sm text-error">{tv('nameRequired')}</p>}
         </div>
 
         <div>
-          <label htmlFor="sq-email" className="block text-sm font-medium text-primary mb-1">
+          <label htmlFor="sq-email" className="block font-label text-xs uppercase tracking-widest text-on-surface-variant mb-2">
             {t('formEmail')} *
           </label>
-          <input
-            id="sq-email"
-            type="email"
-            {...register('email')}
-            className="w-full px-4 py-3 rounded-lg border border-border bg-surface text-text focus:outline-none focus:ring-2 focus:ring-accent"
-          />
-          {errors.email && <p className="mt-1 text-sm text-red-600">{tv('emailInvalid')}</p>}
+          <input id="sq-email" type="email" {...register('email')} className={inputClasses} />
+          {errors.email && <p className="mt-2 text-sm text-error">{tv('emailInvalid')}</p>}
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
         <div>
-          <label htmlFor="sq-phone" className="block text-sm font-medium text-primary mb-1">
+          <label htmlFor="sq-phone" className="block font-label text-xs uppercase tracking-widest text-on-surface-variant mb-2">
             {t('formPhone')}
           </label>
-          <input
-            id="sq-phone"
-            type="tel"
-            {...register('phone')}
-            className="w-full px-4 py-3 rounded-lg border border-border bg-surface text-text focus:outline-none focus:ring-2 focus:ring-accent"
-          />
+          <input id="sq-phone" type="tel" {...register('phone')} className={inputClasses} />
         </div>
 
         <div>
-          <label htmlFor="sq-city" className="block text-sm font-medium text-primary mb-1">
+          <label htmlFor="sq-city" className="block font-label text-xs uppercase tracking-widest text-on-surface-variant mb-2">
             {t('formCity')}
           </label>
-          <input
-            id="sq-city"
-            type="text"
-            {...register('city')}
-            className="w-full px-4 py-3 rounded-lg border border-border bg-surface text-text focus:outline-none focus:ring-2 focus:ring-accent"
-          />
+          <input id="sq-city" type="text" {...register('city')} className={inputClasses} />
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
         <div>
-          <label htmlFor="sq-service" className="block text-sm font-medium text-primary mb-1">
+          <label htmlFor="sq-service" className="block font-label text-xs uppercase tracking-widest text-on-surface-variant mb-2">
             {t('formServiceType')} *
           </label>
-          <select
-            id="sq-service"
-            {...register('serviceType')}
-            className="w-full px-4 py-3 rounded-lg border border-border bg-surface text-text focus:outline-none focus:ring-2 focus:ring-accent"
-          >
+          <select id="sq-service" {...register('serviceType')} className={inputClasses}>
             <option value="">{t('formServiceType')}</option>
             {serviceTypes.map((type) => (
               <option key={type} value={type}>{type}</option>
             ))}
           </select>
-          {errors.serviceType && <p className="mt-1 text-sm text-red-600">{tv('serviceTypeRequired')}</p>}
+          {errors.serviceType && <p className="mt-2 text-sm text-error">{tv('serviceTypeRequired')}</p>}
         </div>
 
         <div>
-          <label htmlFor="sq-size" className="block text-sm font-medium text-primary mb-1">
+          <label htmlFor="sq-size" className="block font-label text-xs uppercase tracking-widest text-on-surface-variant mb-2">
             {t('formTableSize')}
           </label>
-          <select
-            id="sq-size"
-            {...register('tableSize')}
-            className="w-full px-4 py-3 rounded-lg border border-border bg-surface text-text focus:outline-none focus:ring-2 focus:ring-accent"
-          >
+          <select id="sq-size" {...register('tableSize')} className={inputClasses}>
             <option value="">{t('formTableSize')}</option>
             {tableSizes.map((size) => (
               <option key={size} value={size}>{size}</option>
@@ -162,29 +135,28 @@ const ServiceQuoteForm = () => {
       </div>
 
       <div>
-        <label htmlFor="sq-message" className="block text-sm font-medium text-primary mb-1">
+        <label htmlFor="sq-message" className="block font-label text-xs uppercase tracking-widest text-on-surface-variant mb-2">
           {t('formMessage')} *
         </label>
-        <textarea
-          id="sq-message"
-          rows={4}
-          {...register('message')}
-          className="w-full px-4 py-3 rounded-lg border border-border bg-surface text-text focus:outline-none focus:ring-2 focus:ring-accent resize-none"
-        />
-        {errors.message && <p className="mt-1 text-sm text-red-600">{tv('messageTooShort')}</p>}
+        <textarea id="sq-message" rows={4} {...register('message')} className={`${inputClasses} resize-none`} />
+        {errors.message && <p className="mt-2 text-sm text-error">{tv('messageTooShort')}</p>}
       </div>
 
       {status === 'error' && (
-        <div className="flex items-center gap-2 text-red-600">
+        <div className="flex items-center gap-2 text-error">
           <AlertCircle className="w-4 h-4" />
           <p className="text-sm">{t('formError')}</p>
         </div>
       )}
 
-      <Button type="submit" disabled={isSubmitting} size="lg" className="w-full">
-        <Send className="w-4 h-4 mr-2" />
+      <button
+        type="submit"
+        disabled={isSubmitting}
+        className="w-full bg-secondary text-on-secondary py-4 font-label text-xs uppercase tracking-[0.2em] hover:brightness-110 transition-all disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
+      >
+        <Send className="w-4 h-4 mr-2 inline" />
         {t('formSubmit')}
-      </Button>
+      </button>
     </form>
   );
 };

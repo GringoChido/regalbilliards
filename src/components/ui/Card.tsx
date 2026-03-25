@@ -13,11 +13,11 @@ interface CardProps {
 const Card = ({ children, className, hover = true }: CardProps) => (
   <motion.div
     className={cn(
-      'bg-surface rounded-2xl border border-border overflow-hidden',
+      'bg-surface-container-low overflow-hidden',
       hover && 'transition-all duration-500',
       className,
     )}
-    whileHover={hover ? { y: -4, boxShadow: '0 20px 60px rgba(0,0,0,0.08)' } : undefined}
+    whileHover={hover ? { y: -4, boxShadow: '0 20px 40px rgba(28,28,26,0.05)' } : undefined}
   >
     {children}
   </motion.div>

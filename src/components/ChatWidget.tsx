@@ -23,9 +23,9 @@ const ChatWidget = () => {
             initial={{ opacity: 0, y: 10, scale: 0.95 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 10, scale: 0.95 }}
-            className="absolute bottom-16 right-0 bg-surface border border-border rounded-lg px-4 py-2 shadow-lg whitespace-nowrap"
+            className="absolute bottom-16 right-0 bg-surface border border-outline-variant/15 rounded-lg px-4 py-2 shadow-lg whitespace-nowrap"
           >
-            <p className="text-sm text-text-muted">{t('chatComingSoon')}</p>
+            <p className="text-sm text-on-surface-variant">{t('chatComingSoon')}</p>
           </motion.div>
         )}
       </AnimatePresence>
@@ -33,7 +33,7 @@ const ChatWidget = () => {
         onClick={() => setShowTooltip(!showTooltip)}
         onMouseEnter={() => setShowTooltip(true)}
         onMouseLeave={() => setShowTooltip(false)}
-        className="bg-accent hover:bg-accent-hover text-primary w-14 h-14 rounded-full shadow-lg flex items-center justify-center transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+        className="bg-secondary hover:bg-secondary-hover text-primary w-14 h-14 rounded-full shadow-lg flex items-center justify-center transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary"
         aria-label={t('chatComingSoon')}
       >
         {showTooltip ? <X className="w-6 h-6" /> : <MessageCircle className="w-6 h-6" />}

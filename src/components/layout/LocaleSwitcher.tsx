@@ -27,9 +27,9 @@ const LocaleSwitcher = ({ className, scrolled }: LocaleSwitcherProps) => {
       onClick={switchLocale}
       aria-label={`Switch to ${nextLocale === 'en' ? 'English' : 'Spanish'}`}
       className={cn(
-        'px-2.5 py-1 text-xs font-semibold font-body uppercase tracking-wider rounded-full border transition-colors duration-300 cursor-pointer',
+        'px-2.5 py-1 font-label text-[10px] uppercase tracking-[0.2em] border transition-colors duration-300 cursor-pointer',
         scrolled
-          ? 'border-surface/30 text-surface/70 hover:text-surface hover:border-surface/60'
+          ? 'border-outline-variant/30 text-on-surface-variant hover:text-secondary hover:border-secondary/30'
           : 'border-surface/30 text-surface/70 hover:text-surface hover:border-surface/60',
         className,
       )}

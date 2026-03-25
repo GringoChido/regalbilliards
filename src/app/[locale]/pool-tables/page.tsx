@@ -27,57 +27,47 @@ export default function PoolTablesPage() {
 
   return (
     <main id="main-content">
-      {/* Hero */}
-      <section className="relative h-[50vh] min-h-[400px] max-h-[600px] flex items-end overflow-hidden">
+      {/* Full-bleed Hero */}
+      <section className="relative h-[80vh] min-h-[500px] flex items-end overflow-hidden">
         <Image
-          src="/images/categories/pool-tables.jpg"
+          src="/images/categories/pool-tables-hero.jpg"
           alt="Pool tables"
           fill
           priority
           className="object-cover"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-dark/80 via-dark/30 to-dark/10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent" />
 
-        <Container className="relative z-10 pb-12 md:pb-16">
+        <div className="relative z-10 w-full pb-16 md:pb-24 px-6 sm:px-8 lg:px-16 max-w-screen-2xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
           >
-            <nav className="mb-4" aria-label="Breadcrumb">
-              <ol className="flex items-center gap-2 text-sm font-body text-white/50">
-                <li><a href="/" className="hover:text-white transition-colors">Home</a></li>
-                <li>/</li>
-                <li className="text-white/80">{t('title')}</li>
-              </ol>
-            </nav>
-            <h1 className="font-heading text-5xl md:text-6xl lg:text-7xl text-white tracking-tight">
+            <p className="font-label text-xs tracking-[0.3em] uppercase text-secondary mb-4">
+              Collection
+            </p>
+            <h1 className="font-headline text-6xl md:text-7xl lg:text-8xl text-surface -tracking-widest leading-[0.95] mb-6">
               {t('title')}
             </h1>
+            <p className="text-on-primary-container text-lg max-w-2xl leading-relaxed font-body font-light">
+              {t('intro')}
+            </p>
           </motion.div>
-        </Container>
+        </div>
       </section>
 
       {/* Products */}
-      <section className="py-16 md:py-24">
+      <section className="py-20 md:py-32">
         <Container>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-text-muted max-w-3xl text-lg leading-relaxed mb-10"
-          >
-            {t('intro')}
-          </motion.p>
-
-          <div className="mb-10">
+          <div className="mb-12">
             <ProductFilter onFilterChange={setFilters} />
           </div>
 
           <ProductGrid products={filtered} />
 
-          <p className="text-center text-text-muted mt-16 text-lg font-body">
+          <p className="text-center text-on-surface-variant mt-20 text-lg font-body">
             {t('bottomCta')}
           </p>
         </Container>

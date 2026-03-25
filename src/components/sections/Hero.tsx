@@ -8,21 +8,21 @@ import Image from 'next/image';
 
 const slides = [
   {
-    image: '/images/hero-pool-balls.jpg',
+    image: '/images/hero-slide-1.jpeg',
     headlineKey: 'headline',
     subKey: 'subheadline',
     ctaKey: 'cta',
     ctaHref: '/pool-tables',
   },
   {
-    image: '/images/service-hero.jpg',
+    image: '/images/hero-slide-2.jpg',
     headlineKey: 'headline2',
     subKey: 'subheadline2',
     ctaKey: 'cta2',
     ctaHref: '/service-center',
   },
   {
-    image: '/images/hero-game-room.jpg',
+    image: '/images/hero-slide-3.avif',
     headlineKey: 'headline3',
     subKey: 'subheadline3',
     ctaKey: 'cta3',
@@ -46,14 +46,15 @@ const Hero = () => {
   const slide = slides[current];
 
   return (
-    <section className="relative h-screen min-h-[600px] max-h-[1000px] overflow-hidden">
+    <section className="relative h-screen min-h-[600px] overflow-hidden">
+      {/* Background images with Ken Burns zoom */}
       <AnimatePresence mode="sync">
         <motion.div
           key={current}
-          initial={{ opacity: 0, scale: 1.1 }}
-          animate={{ opacity: 1, scale: 1 }}
+          initial={{ opacity: 0, scale: 1.05 }}
+          animate={{ opacity: 1, scale: 1.15 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 1.2, ease: 'easeInOut' }}
+          transition={{ opacity: { duration: 1.2, ease: 'easeInOut' }, scale: { duration: 12, ease: 'linear' } }}
           className="absolute inset-0"
         >
           <Image
@@ -64,50 +65,71 @@ const Hero = () => {
             className="object-cover"
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-dark/80 via-dark/40 to-dark/20" />
+          {/* Gradient overlay — radial from center-bottom */}
+          <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/30 to-transparent" />
         </motion.div>
       </AnimatePresence>
 
-      <div className="relative z-10 h-full flex flex-col justify-end pb-20 md:pb-28 px-6 sm:px-8 lg:px-16 max-w-7xl mx-auto">
+      {/* Content */}
+      <div className="relative z-10 h-full flex flex-col justify-end pb-24 md:pb-32 px-6 sm:px-8 lg:px-16 max-w-screen-2xl mx-auto">
         <AnimatePresence mode="wait">
           <motion.div
             key={current}
-            initial={{ opacity: 0, y: 40 }}
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.7, delay: 0.2 }}
-            className="max-w-3xl"
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="max-w-4xl"
           >
-            <h1 className="font-heading text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-white leading-[0.95] tracking-tight mb-6">
-              {t(slide.headlineKey)}
+            {/* Subtitle label */}
+            <p className="font-label text-xs uppercase tracking-[0.3em] text-secondary mb-6">
+              {t('label') || 'Since 1983 · Hicksville, New York'}
+            </p>
+
+            {/* Massive serif headline */}
+            <h1 className="font-headline text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-surface leading-[0.95] -tracking-wide mb-8">
+              <em>{t(slide.headlineKey)}</em>
             </h1>
-            <p className="text-lg md:text-xl text-white/75 mb-8 max-w-xl leading-relaxed font-body">
+
+            {/* Body text */}
+            <p className="text-lg md:text-xl text-on-primary-container font-light mb-10 max-w-xl leading-relaxed font-body">
               {t(slide.subKey)}
             </p>
-            <Link
-              href={slide.ctaHref}
-              className="inline-flex items-center px-8 py-4 text-base font-semibold font-body rounded-full bg-accent text-white hover:bg-accent-hover transition-colors duration-300"
-            >
-              {t(slide.ctaKey)}
-            </Link>
+
+            {/* Dual CTAs */}
+            <div className="flex flex-wrap items-center gap-6">
+              <Link
+                href={slide.ctaHref}
+                className="group inline-flex items-center gap-4 px-10 py-4 bg-secondary text-on-secondary font-label text-xs uppercase tracking-widest rounded-sm hover:brightness-110 transition-all duration-300"
+              >
+                {t(slide.ctaKey)}
+                <span className="group-hover:translate-x-2 transition-transform duration-300">&rarr;</span>
+              </Link>
+              <Link
+                href="/contact-us"
+                className="inline-flex items-center text-surface font-label text-xs uppercase tracking-widest border-b border-surface/30 pb-1 hover:border-secondary hover:text-secondary transition-all duration-300"
+              >
+                {t('visitShowroom') || 'Visit Our Showroom'}
+              </Link>
+            </div>
           </motion.div>
         </AnimatePresence>
 
-        {/* Progress indicators */}
-        <div className="absolute bottom-8 right-6 sm:right-8 lg:right-16 flex items-center gap-2">
+        {/* Carousel indicator lines — bottom left */}
+        <div className="absolute bottom-8 left-6 sm:left-8 lg:left-16 flex items-center gap-3">
           {slides.map((_, index) => (
             <button
               key={index}
               type="button"
               onClick={() => setCurrent(index)}
               aria-label={`Slide ${index + 1}`}
-              className="group relative h-1 rounded-full overflow-hidden transition-all duration-300 cursor-pointer"
-              style={{ width: index === current ? 48 : 16 }}
+              className="relative h-[1px] overflow-hidden transition-all duration-300 cursor-pointer"
+              style={{ width: index === current ? 48 : 24 }}
             >
-              <div className="absolute inset-0 bg-white/30 rounded-full" />
+              <div className="absolute inset-0 bg-surface/30" />
               {index === current && (
                 <motion.div
-                  className="absolute inset-0 bg-white rounded-full origin-left"
+                  className="absolute inset-0 bg-secondary origin-left"
                   initial={{ scaleX: 0 }}
                   animate={{ scaleX: 1 }}
                   transition={{ duration: 6, ease: 'linear' }}

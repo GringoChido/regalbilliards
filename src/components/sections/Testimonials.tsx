@@ -28,7 +28,7 @@ const Testimonials = () => {
   const testimonial = testimonials[current];
 
   return (
-    <section className="py-20 md:py-32 bg-surface">
+    <section className="py-24 md:py-40 bg-surface">
       <Container>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -37,10 +37,10 @@ const Testimonials = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <p className="text-sm font-body font-medium tracking-widest uppercase text-accent mb-3">
+          <p className="font-label text-xs tracking-[0.3em] uppercase text-secondary mb-4">
             Testimonials
           </p>
-          <h2 className="font-heading text-4xl md:text-5xl text-primary tracking-tight">
+          <h2 className="font-headline text-4xl md:text-5xl text-primary -tracking-wide">
             {t('heading')}
           </h2>
         </motion.div>
@@ -57,25 +57,25 @@ const Testimonials = () => {
               className="text-center"
             >
               {/* Large quote mark */}
-              <div className="font-heading text-8xl md:text-9xl text-accent/20 leading-none mb-4 select-none">
+              <div className="font-headline text-8xl md:text-[10rem] text-secondary/15 leading-none mb-4 select-none">
                 &ldquo;
               </div>
 
-              <blockquote className="font-heading text-2xl md:text-3xl lg:text-4xl text-primary leading-relaxed mb-8 -mt-12 px-4">
+              <blockquote className="font-headline text-2xl md:text-3xl lg:text-4xl text-primary leading-relaxed mb-8 -mt-16 px-4 italic font-light">
                 {testimonial.text[locale as 'en' | 'es']}
               </blockquote>
 
               <div className="flex items-center justify-center gap-1 mb-4">
                 {Array.from({ length: testimonial.rating }).map((_, i) => (
-                  <Star key={i} className="w-5 h-5 fill-accent text-accent" />
+                  <Star key={i} className="w-4 h-4 fill-secondary text-secondary" />
                 ))}
               </div>
 
-              <p className="font-semibold text-primary text-lg font-body">
+              <p className="font-label text-xs uppercase tracking-[0.2em] text-primary">
                 {testimonial.name}
               </p>
               {testimonial.location && (
-                <p className="text-text-muted text-sm font-body mt-0.5">
+                <p className="text-on-surface-variant text-sm font-body mt-1">
                   {testimonial.location}
                 </p>
               )}
@@ -83,27 +83,27 @@ const Testimonials = () => {
           </AnimatePresence>
 
           {/* Navigation */}
-          <div className="flex items-center justify-center gap-4 mt-10">
+          <div className="flex items-center justify-center gap-4 mt-12">
             <button
               type="button"
               onClick={prev}
               aria-label="Previous testimonial"
-              className="w-12 h-12 rounded-full border border-border flex items-center justify-center text-text-muted hover:text-primary hover:border-primary transition-colors cursor-pointer"
+              className="w-12 h-12 flex items-center justify-center text-on-surface-variant hover:text-secondary transition-colors cursor-pointer"
             >
               <ChevronLeft className="w-5 h-5" />
             </button>
 
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-3">
               {testimonials.map((_, index) => (
                 <button
                   key={index}
                   type="button"
                   onClick={() => setCurrent(index)}
                   aria-label={`Testimonial ${index + 1}`}
-                  className={`h-2 rounded-full transition-all duration-300 cursor-pointer ${
+                  className={`h-[1px] rounded-full transition-all duration-300 cursor-pointer ${
                     index === current
-                      ? 'w-8 bg-accent'
-                      : 'w-2 bg-border hover:bg-text-muted'
+                      ? 'w-10 bg-secondary'
+                      : 'w-4 bg-outline-variant hover:bg-on-surface-variant'
                   }`}
                 />
               ))}
@@ -113,7 +113,7 @@ const Testimonials = () => {
               type="button"
               onClick={next}
               aria-label="Next testimonial"
-              className="w-12 h-12 rounded-full border border-border flex items-center justify-center text-text-muted hover:text-primary hover:border-primary transition-colors cursor-pointer"
+              className="w-12 h-12 flex items-center justify-center text-on-surface-variant hover:text-secondary transition-colors cursor-pointer"
             >
               <ChevronRight className="w-5 h-5" />
             </button>

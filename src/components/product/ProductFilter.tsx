@@ -39,16 +39,18 @@ const ProductFilter = ({ onFilterChange }: ProductFilterProps) => {
 
   const filterButtonClasses = (isActive: boolean) =>
     cn(
-      'px-4 py-2 rounded-full text-sm font-medium transition-colors',
+      'px-4 py-2 font-label text-xs uppercase tracking-widest transition-all duration-300 cursor-pointer',
       isActive
-        ? 'bg-primary text-surface'
-        : 'bg-surface text-text-muted border border-border hover:border-primary hover:text-primary',
+        ? 'bg-secondary text-on-secondary'
+        : 'text-on-surface-variant hover:text-secondary border-b border-transparent hover:border-secondary/30',
     );
 
   return (
-    <div className="space-y-4">
-      <div className="flex flex-wrap items-center gap-2">
-        <span className="text-sm font-medium text-text-muted mr-2">{t('filterManufacturer')}:</span>
+    <div className="space-y-6">
+      <div className="flex flex-wrap items-center gap-3">
+        <span className="font-label text-[10px] uppercase tracking-[0.2em] text-secondary mr-2">
+          {t('filterManufacturer')}:
+        </span>
         <button
           onClick={() => handleManufacturer(null)}
           className={filterButtonClasses(activeManufacturer === null)}
@@ -65,8 +67,10 @@ const ProductFilter = ({ onFilterChange }: ProductFilterProps) => {
           </button>
         ))}
       </div>
-      <div className="flex flex-wrap items-center gap-2">
-        <span className="text-sm font-medium text-text-muted mr-2">{t('filterStyle')}:</span>
+      <div className="flex flex-wrap items-center gap-3">
+        <span className="font-label text-[10px] uppercase tracking-[0.2em] text-secondary mr-2">
+          {t('filterStyle')}:
+        </span>
         <button
           onClick={() => handleStyle(null)}
           className={filterButtonClasses(activeStyle === null)}

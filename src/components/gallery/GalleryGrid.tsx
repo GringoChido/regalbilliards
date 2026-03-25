@@ -34,7 +34,7 @@ const GalleryGrid = ({ images, filter }: GalleryGridProps) => {
               exit={{ opacity: 0, scale: 0.9 }}
               transition={{ duration: 0.3 }}
               onClick={() => setLightboxIndex(index)}
-              className="relative aspect-square rounded-lg overflow-hidden focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+              className="relative aspect-square rounded-lg overflow-hidden focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary"
             >
               <Image
                 src={image.src}

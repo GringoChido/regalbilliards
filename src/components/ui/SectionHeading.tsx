@@ -17,8 +17,8 @@ const SectionHeading = ({
   centered = true,
 }: SectionHeadingProps) => {
   const sizes = {
-    h1: 'text-5xl md:text-6xl lg:text-7xl tracking-tight',
-    h2: 'text-4xl md:text-5xl tracking-tight',
+    h1: 'text-5xl md:text-6xl lg:text-7xl -tracking-wide',
+    h2: 'text-4xl md:text-5xl -tracking-wide',
     h3: 'text-3xl md:text-4xl',
   };
 
@@ -31,7 +31,7 @@ const SectionHeading = ({
     >
       <Tag
         className={cn(
-          'font-heading text-primary leading-tight',
+          'font-headline text-primary leading-tight',
           sizes[Tag],
           centered && 'text-center',
           className,

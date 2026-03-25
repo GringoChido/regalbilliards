@@ -9,17 +9,17 @@ interface BadgeProps {
 }
 
 const variantStyles: Record<BadgeVariant, string> = {
-  default: 'bg-primary/10 text-primary',
-  presidential: 'bg-accent/25 text-white backdrop-blur-sm',
-  'cl-bailey': 'bg-secondary/25 text-white backdrop-blur-sm',
-  imperial: 'bg-primary/25 text-white backdrop-blur-sm',
-  secondary: 'bg-white/15 text-white backdrop-blur-sm',
+  default: 'bg-surface/90 text-primary backdrop-blur-sm',
+  presidential: 'bg-secondary/90 text-on-secondary backdrop-blur-sm',
+  'cl-bailey': 'bg-primary-container/90 text-surface backdrop-blur-sm',
+  imperial: 'bg-surface/90 text-primary backdrop-blur-sm',
+  secondary: 'bg-surface/80 text-on-surface-variant backdrop-blur-sm',
 };
 
 const Badge = ({ children, variant = 'default', className }: BadgeProps) => (
   <span
     className={cn(
-      'inline-flex items-center px-3 py-1 rounded-full text-xs font-medium font-body',
+      'inline-flex items-center px-3 py-1 font-label text-[10px] uppercase tracking-[0.15em]',
       variantStyles[variant],
       className,
     )}

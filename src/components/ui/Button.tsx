@@ -4,7 +4,7 @@ import type { ReactNode } from 'react';
 import { motion } from 'framer-motion';
 import { cn } from '@/lib/utils';
 
-type Variant = 'primary' | 'secondary' | 'ghost';
+type Variant = 'primary' | 'ghost' | 'tertiary';
 type Size = 'sm' | 'md' | 'lg';
 
 interface ButtonProps {
@@ -20,15 +20,15 @@ interface ButtonProps {
 }
 
 const variantStyles: Record<Variant, string> = {
-  primary: 'bg-accent text-white font-semibold hover:bg-accent-hover',
-  secondary: 'border-2 border-primary text-primary font-semibold hover:bg-primary hover:text-surface',
-  ghost: 'text-primary font-medium hover:text-accent',
+  primary: 'bg-secondary text-on-secondary font-label uppercase tracking-widest hover:brightness-110 rounded-sm',
+  ghost: 'text-surface border-b border-surface/30 pb-1 font-label uppercase tracking-widest hover:border-secondary hover:text-secondary rounded-none',
+  tertiary: 'text-secondary font-label uppercase tracking-[0.2em] border-b border-secondary/20 pb-1 hover:border-secondary rounded-none',
 };
 
 const sizeStyles: Record<Size, string> = {
-  sm: 'px-5 py-2.5 text-sm',
-  md: 'px-7 py-3.5 text-base',
-  lg: 'px-8 py-4 text-lg',
+  sm: 'px-6 py-2.5 text-xs',
+  md: 'px-8 py-3.5 text-sm',
+  lg: 'px-10 py-4 text-sm',
 };
 
 const Button = ({
@@ -43,7 +43,7 @@ const Button = ({
   onClick,
 }: ButtonProps) => {
   const classes = cn(
-    'inline-flex items-center justify-center rounded-full transition-all duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer',
+    'inline-flex items-center justify-center transition-all duration-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer',
     variantStyles[variant],
     sizeStyles[size],
     className,

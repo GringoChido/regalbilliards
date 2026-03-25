@@ -6,62 +6,71 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Container from '@/components/ui/Container';
 
+const fadeUp = {
+  initial: { opacity: 0, y: 30 },
+  whileInView: { opacity: 1, y: 0 },
+  viewport: { once: true, margin: '-100px' },
+  transition: { duration: 0.6, ease: 'easeOut' as const },
+};
+
 const StoryTeaser = () => {
   const t = useTranslations('StoryTeaser');
 
   return (
-    <section className="py-20 md:py-32 bg-primary overflow-hidden">
+    <section className="py-24 md:py-40 bg-primary-container overflow-hidden">
       <Container>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
+          {/* Image — spans 7 columns */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="relative"
+            className="lg:col-span-7 relative"
           >
-            <div className="relative h-80 lg:h-[32rem] rounded-2xl overflow-hidden">
+            <div className="relative h-80 lg:h-[36rem] rounded-sm overflow-hidden">
               <Image
-                src="/images/hero-showroom-install.jpg"
+                src="/images/story-teaser.jpeg"
                 alt="Regal Billiards showroom"
                 fill
                 className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 50vw"
+                sizes="(max-width: 1024px) 100vw, 58vw"
               />
             </div>
-            {/* Floating accent detail */}
-            <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-accent/20 rounded-2xl -z-10 hidden lg:block" />
           </motion.div>
 
+          {/* Text — spans 5 columns */}
           <motion.div
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.15 }}
+            className="lg:col-span-5"
           >
-            <p className="text-sm font-body font-medium tracking-widest uppercase text-accent mb-4">
+            <p className="font-label text-xs tracking-[0.3em] uppercase text-secondary mb-6">
               Our story
             </p>
-            <h2 className="font-heading text-4xl md:text-5xl text-surface leading-tight mb-8">
+            <h2 className="font-headline text-4xl md:text-5xl text-surface leading-[1.1] mb-10">
               {t('heading')}
             </h2>
 
             {/* Pull quote */}
-            <blockquote className="border-l-2 border-accent pl-6 mb-8">
-              <p className="font-heading text-xl md:text-2xl text-surface/80 italic leading-relaxed">
+            <blockquote className="border-l border-secondary/30 pl-8 py-4 mb-10">
+              <p className="font-headline text-xl md:text-2xl text-surface/80 italic leading-relaxed font-light">
                 &ldquo;When you buy from Regal, you&rsquo;re getting a team that knows every table inside and out.&rdquo;
               </p>
             </blockquote>
 
-            <p className="text-surface/60 text-lg leading-relaxed mb-10 font-body">
+            <p className="text-on-primary-container text-lg leading-[1.7] mb-12 font-body">
               {t('text')}
             </p>
 
             <Link
               href="/about"
-              className="inline-flex items-center px-7 py-3.5 text-sm font-semibold font-body rounded-full border-2 border-surface/30 text-surface hover:bg-surface/10 transition-all duration-300"
+              className="group inline-flex items-center gap-4 text-surface font-label text-xs uppercase tracking-widest border-b border-surface/30 pb-1 hover:border-secondary hover:text-secondary transition-all duration-300"
             >
               {t('cta')}
+              <span className="group-hover:translate-x-2 transition-transform duration-300">&rarr;</span>
             </Link>
           </motion.div>
         </div>

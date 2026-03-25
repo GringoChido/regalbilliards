@@ -21,7 +21,10 @@
     "callUs": "Llámenos",
     "visitShowroom": "Visitar Showroom",
     "menu": "Menú",
-    "close": "Cerrar"
+    "close": "Cerrar",
+    "heritage": "Herencia",
+    "collections": "Colecciones",
+    "atelier": "Atelier"
   },
   "Hero": {
     "headline": "Tu salón de juegos empieza aquí",
@@ -32,7 +35,9 @@
     "cta2": "Explorar servicios",
     "headline3": "40 años haciéndolo bien",
     "subheadline3": "Propiedad de veterano y operado en familia. Conocemos cada mesa por dentro y por fuera.",
-    "cta3": "Nuestra historia"
+    "cta3": "Nuestra historia",
+    "label": "Desde 1983 · Hicksville, Nueva York",
+    "visitShowroom": "Visitar Nuestro Showroom"
   },
   "TrustStrip": {
     "years": "40+ años",

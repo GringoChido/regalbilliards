@@ -6,7 +6,6 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { useTranslations } from 'next-intl';
 import { Send, CheckCircle, AlertCircle } from 'lucide-react';
-import Button from '@/components/ui/Button';
 
 const contactSchema = z.object({
   name: z.string().min(1),
@@ -17,6 +16,8 @@ const contactSchema = z.object({
 });
 
 type ContactFormData = z.infer<typeof contactSchema>;
+
+const inputClasses = 'w-full bg-transparent border-0 border-b border-outline-variant px-0 py-3 text-on-surface font-body focus:outline-none focus:border-secondary focus:ring-0 transition-colors';
 
 const ContactForm = () => {
   const t = useTranslations('Contact');
@@ -49,61 +50,61 @@ const ContactForm = () => {
 
   if (status === 'success') {
     return (
-      <div className="bg-secondary/10 rounded-xl p-8 text-center">
-        <CheckCircle className="w-12 h-12 text-secondary mx-auto mb-4" />
-        <p className="text-lg font-medium text-primary">{t('formSuccess')}</p>
+      <div className="bg-surface-container-low p-12 text-center">
+        <CheckCircle className="w-10 h-10 text-secondary mx-auto mb-4" />
+        <p className="text-lg font-headline text-primary">{t('formSuccess')}</p>
       </div>
     );
   }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
+    <form onSubmit={handleSubmit(onSubmit)} className="space-y-8">
       <div>
-        <label htmlFor="name" className="block text-sm font-medium text-primary mb-1">
+        <label htmlFor="name" className="block font-label text-xs uppercase tracking-widest text-on-surface-variant mb-2">
           {t('formName')} *
         </label>
         <input
           id="name"
           type="text"
           {...register('name')}
-          className="w-full px-4 py-3 rounded-lg border border-border bg-surface text-text focus:outline-none focus:ring-2 focus:ring-accent"
+          className={inputClasses}
         />
-        {errors.name && <p className="mt-1 text-sm text-red-600">{tv('nameRequired')}</p>}
+        {errors.name && <p className="mt-2 text-sm text-error">{tv('nameRequired')}</p>}
       </div>
 
       <div>
-        <label htmlFor="email" className="block text-sm font-medium text-primary mb-1">
+        <label htmlFor="email" className="block font-label text-xs uppercase tracking-widest text-on-surface-variant mb-2">
           {t('formEmail')} *
         </label>
         <input
           id="email"
           type="email"
           {...register('email')}
-          className="w-full px-4 py-3 rounded-lg border border-border bg-surface text-text focus:outline-none focus:ring-2 focus:ring-accent"
+          className={inputClasses}
         />
-        {errors.email && <p className="mt-1 text-sm text-red-600">{tv('emailInvalid')}</p>}
+        {errors.email && <p className="mt-2 text-sm text-error">{tv('emailInvalid')}</p>}
       </div>
 
       <div>
-        <label htmlFor="phone" className="block text-sm font-medium text-primary mb-1">
+        <label htmlFor="phone" className="block font-label text-xs uppercase tracking-widest text-on-surface-variant mb-2">
           {t('formPhone')}
         </label>
         <input
           id="phone"
           type="tel"
           {...register('phone')}
-          className="w-full px-4 py-3 rounded-lg border border-border bg-surface text-text focus:outline-none focus:ring-2 focus:ring-accent"
+          className={inputClasses}
         />
       </div>
 
       <div>
-        <label htmlFor="interest" className="block text-sm font-medium text-primary mb-1">
+        <label htmlFor="interest" className="block font-label text-xs uppercase tracking-widest text-on-surface-variant mb-2">
           {t('formInterest')} *
         </label>
         <select
           id="interest"
           {...register('interest')}
-          className="w-full px-4 py-3 rounded-lg border border-border bg-surface text-text focus:outline-none focus:ring-2 focus:ring-accent"
+          className={inputClasses}
         >
           <option value="">{t('formInterest')}</option>
           <option value="new-table">{t('interestNewTable')}</option>
@@ -112,33 +113,37 @@ const ContactForm = () => {
           <option value="service">{t('interestService')}</option>
           <option value="general">{t('interestGeneral')}</option>
         </select>
-        {errors.interest && <p className="mt-1 text-sm text-red-600">{tv('interestRequired')}</p>}
+        {errors.interest && <p className="mt-2 text-sm text-error">{tv('interestRequired')}</p>}
       </div>
 
       <div>
-        <label htmlFor="message" className="block text-sm font-medium text-primary mb-1">
+        <label htmlFor="message" className="block font-label text-xs uppercase tracking-widest text-on-surface-variant mb-2">
           {t('formMessage')} *
         </label>
         <textarea
           id="message"
           rows={4}
           {...register('message')}
-          className="w-full px-4 py-3 rounded-lg border border-border bg-surface text-text focus:outline-none focus:ring-2 focus:ring-accent resize-none"
+          className={`${inputClasses} resize-none`}
         />
-        {errors.message && <p className="mt-1 text-sm text-red-600">{tv('messageTooShort')}</p>}
+        {errors.message && <p className="mt-2 text-sm text-error">{tv('messageTooShort')}</p>}
       </div>
 
       {status === 'error' && (
-        <div className="flex items-center gap-2 text-red-600">
+        <div className="flex items-center gap-2 text-error">
           <AlertCircle className="w-4 h-4" />
           <p className="text-sm">{t('formError')}</p>
         </div>
       )}
 
-      <Button type="submit" disabled={isSubmitting} size="lg" className="w-full">
-        <Send className="w-4 h-4 mr-2" />
+      <button
+        type="submit"
+        disabled={isSubmitting}
+        className="w-full bg-secondary text-on-secondary py-4 font-label text-xs uppercase tracking-[0.2em] hover:brightness-110 transition-all disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
+      >
+        <Send className="w-4 h-4 mr-2 inline" />
         {t('formSubmit')}
-      </Button>
+      </button>
     </form>
   );
 };

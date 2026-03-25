@@ -47,15 +47,15 @@ export default async function ConstructionPage({ params }: Props) {
     <main id="main-content" className="py-16 md:py-24">
       <Container>
         <SectionHeading as="h1" className="mb-6">{t('title')}</SectionHeading>
-        <p className="text-text-muted text-lg text-center max-w-3xl mx-auto mb-16 leading-relaxed">
+        <p className="text-on-surface-variant text-lg text-center max-w-3xl mx-auto mb-16 leading-relaxed">
           When you're spending thousands on a pool table, you want to know what you're getting. Here's what to look for — and what we look for when choosing the tables we carry.
         </p>
 
         <div className="max-w-4xl mx-auto space-y-12">
           {sections.map((section) => (
-            <div key={section.title} className="border-b border-border pb-8 last:border-0">
-              <h2 className="font-heading text-2xl text-primary mb-3">{section.title}</h2>
-              <p className="text-text-muted leading-relaxed">{section.content}</p>
+            <div key={section.title} className="border-b border-outline-variant/15 pb-8 last:border-0">
+              <h2 className="font-headline text-2xl text-primary mb-3">{section.title}</h2>
+              <p className="text-on-surface-variant leading-relaxed">{section.content}</p>
             </div>
           ))}
         </div>

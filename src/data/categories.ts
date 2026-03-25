@@ -11,7 +11,7 @@ export const categories: CategoryInfo[] = [
       en: 'Browse our full selection of new pool tables from Presidential, C.L. Bailey, and Imperial. Available in 7\', 8\', and 9\' sizes with professional-grade slate and cushions.',
       es: 'Explore nuestra seleccion completa de mesas de billar nuevas de Presidential, C.L. Bailey e Imperial. Disponibles en tamanos de 7\', 8\' y 9\' con pizarra y bandas de grado profesional.',
     },
-    image: '/images/categories/pool-tables.jpg',
+    image: '/images/categories/pool-tables-hero.jpg',
   },
   {
     slug: 'used-pool-tables',
@@ -23,7 +23,7 @@ export const categories: CategoryInfo[] = [
       en: 'Quality pre-owned pool tables inspected and refurbished by our expert technicians. Every used table is tested for level, cushion response, and overall playability.',
       es: 'Mesas de billar usadas de calidad inspeccionadas y restauradas por nuestros tecnicos expertos. Cada mesa usada se prueba en nivelacion, respuesta de bandas y jugabilidad general.',
     },
-    image: '/images/categories/used-pool-tables.jpg',
+    image: '/images/categories/used-pool-tables.png',
   },
   {
     slug: 'game-room-furniture',
@@ -35,7 +35,7 @@ export const categories: CategoryInfo[] = [
       en: 'Complete your game room with spectator chairs, cue racks, pub tables, and bar stools. Designed to match and complement your pool table.',
       es: 'Complete su sala de juegos con sillas de espectador, porta-tacos, mesas de pub y taburetes de bar. Disenados para combinar y complementar su mesa de billar.',
     },
-    image: '/images/categories/game-room-furniture.webp',
+    image: '/images/categories/game-room-furniture.jpg',
   },
   {
     slug: 'game-tables',
@@ -71,7 +71,7 @@ export const categories: CategoryInfo[] = [
       en: 'Everything you need for your table: ball sets, table covers, lighting, chalk, brushes, and replacement parts. We carry top brands like Aramith and Simonis.',
       es: 'Todo lo que necesita para su mesa: juegos de bolas, cubiertas, iluminacion, tiza, cepillos y repuestos. Ofrecemos marcas de primera como Aramith y Simonis.',
     },
-    image: '/images/categories/accessories.jpg',
+    image: '/images/categories/accessories.webp',
   },
   {
     slug: 'cue-sticks',
@@ -83,6 +83,6 @@ export const categories: CategoryInfo[] = [
       en: 'From starter cues to professional-grade custom sticks. We carry Players, Lucasi, Predator, and more. Stop in to try before you buy.',
       es: 'Desde tacos iniciales hasta tacos personalizados de grado profesional. Ofrecemos Players, Lucasi, Predator y mas. Visitenos para probar antes de comprar.',
     },
-    image: '/images/categories/cue-sticks.jpg',
+    image: '/images/categories/cue-sticks.webp',
   },
 ];

@@ -32,7 +32,7 @@ export function LocalBusinessSchema() {
     ],
     sameAs: [BUSINESS.facebook],
     priceRange: '$$',
-    image: 'https://regalbilliards.com/images/hero-showroom-install.jpg',
+    image: 'https://regalbilliards.com/images/story-teaser.jpeg',
     areaServed: [
       { '@type': 'County', name: 'Nassau County' },
       { '@type': 'County', name: 'Suffolk County' },

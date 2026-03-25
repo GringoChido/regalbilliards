@@ -28,7 +28,7 @@ export default async function DimensionsPage({ params }: Props) {
       <Container>
         <SectionHeading as="h1" className="mb-6">{t('title')}</SectionHeading>
         <div className="max-w-4xl mx-auto">
-          <p className="text-text-muted text-lg text-center mb-12 leading-relaxed">
+          <p className="text-on-surface-variant text-lg text-center mb-12 leading-relaxed">
             The most important thing to know before buying a pool table is whether it will fit in your room. You need enough space around the table for a full cue stroke — typically 5 feet on every side.
           </p>
 
@@ -36,30 +36,30 @@ export default async function DimensionsPage({ params }: Props) {
             <table className="w-full text-left border-collapse">
               <thead>
                 <tr className="border-b-2 border-primary">
-                  <th className="py-3 px-4 font-heading text-primary">Table size</th>
-                  <th className="py-3 px-4 font-heading text-primary">Playing surface</th>
-                  <th className="py-3 px-4 font-heading text-primary">Minimum room size</th>
+                  <th className="py-3 px-4 font-headline text-primary">Table size</th>
+                  <th className="py-3 px-4 font-headline text-primary">Playing surface</th>
+                  <th className="py-3 px-4 font-headline text-primary">Minimum room size</th>
                 </tr>
               </thead>
               <tbody>
                 {dimensions.map((row) => (
-                  <tr key={row.table} className="border-b border-border">
+                  <tr key={row.table} className="border-b border-outline-variant/15">
                     <td className="py-3 px-4 font-medium">{row.table}</td>
-                    <td className="py-3 px-4 text-text-muted">{row.playfield}</td>
-                    <td className="py-3 px-4 text-text-muted">{row.room}</td>
+                    <td className="py-3 px-4 text-on-surface-variant">{row.playfield}</td>
+                    <td className="py-3 px-4 text-on-surface-variant">{row.room}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
 
-          <p className="text-sm text-text-muted mt-6">
+          <p className="text-sm text-on-surface-variant mt-6">
             * Room sizes assume a standard 58&quot; cue. Shorter cues are available for tighter spaces. Come visit the showroom and we can help you figure out the best fit.
           </p>
 
-          <div className="mt-12 bg-surface rounded-xl border border-border p-8">
-            <h2 className="font-heading text-2xl text-primary mb-4">Not sure about your room?</h2>
-            <p className="text-text-muted leading-relaxed">
+          <div className="mt-12 bg-surface rounded-sm border border-outline-variant/15 p-8">
+            <h2 className="font-headline text-2xl text-primary mb-4">Not sure about your room?</h2>
+            <p className="text-on-surface-variant leading-relaxed">
               Bring your room measurements to the showroom, and we'll help you find the right table size. We've been doing this for over 40 years — we can usually tell you what will work just from the dimensions.
             </p>
           </div>

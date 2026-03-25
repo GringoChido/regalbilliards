@@ -21,33 +21,37 @@ interface NavItem {
 
 const navItems: NavItem[] = [
   {
-    key: 'poolTables',
-    href: '/pool-tables',
-    children: [
-      { key: 'newTables', href: '/pool-tables/new' },
-      { key: 'usedTables', href: '/pool-tables/used' },
-      { key: 'buyingGuide', href: '/pool-tables/buying-guide' },
-    ],
+    key: 'heritage',
+    href: '/about',
   },
   {
-    key: 'gameRoom',
-    href: '/category/game-room-furniture',
+    key: 'collections',
+    href: '/pool-tables',
     children: [
-      { key: 'gameRoomFurniture', href: '/category/game-room-furniture' },
+      { key: 'poolTables', href: '/pool-tables' },
+      { key: 'usedTables', href: '/pool-tables/used' },
       { key: 'gameTables', href: '/category/game-tables' },
+      { key: 'gameRoomFurniture', href: '/category/game-room-furniture' },
       { key: 'darts', href: '/category/darts' },
       { key: 'accessories', href: '/category/accessories' },
+      { key: 'cueSticks', href: '/category/cue-sticks' },
     ],
   },
   { key: 'services', href: '/service-center' },
-  { key: 'about', href: '/about' },
-  { key: 'contact', href: '/contact-us' },
+  {
+    key: 'atelier',
+    href: '/contact-us',
+    children: [
+      { key: 'contact', href: '/contact-us' },
+      { key: 'gallery', href: '/gallery' },
+    ],
+  },
 ];
 
 const dropdownVariants = {
-  hidden: { opacity: 0, y: -8, scale: 0.96 },
-  visible: { opacity: 1, y: 0, scale: 1 },
-  exit: { opacity: 0, y: -8, scale: 0.96 },
+  hidden: { opacity: 0, y: -4 },
+  visible: { opacity: 1, y: 0 },
+  exit: { opacity: 0, y: -4 },
 };
 
 interface NavigationProps {
@@ -79,15 +83,6 @@ const Navigation = ({ scrolled }: NavigationProps) => {
     }, 150);
   };
 
-  const linkColor = cn(
-    'transition-colors duration-300',
-    scrolled
-      ? 'text-surface/80 hover:text-surface'
-      : 'text-surface/80 hover:text-surface',
-  );
-
-  const activeLinkColor = 'text-surface';
-
   return (
     <nav aria-label={t('menu')} className="hidden lg:flex items-center gap-1">
       {navItems.map((item) => {
@@ -104,9 +99,14 @@ const Navigation = ({ scrolled }: NavigationProps) => {
               <Link
                 href={item.href}
                 className={cn(
-                  'inline-flex items-center gap-1 px-3.5 py-2 text-sm font-medium font-body rounded-full',
-                  linkColor,
-                  active && activeLinkColor,
+                  'inline-flex items-center gap-1.5 px-4 py-2 font-label text-xs uppercase tracking-widest transition-colors duration-300',
+                  scrolled
+                    ? active
+                      ? 'text-secondary font-semibold'
+                      : 'text-on-surface-variant hover:text-secondary'
+                    : active
+                      ? 'text-surface font-semibold'
+                      : 'text-surface/70 hover:text-secondary',
                 )}
                 aria-expanded={openDropdown === item.key}
                 aria-haspopup="true"
@@ -114,7 +114,7 @@ const Navigation = ({ scrolled }: NavigationProps) => {
                 {t(item.key)}
                 <ChevronDown
                   className={cn(
-                    'h-3.5 w-3.5 transition-transform duration-200',
+                    'h-3 w-3 transition-transform duration-200',
                     openDropdown === item.key && 'rotate-180',
                   )}
                 />
@@ -127,19 +127,19 @@ const Navigation = ({ scrolled }: NavigationProps) => {
                     initial="hidden"
                     animate="visible"
                     exit="exit"
-                    transition={{ duration: 0.15, ease: 'easeOut' }}
+                    transition={{ duration: 0.15, ease: 'easeOut' as const }}
                     className="absolute left-0 top-full pt-2 z-50"
                   >
-                    <div className="w-56 rounded-xl bg-primary-light/95 backdrop-blur-lg shadow-2xl ring-1 ring-white/10 py-2">
+                    <div className="w-60 bg-surface/95 backdrop-blur-lg shadow-[0_20px_40px_rgba(28,28,26,0.08)] py-3">
                       {item.children.map((child) => (
                         <Link
                           key={child.key}
                           href={child.href}
                           className={cn(
-                            'block px-4 py-2.5 text-sm font-body transition-colors',
+                            'block px-6 py-2.5 font-label text-xs uppercase tracking-widest transition-all duration-300',
                             isActive(child.href)
-                              ? 'text-accent bg-white/5'
-                              : 'text-surface/70 hover:text-surface hover:bg-white/5',
+                              ? 'text-secondary font-semibold'
+                              : 'text-on-surface-variant hover:text-secondary hover:translate-x-2',
                           )}
                         >
                           {t(child.key)}
@@ -158,9 +158,14 @@ const Navigation = ({ scrolled }: NavigationProps) => {
             key={item.key}
             href={item.href}
             className={cn(
-              'inline-flex items-center px-3.5 py-2 text-sm font-medium font-body rounded-full',
-              linkColor,
-              active && activeLinkColor,
+              'inline-flex items-center px-4 py-2 font-label text-xs uppercase tracking-widest transition-colors duration-300',
+              scrolled
+                ? active
+                  ? 'text-secondary font-semibold'
+                  : 'text-on-surface-variant hover:text-secondary'
+                : active
+                  ? 'text-surface font-semibold'
+                  : 'text-surface/70 hover:text-secondary',
             )}
           >
             {t(item.key)}

@@ -1,21 +1,65 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-primary: #1a2e1a;
-  --color-primary-light: #2d3a2d;
-  --color-background: #f5f0e8;
-  --color-surface: #faf6f0;
-  --color-accent: #7a8c6e;
-  --color-accent-hover: #5f7353;
-  --color-secondary: #3d5a3d;
-  --color-text: #1a1a1a;
-  --color-text-muted: #6b6b60;
-  --color-border: #ddd8cc;
-  --color-cream: #f5f0e8;
-  --color-dark: #1c1c1c;
-
-  --font-heading: 'Playfair Display', serif;
+  /* ── Typography ── */
+  --font-headline: 'Newsreader', serif;
   --font-body: 'Plus Jakarta Sans', sans-serif;
+  --font-label: 'Plus Jakarta Sans', sans-serif;
+
+  /* ── Primary (Forest Floor) ── */
+  --color-primary: #051b0c;
+  --color-primary-container: #1a301f;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #809982;
+  --color-on-primary-fixed-variant: #354c39;
+
+  /* ── Secondary (Heritage Gold) ── */
+  --color-secondary: #7b5800;
+  --color-secondary-container: #fdc34d;
+  --color-on-secondary: #ffffff;
+  --color-on-secondary-container: #715000;
+
+  /* ── Tertiary (Warm Mahogany) ── */
+  --color-tertiary: #26110c;
+  --color-tertiary-container: #3d2520;
+
+  /* ── Surface (Parchment System) ── */
+  --color-surface: #fcf9f5;
+  --color-surface-container: #f0ede9;
+  --color-surface-container-low: #f6f3ef;
+  --color-surface-container-high: #eae8e4;
+  --color-surface-container-highest: #e5e2de;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-dim: #dcdad6;
+  --color-surface-bright: #fcf9f5;
+
+  /* ── On-Surface ── */
+  --color-on-surface: #1c1c1a;
+  --color-on-surface-variant: #434842;
+  --color-on-background: #1c1c1a;
+
+  /* ── Outline ── */
+  --color-outline: #737972;
+  --color-outline-variant: #c3c8c0;
+
+  /* ── Inverse ── */
+  --color-inverse-surface: #31302e;
+  --color-inverse-on-surface: #f3f0ec;
+  --color-inverse-primary: #b3cdb4;
+
+  /* ── Error ── */
+  --color-error: #ba1a1a;
+  --color-error-container: #ffdad6;
+
+  /* ── Legacy aliases (for gradual migration) ── */
+  --color-background: #fcf9f5;
+  --color-accent: #7b5800;
+  --color-accent-hover: #9a6e00;
+  --color-text: #1c1c1a;
+  --color-text-muted: #434842;
+  --color-border: #c3c8c0;
+  --color-cream: #fcf9f5;
+  --color-dark: #051b0c;
 }
 
 html {
@@ -23,20 +67,20 @@ html {
 }
 
 body {
-  background-color: var(--color-background);
-  color: var(--color-text);
+  background-color: var(--color-surface);
+  color: var(--color-on-surface);
   font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-heading);
+  font-family: var(--font-headline);
 }
 
 ::selection {
-  background-color: var(--color-accent);
-  color: white;
+  background-color: var(--color-secondary);
+  color: var(--color-on-secondary);
 }
 
 /* Skip to main content */

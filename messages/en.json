@@ -21,7 +21,10 @@
     "callUs": "Call us",
     "visitShowroom": "Visit Showroom",
     "menu": "Menu",
-    "close": "Close"
+    "close": "Close",
+    "heritage": "Heritage",
+    "collections": "Collections",
+    "atelier": "Atelier"
   },
   "Hero": {
     "headline": "Your game room starts here",
@@ -32,7 +35,9 @@
     "cta2": "Explore services",
     "headline3": "40 years of doing it right",
     "subheadline3": "Veteran-owned and family-operated. We know every table inside and out.",
-    "cta3": "Our story"
+    "cta3": "Our story",
+    "label": "Since 1983 · Hicksville, New York",
+    "visitShowroom": "Visit Our Showroom"
   },
   "TrustStrip": {
     "years": "40+ years",

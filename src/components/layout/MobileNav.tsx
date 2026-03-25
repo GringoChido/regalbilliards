@@ -22,28 +22,29 @@ interface NavItem {
 }
 
 const navItems: NavItem[] = [
+  { key: 'heritage', href: '/about' },
   {
-    key: 'poolTables',
+    key: 'collections',
     href: '/pool-tables',
     children: [
-      { key: 'newTables', href: '/pool-tables/new' },
+      { key: 'poolTables', href: '/pool-tables' },
       { key: 'usedTables', href: '/pool-tables/used' },
-      { key: 'buyingGuide', href: '/pool-tables/buying-guide' },
-    ],
-  },
-  {
-    key: 'gameRoom',
-    href: '/category/game-room-furniture',
-    children: [
-      { key: 'gameRoomFurniture', href: '/category/game-room-furniture' },
       { key: 'gameTables', href: '/category/game-tables' },
+      { key: 'gameRoomFurniture', href: '/category/game-room-furniture' },
       { key: 'darts', href: '/category/darts' },
       { key: 'accessories', href: '/category/accessories' },
+      { key: 'cueSticks', href: '/category/cue-sticks' },
     ],
   },
   { key: 'services', href: '/service-center' },
-  { key: 'about', href: '/about' },
-  { key: 'contact', href: '/contact-us' },
+  {
+    key: 'atelier',
+    href: '/contact-us',
+    children: [
+      { key: 'contact', href: '/contact-us' },
+      { key: 'gallery', href: '/gallery' },
+    ],
+  },
 ];
 
 const overlayVariants = {
@@ -101,7 +102,7 @@ const MobileNav = ({ isOpen, onClose }: MobileNavProps) => {
             animate="visible"
             exit="hidden"
             transition={{ duration: 0.2 }}
-            className="fixed inset-0 z-40 bg-dark/60 backdrop-blur-sm lg:hidden"
+            className="fixed inset-0 z-40 bg-primary/60 backdrop-blur-sm lg:hidden"
             onClick={onClose}
             aria-hidden="true"
           />
@@ -112,27 +113,27 @@ const MobileNav = ({ isOpen, onClose }: MobileNavProps) => {
             animate="visible"
             exit="exit"
             transition={{ type: 'spring', damping: 30, stiffness: 300 }}
-            className="fixed inset-0 z-50 bg-primary lg:hidden"
+            className="fixed inset-0 z-50 bg-surface lg:hidden"
             role="dialog"
             aria-modal="true"
             aria-label={t('menu')}
           >
             <div className="flex flex-col h-full">
-              <div className="flex items-center justify-between px-6 py-5">
-                <span className="font-heading text-2xl text-surface">
+              <div className="flex items-center justify-between px-6 py-5 border-b border-outline-variant/15">
+                <span className="font-headline text-2xl text-primary tracking-tighter">
                   Regal Billiards
                 </span>
                 <button
                   type="button"
                   onClick={onClose}
                   aria-label={t('close')}
-                  className="p-2 -mr-2 text-surface/60 hover:text-surface transition-colors rounded-md"
+                  className="p-2 -mr-2 text-on-surface-variant hover:text-primary transition-colors rounded-md"
                 >
                   <X className="h-6 w-6" />
                 </button>
               </div>
 
-              <nav className="flex-1 overflow-y-auto px-6 py-6">
+              <nav className="flex-1 overflow-y-auto px-6 py-8">
                 <ul className="space-y-1">
                   {navItems.map((item) => {
                     const active = isActive(item.href);
@@ -144,8 +145,8 @@ const MobileNav = ({ isOpen, onClose }: MobileNavProps) => {
                             <Link
                               href={item.href}
                               className={cn(
-                                'flex-1 py-3 text-2xl font-heading transition-colors',
-                                active ? 'text-accent' : 'text-surface',
+                                'flex-1 py-3 font-headline text-3xl transition-colors',
+                                active ? 'text-secondary' : 'text-primary',
                               )}
                             >
                               {t(item.key)}
@@ -155,7 +156,7 @@ const MobileNav = ({ isOpen, onClose }: MobileNavProps) => {
                               onClick={() => toggleSection(item.key)}
                               aria-expanded={expandedSection === item.key}
                               aria-label={`${t(item.key)} submenu`}
-                              className="p-2 text-surface/50 hover:text-surface transition-colors"
+                              className="p-2 text-on-surface-variant hover:text-secondary transition-colors"
                             >
                               <ChevronDown
                                 className={cn(
@@ -173,17 +174,17 @@ const MobileNav = ({ isOpen, onClose }: MobileNavProps) => {
                                 animate={{ height: 'auto', opacity: 1 }}
                                 exit={{ height: 0, opacity: 0 }}
                                 transition={{ duration: 0.2, ease: 'easeInOut' }}
-                                className="overflow-hidden pl-4 border-l border-surface/20 ml-2"
+                                className="overflow-hidden pl-4 border-l border-secondary/20 ml-2"
                               >
                                 {item.children.map((child) => (
                                   <li key={child.key}>
                                     <Link
                                       href={child.href}
                                       className={cn(
-                                        'block py-2.5 text-lg font-body transition-colors',
+                                        'block py-2.5 font-label text-sm uppercase tracking-widest transition-colors',
                                         isActive(child.href)
-                                          ? 'text-accent'
-                                          : 'text-surface/60 hover:text-surface',
+                                          ? 'text-secondary font-semibold'
+                                          : 'text-on-surface-variant hover:text-secondary',
                                       )}
                                     >
                                       {t(child.key)}
@@ -202,8 +203,8 @@ const MobileNav = ({ isOpen, onClose }: MobileNavProps) => {
                         <Link
                           href={item.href}
                           className={cn(
-                            'block py-3 text-2xl font-heading transition-colors',
-                            active ? 'text-accent' : 'text-surface hover:text-accent',
+                            'block py-3 font-headline text-3xl transition-colors',
+                            active ? 'text-secondary' : 'text-primary hover:text-secondary',
                           )}
                         >
                           {t(item.key)}
@@ -214,21 +215,21 @@ const MobileNav = ({ isOpen, onClose }: MobileNavProps) => {
                 </ul>
               </nav>
 
-              <div className="px-6 py-6 border-t border-surface/10 space-y-4">
+              <div className="px-6 py-6 border-t border-outline-variant/15 space-y-4">
                 <a
                   href={BUSINESS.phoneHref}
-                  className="flex items-center gap-3 text-surface font-medium font-body"
+                  className="flex items-center gap-3 text-primary font-label text-sm uppercase tracking-widest"
                 >
-                  <Phone className="h-5 w-5 text-accent" />
+                  <Phone className="h-4 w-4 text-secondary" />
                   {BUSINESS.phone}
                 </a>
                 <a
                   href={BUSINESS.googleMapsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-surface/70 font-body text-sm"
+                  className="flex items-center gap-3 text-on-surface-variant font-body text-sm"
                 >
-                  <MapPin className="h-5 w-5 text-accent" />
+                  <MapPin className="h-4 w-4 text-secondary" />
                   {BUSINESS.address}
                 </a>
                 <div className="flex items-center justify-between pt-2">

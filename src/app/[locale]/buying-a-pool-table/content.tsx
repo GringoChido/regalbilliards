@@ -23,7 +23,7 @@ export default function BuyingGuideContent() {
       <section className="py-16 md:py-24">
         <Container>
           <SectionHeading as="h1" className="mb-6">{t('title')}</SectionHeading>
-          <p className="text-center text-text-muted max-w-3xl mx-auto mb-16 text-lg leading-relaxed">
+          <p className="text-center text-on-surface-variant max-w-3xl mx-auto mb-16 text-lg leading-relaxed">
             {t('intro')}
           </p>
 
@@ -36,10 +36,10 @@ export default function BuyingGuideContent() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <h2 className="font-heading text-2xl md:text-3xl text-primary mb-4">
+                <h2 className="font-headline text-2xl md:text-3xl text-primary mb-4">
                   {t(`${section}Heading`)}
                 </h2>
-                <p className="text-text-muted text-lg leading-relaxed">
+                <p className="text-on-surface-variant text-lg leading-relaxed">
                   {t(`${section}Text`)}
                 </p>
               </motion.div>
@@ -47,7 +47,7 @@ export default function BuyingGuideContent() {
           </div>
 
           <div className="mt-20">
-            <h2 className="font-heading text-2xl md:text-3xl text-primary text-center mb-8">
+            <h2 className="font-headline text-2xl md:text-3xl text-primary text-center mb-8">
               {t('resourcesHeading')}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -61,11 +61,11 @@ export default function BuyingGuideContent() {
                 >
                   <Link href={href}>
                     <Card className="p-6 h-full">
-                      <Icon className="w-8 h-8 text-accent mb-4" />
-                      <h3 className="font-heading text-lg text-primary mb-2">
+                      <Icon className="w-8 h-8 text-secondary mb-4" />
+                      <h3 className="font-headline text-lg text-primary mb-2">
                         {t(`${key}Card`)}
                       </h3>
-                      <p className="text-sm text-text-muted">{t(`${key}Desc`)}</p>
+                      <p className="text-sm text-on-surface-variant">{t(`${key}Desc`)}</p>
                     </Card>
                   </Link>
                 </motion.div>
@@ -74,7 +74,7 @@ export default function BuyingGuideContent() {
           </div>
 
           <div className="text-center mt-16">
-            <p className="text-text-muted text-lg mb-6">{t('bottomCta')}</p>
+            <p className="text-on-surface-variant text-lg mb-6">{t('bottomCta')}</p>
             <Link href="/contact-us">
               <Button size="lg">Visit the showroom</Button>
             </Link>
