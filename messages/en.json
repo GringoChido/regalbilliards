@@ -333,5 +333,15 @@
     "intermediateText": "Ready to invest in your game? Cuetec, Dufferin, and Valhalla cues offer excellent performance in the $60-$200 range. You'll feel the difference in balance and hit quality.",
     "advancedHeading": "Serious Players",
     "advancedText": "For competitive players, Lucasi, Viking, and Predator cues deliver professional-grade performance. Custom wraps, low-deflection shafts, and premium tips. $200 and up."
+  },
+  "ProductDetail": {
+    "backToPoolTables": "Back to Pool Tables",
+    "features": "Features",
+    "visitShowroom": "See This Table in Person",
+    "callForDetails": "Call for Details",
+    "moreFrom": "More from {manufacturer}",
+    "priceNote": "Prices vary by size and options. Visit the showroom or call for a quote.",
+    "styleLabel": "Style",
+    "authorizedDealer": "Authorized Dealer"
   }
 }

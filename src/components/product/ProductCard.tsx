@@ -37,7 +37,7 @@ const getDisplayBrand = (product: Product): string =>
 
 const ProductCard = ({ product, compact }: ProductCardProps) => {
   const locale = useLocale();
-  const href = product.category === 'pool-tables' ? '/pool-tables' : `/category/${product.category}`;
+  const href = product.category === 'pool-tables' ? `/pool-tables/${product.slug}` : `/category/${product.category}`;
   const brand = getDisplayBrand(product);
 
   if (compact) {

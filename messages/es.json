@@ -333,5 +333,15 @@
     "intermediateText": "¿Listo para invertir en tu juego? Los tacos Cuetec, Dufferin y Valhalla ofrecen excelente rendimiento en el rango de $60-$200. Sentirás la diferencia en balance y calidad de golpe.",
     "advancedHeading": "Jugadores Serios",
     "advancedText": "Para jugadores competitivos, los tacos Lucasi, Viking y Predator ofrecen rendimiento de grado profesional. Empuñaduras personalizadas, ejes de baja deflexión y puntas premium. $200 en adelante."
+  },
+  "ProductDetail": {
+    "backToPoolTables": "Volver a Mesas de Billar",
+    "features": "Características",
+    "visitShowroom": "Ver Esta Mesa en Persona",
+    "callForDetails": "Llama para Detalles",
+    "moreFrom": "Más de {manufacturer}",
+    "priceNote": "Los precios varían según tamaño y opciones. Visita el showroom o llama para una cotización.",
+    "styleLabel": "Estilo",
+    "authorizedDealer": "Distribuidor Autorizado"
   }
 }
