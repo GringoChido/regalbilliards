@@ -128,17 +128,51 @@
   "Dimensions": {
     "title": "Dimensiones de mesa y requisitos de espacio",
     "metaTitle": "Dimensiones de Mesa de Billar y Guía de Espacio | Regal Billiards",
-    "metaDescription": "Tamaños de mesas de billar y dimensiones mínimas de habitación. Use nuestra guía para asegurarse de que su espacio esté listo para una nueva mesa."
+    "metaDescription": "Tamaños de mesas de billar y dimensiones mínimas de habitación. Use nuestra guía para asegurarse de que su espacio esté listo para una nueva mesa.",
+    "intro": "Lo más importante que debes saber antes de comprar una mesa de billar es si cabe en tu sala. Necesitas suficiente espacio alrededor de la mesa para un golpe completo con el taco — típicamente 5 pies por cada lado.",
+    "tableSize": "Tamaño de mesa",
+    "playingSurface": "Superficie de juego",
+    "minimumRoom": "Tamaño mínimo de sala",
+    "footnote": "Los tamaños de sala asumen un taco estándar de 58\". Tacos más cortos están disponibles para espacios reducidos. Visita el showroom y te ayudaremos a encontrar el mejor ajuste.",
+    "helpTitle": "¿No estás seguro de tu sala?",
+    "helpText": "Trae las medidas de tu sala al showroom y te ayudaremos a encontrar el tamaño correcto de mesa. Llevamos más de 40 años haciendo esto — generalmente podemos decirte qué funcionará solo con las dimensiones."
   },
   "Construction": {
     "title": "Características de construcción de mesas",
     "metaTitle": "Guía de Construcción de Mesas de Billar | Regal Billiards",
-    "metaDescription": "Aprenda sobre pizarra, marcos de madera dura, goma de banda y paño — las características que separan una mesa de billar de calidad del resto."
+    "metaDescription": "Aprenda sobre pizarra, marcos de madera dura, goma de banda y paño — las características que separan una mesa de billar de calidad del resto.",
+    "intro": "Cuando vas a invertir miles de dólares en una mesa de billar, quieres saber lo que estás obteniendo. Esto es lo que debes buscar — y lo que nosotros buscamos al elegir las mesas que vendemos.",
+    "slateTitle": "Pizarra",
+    "slateText": "Una mesa de billar de calidad usa una superficie de juego de pizarra genuina — típicamente de 3/4\" a 1\" de grosor. La pizarra se rectifica y pule para ser perfectamente plana, dándote un rodamiento verdadero y consistente. Las mejores mesas usan pizarra de tres piezas, que es más fácil de transportar y nivelar con precisión. Evita mesas con superficies de MDF o sintéticas — se deforman con el tiempo y no juegan bien.",
+    "frameTitle": "Marco y Gabinete",
+    "frameText": "Busca construcción en madera maciza en el marco y gabinete. El marco soporta la pizarra y necesita ser rígido y fuerte. Las mesas baratas usan tablero de partículas o MDF, que puede pandear, agrietarse o absorber humedad. Un marco bien construido usa travesaños y bloques de esquina para integridad estructural.",
+    "cushionTitle": "Goma de Bandas",
+    "cushionText": "La goma de bandas (también llamada \"rieles\") es contra lo que rebota la bola. Las mesas de calidad usan goma natural perfil K-66, que proporciona un rebote consistente y vivo. La goma sintética de menor calidad se endurece con el tiempo y amortigua la respuesta de la bola. Este es uno de los componentes que podemos reemplazar durante el servicio.",
+    "clothTitle": "Paño",
+    "clothText": "El paño de la mesa de billar (o \"fieltro\") viene en dos tipos principales: de lana y estambre. El paño de lana es más económico y funciona bien para juego casual. El paño estambre — como Simonis — es más rápido, más duradero y preferido por jugadores serios. El paño se desgasta con el tiempo y se puede reemplazar, así que no es una decisión permanente.",
+    "pocketsTitle": "Bolsillos",
+    "pocketsText": "Los bolsillos vienen en cuero, plástico o goma. Los bolsillos de cuero son tradicionales y duraderos cuando se mantienen adecuadamente. Busca hierros de bolsillo reforzados (el marco de metal debajo del bolsillo) hechos de hierro fundido, no de acero estampado. Esta es la parte que recibe más abuso con el tiempo.",
+    "legsTitle": "Patas y Nivelación",
+    "legsText": "Las patas de la mesa deben ser sólidas y bien sujetas — no simplemente atornilladas. Las mesas de calidad usan construcción con pernos pasantes y niveladores que permiten ajuste preciso. La nivelación es crítica para un juego justo, y es uno de los servicios que proporcionamos después de cada instalación."
   },
   "Warranty": {
     "title": "Garantía de por vida",
     "metaTitle": "Garantía de Por Vida | Regal Billiards",
-    "metaDescription": "Nuestros fabricantes respaldan sus mesas con una garantía de por vida. Conozca qué está cubierto y por qué importa."
+    "metaDescription": "Nuestros fabricantes respaldan sus mesas con una garantía de por vida. Conozca qué está cubierto y por qué importa.",
+    "intro": "Los fabricantes que vendemos — Presidential, C.L. Bailey e Imperial — respaldan sus mesas con garantía de por vida. Esto es lo que significa para ti.",
+    "structuralTitle": "Garantía Estructural de Por Vida",
+    "structuralText": "Cubre el marco, pizarra y componentes estructurales contra defectos de materiales y mano de obra durante la vida de la mesa.",
+    "manufacturerTitle": "Respaldada por el Fabricante",
+    "manufacturerText": "Cada fabricante maneja las reclamaciones de garantía directamente. Nosotros trabajamos con ellos en tu nombre para hacer el proceso simple.",
+    "serviceTitle": "Soporte de Servicio Local",
+    "serviceText": "Como somos locales, el servicio de garantía se maneja rápidamente. Nuestros técnicos capacitados hacen el trabajo en el lugar.",
+    "coveredTitle": "Lo que típicamente cubre",
+    "coveredFrame": "Integridad estructural del marco y gabinete",
+    "coveredSlate": "Integridad de la pizarra (agrietamiento o deformación bajo uso normal)",
+    "coveredCushion": "Goma de bandas (rendimiento de rebote)",
+    "coveredHardware": "Herrajes y ensamblajes de bolsillos",
+    "notCoveredTitle": "Lo que típicamente no cubre",
+    "notCoveredText": "Artículos de desgaste normal como paño, bolsillos de cuero y acabado no están cubiertos por la garantía — se espera que se desgasten con el tiempo con uso regular. La buena noticia: nuestro equipo de servicio maneja todos estos reemplazos y reparaciones, ya sea que tu mesa esté bajo garantía o no."
   },
   "ServiceCenter": {
     "title": "Su mesa merece cuidado experto",

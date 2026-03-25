@@ -128,17 +128,51 @@
   "Dimensions": {
     "title": "Table dimensions and room size requirements",
     "metaTitle": "Pool Table Dimensions & Room Size Guide | Regal Billiards",
-    "metaDescription": "Pool table sizes and minimum room dimensions. Use our guide to make sure your space is ready for a new table."
+    "metaDescription": "Pool table sizes and minimum room dimensions. Use our guide to make sure your space is ready for a new table.",
+    "intro": "The most important thing to know before buying a pool table is whether it will fit in your room. You need enough space around the table for a full cue stroke — typically 5 feet on every side.",
+    "tableSize": "Table size",
+    "playingSurface": "Playing surface",
+    "minimumRoom": "Minimum room size",
+    "footnote": "Room sizes assume a standard 58\" cue. Shorter cues are available for tighter spaces. Come visit the showroom and we can help you figure out the best fit.",
+    "helpTitle": "Not sure about your room?",
+    "helpText": "Bring your room measurements to the showroom, and we'll help you find the right table size. We've been doing this for over 40 years — we can usually tell you what will work just from the dimensions."
   },
   "Construction": {
     "title": "Table construction features",
     "metaTitle": "Pool Table Construction Guide | Regal Billiards",
-    "metaDescription": "Learn about slate, hardwood frames, cushion rubber, and cloth — the features that separate a quality pool table from the rest."
+    "metaDescription": "Learn about slate, hardwood frames, cushion rubber, and cloth — the features that separate a quality pool table from the rest.",
+    "intro": "When you're spending thousands on a pool table, you want to know what you're getting. Here's what to look for — and what we look for when choosing the tables we carry.",
+    "slateTitle": "Slate",
+    "slateText": "A quality pool table uses a genuine slate playing surface — typically 3/4\" to 1\" thick. Slate is ground and honed to be perfectly flat, giving you a true, consistent roll. The best tables use three-piece slate, which is easier to transport and level precisely. Avoid tables with MDF or synthetic surfaces — they warp over time and don't play true.",
+    "frameTitle": "Frame and Cabinet",
+    "frameText": "Look for solid hardwood construction in the frame and cabinet. The frame supports the slate and needs to be rigid and strong. Cheap tables use particle board or MDF, which can sag, crack, or absorb moisture. A well-built frame uses cross beams and corner blocks for structural integrity.",
+    "cushionTitle": "Cushion Rubber",
+    "cushionText": "The cushion rubber (also called \"rails\") is what the ball bounces off. Quality tables use K-66 profile natural gum rubber, which provides a consistent, lively bounce. Lower-quality synthetic rubber hardens over time and deadens ball response. This is one of the components we can replace during service.",
+    "clothTitle": "Cloth",
+    "clothText": "Pool table cloth (or \"felt\") comes in two main types: woolen and worsted. Woolen cloth is more affordable and works well for casual play. Worsted cloth — like Simonis — is faster, more durable, and preferred by serious players. The cloth wears over time and can be replaced, so it's not a permanent decision.",
+    "pocketsTitle": "Pockets",
+    "pocketsText": "Pockets come in leather, plastic, or rubber. Leather pockets are traditional and durable when properly maintained. Look for reinforced pocket irons (the metal frame under the pocket) made from cast iron, not stamped steel. This is the part that takes the most abuse over time.",
+    "legsTitle": "Legs and Leveling",
+    "legsText": "Table legs should be solid and well-attached — not just screwed in. Quality tables use bolt-through construction with leg levelers that allow precise adjustment. Leveling is critical for fair play, and it's one of the services we provide after every installation."
   },
   "Warranty": {
     "title": "Lifetime warranty",
     "metaTitle": "Lifetime Warranty | Regal Billiards",
-    "metaDescription": "Our manufacturers back their tables with a lifetime warranty. Learn what's covered and why it matters."
+    "metaDescription": "Our manufacturers back their tables with a lifetime warranty. Learn what's covered and why it matters.",
+    "intro": "The manufacturers we carry — Presidential, C.L. Bailey, and Imperial — stand behind their tables with a lifetime warranty. Here's what that means for you.",
+    "structuralTitle": "Lifetime Structural Warranty",
+    "structuralText": "Covers the frame, slate, and structural components against defects in materials and workmanship for the life of the table.",
+    "manufacturerTitle": "Manufacturer Backed",
+    "manufacturerText": "Each manufacturer handles warranty claims directly. We work with them on your behalf to make the process simple.",
+    "serviceTitle": "Local Service Support",
+    "serviceText": "Because we're local, warranty service is handled quickly. Our factory-trained technicians do the work on-site.",
+    "coveredTitle": "What's typically covered",
+    "coveredFrame": "Frame and cabinet structural integrity",
+    "coveredSlate": "Slate integrity (cracking or warping under normal use)",
+    "coveredCushion": "Cushion rubber (bounce performance)",
+    "coveredHardware": "Hardware and pocket assemblies",
+    "notCoveredTitle": "What's typically not covered",
+    "notCoveredText": "Normal wear items like cloth, leather pockets, and finish are not covered by warranty — these are expected to wear over time with regular use. The good news: our service team handles all of these replacements and repairs, whether your table is under warranty or not."
   },
   "ServiceCenter": {
     "title": "Your table deserves expert care",
