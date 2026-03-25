@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
-import { ExternalLink, Phone, Mail, MapPin, Clock, Shield, Award, CreditCard, Globe, ArrowRight } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Shield, Award, CreditCard } from 'lucide-react';
 import { BUSINESS } from '@/lib/utils';
+import SocialIcons from '@/components/layout/SocialIcons';
 
 const quickLinks = [
   { key: 'poolTables', href: '/pool-tables' },
@@ -20,12 +21,6 @@ const serviceLinks = [
   { key: 'gallery', href: '/gallery' },
   { key: 'about', href: '/about' },
   { key: 'contact', href: '/contact-us' },
-];
-
-const socialLinks = [
-  { label: 'Facebook', href: BUSINESS.facebook, icon: ExternalLink },
-  { label: 'Google', href: 'https://g.page/regal-billiards', icon: Globe },
-  { label: 'Yelp', href: 'https://www.yelp.com/biz/regal-billiards-hicksville', icon: ExternalLink },
 ];
 
 const Footer = () => {
@@ -50,20 +45,7 @@ const Footer = () => {
               {t('about')}
             </p>
 
-            <div className="flex items-center gap-3 mt-8">
-              {socialLinks.map((social) => (
-                <a
-                  key={social.label}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={social.label}
-                  className="w-10 h-10 flex items-center justify-center text-on-surface-variant hover:text-secondary transition-all duration-300"
-                >
-                  <social.icon className="h-4 w-4" />
-                </a>
-              ))}
-            </div>
+            <SocialIcons variant="footer" className="mt-8" />
 
             <div className="mt-8 space-y-3">
               <div className="flex items-center gap-2.5">

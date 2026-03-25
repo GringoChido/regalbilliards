@@ -17,6 +17,8 @@ export const BUSINESS = {
   serviceArea: 'Nassau County, Suffolk County, Brooklyn, Queens',
   googleMapsUrl: 'https://maps.google.com/?q=952+S+Broadway+Hicksville+NY+11801',
   facebook: 'https://facebook.com/RegalBilliards',
+  instagram: 'https://instagram.com/regalbilliards',
+  googleReview: 'https://g.page/regal-billiards',
   geo: {
     lat: 40.7568,
     lng: -73.5249,

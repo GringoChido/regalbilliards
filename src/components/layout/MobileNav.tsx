@@ -5,10 +5,11 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, ChevronDown, Phone, MapPin } from 'lucide-react';
+import { X, ChevronDown, Phone, Mail, MapPin } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { BUSINESS } from '@/lib/utils';
 import LocaleSwitcher from '@/components/layout/LocaleSwitcher';
+import SocialIcons from '@/components/layout/SocialIcons';
 
 interface MobileNavProps {
   isOpen: boolean;
@@ -217,6 +218,13 @@ const MobileNav = ({ isOpen, onClose }: MobileNavProps) => {
                   {BUSINESS.phone}
                 </a>
                 <a
+                  href={`mailto:${BUSINESS.email}`}
+                  className="flex items-center gap-3 text-on-surface-variant font-body text-sm"
+                >
+                  <Mail className="h-4 w-4 text-secondary" />
+                  {BUSINESS.email}
+                </a>
+                <a
                   href={BUSINESS.googleMapsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -226,6 +234,7 @@ const MobileNav = ({ isOpen, onClose }: MobileNavProps) => {
                   {BUSINESS.address}
                 </a>
                 <div className="flex items-center justify-between pt-2">
+                  <SocialIcons variant="mobile" />
                   <LocaleSwitcher />
                 </div>
               </div>

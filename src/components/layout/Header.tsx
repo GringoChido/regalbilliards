@@ -3,12 +3,13 @@
 import { useCallback, useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
-import { Phone, Menu } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { BUSINESS } from '@/lib/utils';
 import Navigation from '@/components/layout/Navigation';
 import MobileNav from '@/components/layout/MobileNav';
 import LocaleSwitcher from '@/components/layout/LocaleSwitcher';
+import SocialIcons from '@/components/layout/SocialIcons';
 
 const Header = () => {
   const t = useTranslations('Nav');
@@ -58,20 +59,8 @@ const Header = () => {
             <Navigation scrolled={scrolled} />
 
             {/* Right side actions */}
-            <div className="hidden lg:flex items-center gap-5">
-              <a
-                href={BUSINESS.phoneHref}
-                className={cn(
-                  'flex items-center gap-2 font-label text-xs uppercase tracking-widest transition-colors duration-300',
-                  scrolled
-                    ? 'text-on-surface-variant hover:text-secondary'
-                    : 'text-surface/70 hover:text-surface',
-                )}
-                aria-label={`${t('callUs')}: ${BUSINESS.phone}`}
-              >
-                <Phone className="h-3.5 w-3.5" />
-                <span>{BUSINESS.phone}</span>
-              </a>
+            <div className="hidden lg:flex items-center gap-4">
+              <SocialIcons variant="header" scrolled={scrolled} />
 
               <LocaleSwitcher scrolled={scrolled} />
 
@@ -79,9 +68,7 @@ const Header = () => {
                 href="/contact-us"
                 className={cn(
                   'inline-flex items-center px-6 py-2.5 font-label text-xs uppercase tracking-widest rounded-sm transition-all duration-300',
-                  scrolled
-                    ? 'bg-secondary text-on-secondary hover:brightness-110'
-                    : 'bg-secondary text-on-secondary hover:brightness-110',
+                  'bg-secondary text-on-secondary hover:brightness-110',
                 )}
               >
                 {t('visitShowroom') || 'Visit Showroom'}
