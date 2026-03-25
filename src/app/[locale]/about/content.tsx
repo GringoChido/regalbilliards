@@ -40,10 +40,10 @@ export default function AboutContent() {
             className="max-w-3xl"
           >
             <p className="font-label text-xs tracking-[0.3em] uppercase text-surface/50 mb-4">
-              {t('veteranHeading')}
+              {t('heroEyebrow')}
             </p>
             <h1 className="font-headline text-5xl md:text-6xl lg:text-8xl text-surface -tracking-widest leading-[0.95] mb-6">
-              Our <em>Heritage</em>
+              {t('heroHeadline')}
             </h1>
             <p className="text-on-primary-container text-lg max-w-2xl leading-relaxed font-body font-light">
               {t('heroSubtext')}
@@ -74,7 +74,7 @@ export default function AboutContent() {
               className="lg:col-span-5"
             >
               <p className="font-label text-xs tracking-[0.3em] uppercase text-on-surface-variant mb-4">
-                Since 1983
+                {t('originEyebrow')}
               </p>
               <h2 className="font-headline text-3xl md:text-4xl text-primary mb-6">
                 {t('originHeading')}
@@ -101,7 +101,7 @@ export default function AboutContent() {
               className="lg:col-span-5 order-2 lg:order-1"
             >
               <p className="font-label text-xs tracking-[0.3em] uppercase text-on-surface-variant mb-4">
-                {t('mikeHeading')}
+                {t('mikeEyebrow')}
               </p>
               <h2 className="font-headline text-3xl md:text-4xl text-primary mb-6">
                 {t('title')}
@@ -153,7 +153,7 @@ export default function AboutContent() {
         <Container>
           <motion.div {...fadeUp} className="text-center mb-16">
             <p className="font-label text-xs tracking-[0.3em] uppercase text-on-surface-variant mb-4">
-              Visit Us
+              {t('showroomEyebrow')}
             </p>
             <h2 className="font-headline text-4xl md:text-5xl text-primary -tracking-wide">
               {t('showroomHeading')}

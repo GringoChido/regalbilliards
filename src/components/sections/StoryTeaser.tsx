@@ -48,7 +48,7 @@ const StoryTeaser = () => {
             className="lg:col-span-5"
           >
             <p className="font-label text-xs tracking-[0.3em] uppercase text-surface/50 mb-6">
-              Our story
+              {t('eyebrow')}
             </p>
             <h2 className="font-headline text-3xl md:text-4xl lg:text-5xl text-surface leading-[1.1] mb-4">
               {t('heading')}
@@ -60,7 +60,7 @@ const StoryTeaser = () => {
             {/* Pull quote */}
             <blockquote className="border-l border-secondary/30 pl-8 py-4 mb-10">
               <p className="font-headline text-xl md:text-2xl text-surface/80 italic leading-relaxed font-light">
-                &ldquo;When you buy from Regal, you&rsquo;re getting a team that knows every table inside and out.&rdquo;
+                &ldquo;{t('quote')}&rdquo;
               </p>
             </blockquote>
 

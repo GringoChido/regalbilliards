@@ -29,7 +29,7 @@ export default function ContactPageContent() {
             className="max-w-3xl"
           >
             <p className="font-label text-xs tracking-[0.3em] uppercase text-surface/50 mb-6">
-              Get in Touch
+              {t('heroEyebrow')}
             </p>
             <h1 className="font-headline text-5xl md:text-6xl lg:text-7xl text-surface -tracking-wide leading-[1.05]">
               {t('title')}
@@ -45,7 +45,7 @@ export default function ContactPageContent() {
             {/* Form */}
             <motion.div {...fadeUp}>
               <p className="font-label text-xs tracking-[0.3em] uppercase text-on-surface-variant mb-4">
-                Send a Message
+                {t('formEyebrow')}
               </p>
               <h2 className="font-headline text-2xl md:text-3xl text-primary mb-8">{t('formHeading')}</h2>
               <ContactForm />
@@ -57,7 +57,7 @@ export default function ContactPageContent() {
               transition={{ duration: 0.6, ease: 'easeOut' as const, delay: 0.15 }}
             >
               <p className="font-label text-xs tracking-[0.3em] uppercase text-on-surface-variant mb-4">
-                Visit Our Showroom
+                {t('infoEyebrow')}
               </p>
               <h2 className="font-headline text-2xl md:text-3xl text-primary mb-8">{t('infoHeading')}</h2>
               <div className="space-y-6">
@@ -71,7 +71,7 @@ export default function ContactPageContent() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Get directions &rarr;
+                      {t('getDirections')} &rarr;
                     </a>
                   </div>
                 </div>

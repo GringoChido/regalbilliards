@@ -174,13 +174,13 @@ const Footer = () => {
 
             <div className="flex items-center gap-6">
               <Link
-                href="#"
+                href="/privacy"
                 className="font-label text-[10px] uppercase tracking-[0.3em] text-outline hover:text-secondary transition-colors"
               >
                 {t('privacy')}
               </Link>
               <Link
-                href="#"
+                href="/terms"
                 className="font-label text-[10px] uppercase tracking-[0.3em] text-outline hover:text-secondary transition-colors"
               >
                 {t('terms')}
@@ -189,7 +189,7 @@ const Footer = () => {
 
             <div className="flex items-center gap-2 text-[10px] font-label uppercase tracking-[0.2em] text-outline">
               <CreditCard className="h-3.5 w-3.5" />
-              <span>Visa / MC / Discover / Amex / Cash</span>
+              <span>{t('paymentMethods')}</span>
             </div>
           </div>
         </div>

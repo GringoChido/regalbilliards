@@ -43,7 +43,7 @@ export function LocalBusinessSchema() {
       '@type': 'Person',
       name: 'Mike Walsh',
     },
-    foundingDate: '1984',
+    foundingDate: '1983',
     knowsAbout: ['Pool Tables', 'Billiards', 'Game Room Furniture', 'Pool Table Service'],
   };
 

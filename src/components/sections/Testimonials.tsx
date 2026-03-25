@@ -38,7 +38,7 @@ const Testimonials = () => {
           className="text-center mb-16"
         >
           <p className="font-label text-xs tracking-[0.3em] uppercase text-on-surface-variant mb-4">
-            Testimonials
+            {t('eyebrow')}
           </p>
           <h2 className="font-headline text-4xl md:text-5xl text-primary -tracking-wide">
             {t('heading')}

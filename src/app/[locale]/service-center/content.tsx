@@ -49,7 +49,7 @@ export default function ServiceCenterContent() {
               {t('areaHeading')}
             </p>
             <h1 className="font-headline text-5xl md:text-6xl lg:text-8xl text-surface -tracking-widest leading-[0.95] mb-6">
-              Service <em>Center</em>
+              {t('heroHeadline')}
             </h1>
             <p className="text-on-primary-container text-lg max-w-2xl leading-relaxed font-body font-light">
               {t('intro')}

@@ -39,7 +39,7 @@ export default function GalleryPage() {
             transition={{ duration: 0.7 }}
           >
             <p className="font-label text-xs tracking-[0.3em] uppercase text-surface/50 mb-6">
-              Our Work
+              {t('eyebrow')}
             </p>
             <h1 className="font-headline text-5xl md:text-6xl lg:text-7xl text-surface -tracking-wide">
               {t('title')}

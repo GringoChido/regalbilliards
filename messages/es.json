@@ -1,7 +1,8 @@
 {
   "Metadata": {
     "title": "Regal Billiards — El destino de salones de juego de Long Island",
-    "description": "Negocio familiar por más de 40 años. Visite la sala de exhibición de mesas de billar premier de Long Island en Hicksville, NY. Mesas de billar, muebles para salones de juego, accesorios y servicio experto."
+    "description": "Negocio familiar por más de 40 años. Visita la sala de exhibición de mesas de billar premier de Long Island en Hicksville, NY. Mesas de billar, muebles para salones de juego, accesorios y servicio experto.",
+    "foundingYear": "1983"
   },
   "Nav": {
     "poolTables": "Mesas de billar",
@@ -15,10 +16,10 @@
     "cueSticks": "Tacos de billar",
     "services": "Centro de servicio",
     "about": "Nosotros",
-    "contact": "Contáctenos",
+    "contact": "Contáctanos",
     "gallery": "Galería",
     "gameRoom": "Salón de Juegos",
-    "callUs": "Llámenos",
+    "callUs": "Llámanos",
     "visitShowroom": "Visitar Showroom",
     "menu": "Menú",
     "close": "Cerrar",
@@ -29,7 +30,7 @@
   },
   "Hero": {
     "headline": "Tu salón de juegos empieza aquí",
-    "subheadline": "Negocio familiar por más de 40 años. Visite la sala de exhibición premier de mesas de billar de Long Island.",
+    "subheadline": "Negocio familiar por más de 40 años. Visita la sala de exhibición premier de mesas de billar de Long Island.",
     "cta": "Ver nuestras mesas",
     "headline2": "Servicio experto, cada mesa",
     "subheadline2": "Técnicos capacitados en fábrica para mudanzas, retapizado, reparaciones y nivelación.",
@@ -47,7 +48,7 @@
     "consultations": "Consultas gratuitas"
   },
   "CategoryGrid": {
-    "heading": "Explorar por categoría",
+    "heading": "Explorar por Categoría",
     "poolTables": "Mesas de billar",
     "poolTablesDesc": "Mesas nuevas de Presidential, C.L. Bailey e Imperial",
     "usedPoolTables": "Mesas de billar usadas",
@@ -63,56 +64,66 @@
     "cueSticks": "Tacos de billar",
     "cueSticksDesc": "Tacos de calidad para cada nivel de juego",
     "serviceCenter": "Centro de servicio",
-    "serviceCenterDesc": "Mudanzas, re-tapizado, reparaciones y nivelación"
+    "serviceCenterDesc": "Mudanzas, re-tapizado, reparaciones y nivelación",
+    "title": "Todo para Tu Sala de Juegos",
+    "subtitle": "40 años de experiencia. Ven a verlo en persona."
   },
   "StoryTeaser": {
     "heading": "La Supertienda de Mesas de Billar de Long Island",
     "text": "Regal Billiards comenzó como fabricante de mesas de billar aquí en Long Island. Hoy, Mike Walsh y su equipo aportan ese mismo conocimiento de constructor a cada mesa que venden, entregan y dan servicio. Cuando compras en Regal, no solo obtienes una mesa — obtienes un equipo que la conoce por dentro y por fuera.",
     "cta": "Conoce nuestra historia",
-    "subheading": "Precios Bajos Todos los Días — Estamos Aquí para Ayudarle"
+    "subheading": "Precios Bajos Todos los Días — Estamos Aquí para Ayudarte",
+    "eyebrow": "Nuestra Historia",
+    "quote": "Cuando compras en Regal, estás obteniendo un equipo que construyó mesas antes de venderlas. Conocemos cada una por dentro y por fuera."
   },
   "Testimonials": {
-    "heading": "Lo que dicen nuestros clientes"
+    "heading": "Lo que dicen nuestros clientes",
+    "eyebrow": "Testimonios"
   },
   "CTA": {
     "heading": "¿No sabes por dónde empezar?",
     "text": "Visita la sala de exhibición o llama a Mike. Sin presión, solo buenos consejos de gente que lleva más de 40 años en esto.",
     "directions": "Cómo llegar",
-    "call": "Llamar al (516) 938-6832"
+    "call": "Llamar al (516) 938-6832",
+    "eyebrow": "Visítanos"
   },
   "PoolTables": {
     "title": "Mesas de billar",
     "metaTitle": "Mesas de Billar | Regal Billiards — El Destino de Salones de Juego de Long Island",
-    "metaDescription": "Explore mesas de billar nuevas de Presidential, C.L. Bailey e Imperial. Visite nuestra sala de exhibición en Hicksville, NY para verlas en persona.",
-    "intro": "Seleccionamos cada mesa que ofrecemos. Después de 40 años en el negocio — incluyendo años como fabricantes — sabemos lo que hace que una mesa valga la pena. Explore nuestra selección de Presidential, C.L. Bailey e Imperial, y luego venga a verlas en persona.",
+    "metaDescription": "Explora mesas de billar nuevas de Presidential, C.L. Bailey e Imperial. Visita nuestra sala de exhibición en Hicksville, NY para verlas en persona.",
+    "intro": "Seleccionamos cada mesa que ofrecemos. Después de 40 años en el negocio — incluyendo años como fabricantes — sabemos lo que hace que una mesa valga la pena. Explora nuestra selección de Presidential, C.L. Bailey e Imperial, y luego ven a verlas en persona.",
     "filterAll": "Todas",
     "filterManufacturer": "Fabricante",
     "filterStyle": "Estilo",
-    "bottomCta": "¿No puede decidir? Visite la sala de exhibición y véalas en persona."
-  },
-  "Category": {
-    "bottomCta": "¿Tiene preguntas? Llámenos o visite la sala de exhibición.",
+    "bottomCta": "¿No puedes decidir? Visita la sala de exhibición y véalas en persona.",
     "eyebrow": "Colección"
   },
+  "Category": {
+    "bottomCta": "¿Tienes preguntas? Llámanos o visita la sala de exhibición.",
+    "eyebrow": "Colección",
+    "notFound": "Categoría no encontrada",
+    "productSingular": "producto",
+    "productPlural": "productos"
+  },
   "BuyingGuide": {
-    "title": "Lo que debe saber antes de comprar",
+    "title": "Lo que debes saber antes de comprar",
     "metaTitle": "Comprar una Mesa de Billar | Regal Billiards — El Destino de Salones de Juego de Long Island",
     "metaDescription": "Todo lo que necesita saber antes de comprar una mesa de billar. Tamaño de la habitación, calidad de construcción y por qué importa comprar local.",
-    "intro": "Una mesa de billar es una compra importante — y debería serlo. Es la pieza central de su salón de juegos, y si compra la correcta, durará toda la vida. Esto es lo que creemos que importa más.",
+    "intro": "Una mesa de billar es una compra importante — y debería serlo. Es la pieza central de tu salón de juegos, y si compras la correcta, durará toda la vida. Esto es lo que creemos que importa más.",
     "challengeHeading": "Elegir una mesa de billar no es simple",
-    "challengeText": "Hay cientos de mesas en el mercado a todos los precios. El desafío no es encontrar una — es saber cuál aguantará, jugará bien y cabrá en su habitación. Ahí es donde entramos nosotros.",
+    "challengeText": "Hay cientos de mesas en el mercado a todos los precios. El desafío no es encontrar una — es saber cuál aguantará, jugará bien y cabrá en tu habitación. Ahí es donde entramos nosotros.",
     "manufacturerHeading": "Empezamos como fabricantes",
     "manufacturerText": "Regal Billiards comenzó como fabricante de mesas de billar aquí en Long Island. Esa experiencia nos enseñó exactamente qué separa una mesa bien construida de una que se ve bien en un catálogo pero no durará. Usamos ese conocimiento para elegir cada mesa que ofrecemos.",
     "serviceHeading": "No solo vendemos — damos servicio",
     "serviceText": "Cada mesa que vendemos, la entregamos, ensamblamos y nivelamos nosotros mismos. Y si algo necesita atención en el futuro, nuestros técnicos capacitados en fábrica se encargan. Por eso solo vendemos localmente — para poder respaldar cada mesa.",
     "resourcesHeading": "Más información",
     "dimensionsCard": "Dimensiones de mesa y requisitos de espacio",
-    "dimensionsDesc": "Asegúrese de que su habitación esté lista antes de comprar.",
+    "dimensionsDesc": "Asegúrate de que tu habitación esté lista antes de comprar.",
     "constructionCard": "Características de construcción de mesas",
     "constructionDesc": "Qué buscar en pizarra, marco, bandas y paño.",
     "warrantyCard": "Garantía de por vida",
     "warrantyDesc": "Nuestros fabricantes respaldan su trabajo — y nosotros también.",
-    "bottomCta": "¿No sabe por dónde empezar? Venga a recorrer la sala de exhibición."
+    "bottomCta": "¿No sabes por dónde empezar? Ven a recorrer la sala de exhibición."
   },
   "Dimensions": {
     "title": "Dimensiones de mesa y requisitos de espacio",
@@ -133,29 +144,29 @@
     "title": "Su mesa merece cuidado experto",
     "metaTitle": "Centro de Servicio de Mesas de Billar | Regal Billiards — Long Island",
     "metaDescription": "Mudanzas de mesas de billar, re-tapizado, reemplazo de bandas, reparaciones y nivelación. Técnicos capacitados en fábrica sirviendo a Nassau County, Suffolk County, Brooklyn y Queens.",
-    "intro": "Ya sea que haya comprado su mesa con nosotros o en otro lugar, nuestros técnicos capacitados en fábrica están aquí para ayudar.",
+    "intro": "Ya sea que hayas comprado tu mesa con nosotros o en otro lugar, nuestros técnicos capacitados en fábrica están aquí para ayudarte.",
     "serviceEveryone": "Damos servicio a todos",
     "serviceEveryoneText": "No necesitas haber comprado tu mesa con nosotros. Si tu mesa necesita trabajo — ya sea una mudanza, un retapizado, un cambio de bandas o solo una re-nivelación — con gusto te ayudamos. Damos servicio a todas las marcas, todos los tamaños, todas las edades.",
     "processHeading": "Cómo funciona",
-    "step1": "Llame para un presupuesto",
-    "step1Desc": "Cuéntenos lo que necesita y le daremos un estimado honesto.",
-    "step2": "Programe una visita",
-    "step2Desc": "Encontraremos un horario que funcione para usted.",
+    "step1": "Llama para un presupuesto",
+    "step1Desc": "Cuéntanos lo que necesitas y te daremos un estimado honesto.",
+    "step2": "Programa una visita",
+    "step2Desc": "Encontraremos un horario que funcione para ti.",
     "step3": "Trabajo completado",
     "step3Desc": "Nuestros técnicos se encargan de todo en el lugar.",
     "areaHeading": "Área de servicio",
     "areaText": "Sirviendo a Nassau County, Suffolk County, Brooklyn y Queens.",
-    "quoteHeading": "Solicite un presupuesto de servicio",
-    "formName": "Su nombre",
+    "quoteHeading": "Solicita un presupuesto de servicio",
+    "formName": "Tu nombre",
     "formEmail": "Correo electrónico",
     "formPhone": "Número de teléfono",
     "formServiceType": "Servicio necesario",
     "formTableSize": "Tamaño de mesa",
     "formCity": "Ciudad o código postal",
-    "formMessage": "Cuéntenos más sobre lo que necesita",
+    "formMessage": "Cuéntanos más sobre lo que necesitas",
     "formSubmit": "Solicitar presupuesto",
-    "formSuccess": "¡Gracias! Le responderemos dentro de un día hábil.",
-    "formError": "Algo salió mal. Por favor llámenos al (516) 938-6832.",
+    "formSuccess": "¡Gracias! Te responderemos dentro de un día hábil.",
+    "formError": "Algo salió mal. Por favor llámanos al (516) 938-6832.",
     "statsYears": "40+",
     "statsYearsLabel": "Años de Experiencia",
     "statsTables": "2,000+",
@@ -168,7 +179,9 @@
     "areaQueens": "Queens",
     "areaManhattan": "Manhattan (con cita)",
     "areaNote": "¿No estás seguro si estás en nuestra zona? Llámanos — lo resolveremos.",
-    "quoteSubtext": "¿Prefieres hablar? Llama a Mike directamente al (516) 938-6832. Respondemos a todos los formularios dentro de un día hábil."
+    "quoteSubtext": "¿Prefieres hablar? Llama a Mike directamente al (516) 938-6832. Respondemos a todos los formularios dentro de un día hábil.",
+    "heroEyebrow": "Cuidado Experto",
+    "heroHeadline": "Centro de Servicio"
   },
   "About": {
     "title": "40 años. Una familia. Cada mesa bien hecha.",
@@ -188,34 +201,43 @@
     "ctaHeading": "Visítanos",
     "address": "952 S Broadway, Hicksville, NY 11801",
     "hours": "Lunes–Sábado 10am–5pm",
-    "hoursAppointment": "Domingos y noches con cita previa"
+    "hoursAppointment": "Domingos y noches con cita previa",
+    "heroEyebrow": "Propiedad de Veterano y Operado por la Familia",
+    "heroHeadline": "Nuestra Herencia",
+    "originEyebrow": "Desde 1983",
+    "mikeEyebrow": "Conoce al Fundador",
+    "showroomEyebrow": "Visítanos"
   },
   "Contact": {
     "title": "Visite la sala de exhibición",
     "metaTitle": "Contáctenos | Regal Billiards — El Destino de Salones de Juego de Long Island",
     "metaDescription": "Visite nuestra sala de exhibición en Hicksville, NY o contáctenos para ventas y servicio de mesas de billar. Abierto Lunes–Sábado, 10am–5pm.",
-    "formHeading": "Envíenos un mensaje",
-    "formName": "Su nombre",
+    "formHeading": "Envíanos un mensaje",
+    "formName": "Tu nombre",
     "formEmail": "Correo electrónico",
     "formPhone": "Número de teléfono",
-    "formInterest": "¿Qué le interesa?",
+    "formInterest": "¿Qué te interesa?",
     "interestNewTable": "Mesa de billar nueva",
     "interestUsedTable": "Mesa de billar usada",
     "interestFurniture": "Muebles para salón de juegos",
     "interestService": "Servicio",
     "interestGeneral": "Consulta general",
-    "formMessage": "Su mensaje",
+    "formMessage": "Tu mensaje",
     "formSubmit": "Enviar mensaje",
-    "formSuccess": "¡Gracias! Le responderemos dentro de un día hábil.",
-    "formError": "Algo salió mal. Por favor llámenos al (516) 938-6832.",
-    "infoHeading": "Visítenos",
+    "formSuccess": "¡Gracias! Te responderemos dentro de un día hábil.",
+    "formError": "Algo salió mal. Por favor llámanos al (516) 938-6832.",
+    "infoHeading": "Visítanos",
     "address": "952 S Broadway, Hicksville, NY 11801",
     "phone": "(516) 938-6832",
     "email": "regalbilliards@gmail.com",
     "hoursHeading": "Horario",
     "hours": "Lunes–Sábado: 10am–5pm",
     "hoursAppointment": "Domingos y noches con cita previa",
-    "appointmentNote": "¿No puede venir durante la semana? Estamos felices de programar una visita los domingos o en la noche — solo llámenos."
+    "appointmentNote": "¿No puedes venir durante la semana? Estamos felices de programar una visita los domingos o en la noche — solo llámanos.",
+    "heroEyebrow": "Contáctanos",
+    "formEyebrow": "Enviar un Mensaje",
+    "infoEyebrow": "Visita Nuestro Showroom",
+    "getDirections": "Cómo llegar"
   },
   "Gallery": {
     "title": "Galería",
@@ -224,7 +246,8 @@
     "all": "Todas",
     "showroom": "Sala de exhibición",
     "installations": "Instalaciones",
-    "gameRooms": "Salones de juego"
+    "gameRooms": "Salones de juego",
+    "eyebrow": "Nuestro Trabajo"
   },
   "Footer": {
     "about": "El nombre más confiable de Long Island en mesas de billar y salones de juego por más de 40 años. Propiedad de veterano, operado en familia.",
@@ -235,7 +258,8 @@
     "bcaMember": "Miembro orgulloso del Billiards Congress of America",
     "privacy": "Política de privacidad",
     "terms": "Términos de servicio",
-    "copyright": "© {year} Regal Billiards. Todos los derechos reservados."
+    "copyright": "© {year} Regal Billiards. Todos los derechos reservados.",
+    "paymentMethods": "Visa / MC / Discover / Amex / Efectivo"
   },
   "Common": {
     "learnMore": "Más información",
@@ -250,11 +274,11 @@
   "Validation": {
     "nameRequired": "El nombre es obligatorio",
     "emailRequired": "El correo electrónico es obligatorio",
-    "emailInvalid": "Por favor ingrese un correo electrónico válido",
+    "emailInvalid": "Por favor ingresa un correo electrónico válido",
     "messageRequired": "El mensaje es obligatorio",
     "messageTooShort": "El mensaje debe tener al menos 10 caracteres",
-    "interestRequired": "Por favor seleccione una opción",
-    "serviceTypeRequired": "Por favor seleccione un tipo de servicio"
+    "interestRequired": "Por favor selecciona una opción",
+    "serviceTypeRequired": "Por favor selecciona un tipo de servicio"
   },
   "Collection": {
     "metaTitle": "Nuestra Colección | Regal Billiards — Mesas de Billar, Muebles y Más",
@@ -289,7 +313,11 @@
     "includesHeading": "Qué incluye nuestro precio",
     "includesList": "Nuestro precio incluye entrega, instalación profesional, la opción de paño nuevo y accesorios. Sabes exactamente lo que estás obteniendo al precio exacto. Sin sorpresas.",
     "brandsHeading": "Marcas que típicamente tenemos",
-    "brandsText": "Brunswick, Olhausen, Connelly, Gandy, AMF y más. El inventario cambia frecuentemente — llámanos o visítanos para ver qué hay disponible."
+    "brandsText": "Brunswick, Olhausen, Connelly, Gandy, AMF y más. El inventario cambia frecuentemente — llámanos o visítanos para ver qué hay disponible.",
+    "includesDelivery": "Entrega",
+    "includesInstallation": "Instalación Profesional",
+    "includesCloth": "Opción de Paño Nuevo",
+    "includesAccessories": "Accesorios"
   },
   "GameRoomFurniture": {
     "introText": "Completa tu sala de juegos con muebles diseñados para complementar tu mesa de billar. Desde sillas de espectador hasta configuraciones completas de bar, vendemos piezas construidas para igualar la calidad y el estilo de tu mesa.",
@@ -343,5 +371,13 @@
     "priceNote": "Los precios varían según tamaño y opciones. Visita el showroom o llama para una cotización.",
     "styleLabel": "Estilo",
     "authorizedDealer": "Distribuidor Autorizado"
+  },
+  "Accessibility": {
+    "previousSlide": "Diapositiva anterior",
+    "nextSlide": "Siguiente diapositiva",
+    "slideNumber": "Diapositiva {number}",
+    "previousTestimonial": "Testimonio anterior",
+    "nextTestimonial": "Siguiente testimonio",
+    "testimonialNumber": "Testimonio {number}"
   }
 }

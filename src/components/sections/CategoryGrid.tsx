@@ -35,10 +35,10 @@ const CategoryGrid = () => {
             {t('heading')}
           </p>
           <h2 className="font-headline text-4xl md:text-5xl lg:text-6xl text-primary -tracking-wide mb-4">
-            The Long Island Pool Table <em>Superstore</em>
+            {t('title')}
           </h2>
           <p className="font-headline text-xl md:text-2xl text-secondary italic font-light">
-            Every Day Low Prices &mdash; We Are Here to Help
+            {t('subtitle')}
           </p>
         </motion.div>
 

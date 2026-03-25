@@ -49,7 +49,7 @@ export default function PoolTablesPage() {
             transition={{ duration: 0.7 }}
           >
             <p className="font-label text-xs tracking-[0.3em] uppercase text-surface/50 mb-4">
-              Collection
+              {t('eyebrow')}
             </p>
             <h1 className="font-headline text-6xl md:text-7xl lg:text-8xl text-surface -tracking-widest leading-[0.95] mb-6">
               {t('title')}

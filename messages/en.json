@@ -1,7 +1,8 @@
 {
   "Metadata": {
     "title": "Regal Billiards — Long Island's Game Room Destination",
-    "description": "Family-owned for over 40 years. Visit Long Island's premier pool table showroom in Hicksville, NY. Pool tables, game room furniture, accessories, and expert service."
+    "description": "Family-owned for over 40 years. Visit Long Island's premier pool table showroom in Hicksville, NY. Pool tables, game room furniture, accessories, and expert service.",
+    "foundingYear": "1983"
   },
   "Nav": {
     "poolTables": "Pool tables",
@@ -47,7 +48,7 @@
     "consultations": "Free consultations"
   },
   "CategoryGrid": {
-    "heading": "Browse by category",
+    "heading": "Browse by Category",
     "poolTables": "Pool tables",
     "poolTablesDesc": "New tables from Presidential, C.L. Bailey, and Imperial",
     "usedPoolTables": "Used pool tables",
@@ -63,22 +64,28 @@
     "cueSticks": "Cue sticks",
     "cueSticksDesc": "Quality cues for every level of play",
     "serviceCenter": "Service center",
-    "serviceCenterDesc": "Moves, re-felting, repairs, and leveling"
+    "serviceCenterDesc": "Moves, re-felting, repairs, and leveling",
+    "title": "Everything for Your Game Room",
+    "subtitle": "40 years of expertise. Come see it in person."
   },
   "StoryTeaser": {
     "heading": "The Long Island Pool Table Superstore",
     "text": "Regal Billiards started as a pool table manufacturer right here on Long Island. Today, Mike Walsh and his team bring that same builder's knowledge to every table they sell, deliver, and service. When you buy from Regal, you're not just getting a table — you're getting a team that knows it inside and out.",
     "cta": "Read our story",
-    "subheading": "Every Day Low Prices — We Are Here to Help"
+    "subheading": "Every Day Low Prices — We Are Here to Help",
+    "eyebrow": "Our Story",
+    "quote": "When you buy from Regal, you're getting a team that built tables before they sold them. We know every one inside and out."
   },
   "Testimonials": {
-    "heading": "What our customers say"
+    "heading": "What our customers say",
+    "eyebrow": "Testimonials"
   },
   "CTA": {
     "heading": "Not sure where to start?",
     "text": "Visit the showroom or give Mike a call. No pressure, just good advice from people who've been doing this for over 40 years.",
     "directions": "Get directions",
-    "call": "Call (516) 938-6832"
+    "call": "Call (516) 938-6832",
+    "eyebrow": "Visit Us"
   },
   "PoolTables": {
     "title": "Pool tables",
@@ -88,11 +95,15 @@
     "filterAll": "All",
     "filterManufacturer": "Manufacturer",
     "filterStyle": "Style",
-    "bottomCta": "Can't decide? Visit the showroom and see them in person."
+    "bottomCta": "Can't decide? Visit the showroom and see them in person.",
+    "eyebrow": "Collection"
   },
   "Category": {
     "bottomCta": "Have questions? Give us a call or stop by the showroom.",
-    "eyebrow": "Collection"
+    "eyebrow": "Collection",
+    "notFound": "Category not found",
+    "productSingular": "product",
+    "productPlural": "products"
   },
   "BuyingGuide": {
     "title": "What to know before you buy",
@@ -168,7 +179,9 @@
     "areaQueens": "Queens",
     "areaManhattan": "Manhattan (by appointment)",
     "areaNote": "Not sure if you're in our range? Give us a call — we'll figure it out.",
-    "quoteSubtext": "Prefer to talk? Call Mike directly at (516) 938-6832. We respond to all form submissions within one business day."
+    "quoteSubtext": "Prefer to talk? Call Mike directly at (516) 938-6832. We respond to all form submissions within one business day.",
+    "heroEyebrow": "Expert Care",
+    "heroHeadline": "Service Center"
   },
   "About": {
     "title": "40 years. One family. Every table done right.",
@@ -188,7 +201,12 @@
     "ctaHeading": "Come see us",
     "address": "952 S Broadway, Hicksville, NY 11801",
     "hours": "Monday–Saturday 10am–5pm",
-    "hoursAppointment": "Sundays and evenings by appointment"
+    "hoursAppointment": "Sundays and evenings by appointment",
+    "heroEyebrow": "Veteran-Owned & Family-Operated",
+    "heroHeadline": "Our Heritage",
+    "originEyebrow": "Since 1983",
+    "mikeEyebrow": "Meet the Founder",
+    "showroomEyebrow": "Visit Us"
   },
   "Contact": {
     "title": "Come see the showroom",
@@ -215,7 +233,11 @@
     "hoursHeading": "Hours",
     "hours": "Monday–Saturday: 10am–5pm",
     "hoursAppointment": "Sundays and evenings by appointment",
-    "appointmentNote": "Can't make it during the week? We're happy to schedule a Sunday or evening visit — just give us a call."
+    "appointmentNote": "Can't make it during the week? We're happy to schedule a Sunday or evening visit — just give us a call.",
+    "heroEyebrow": "Get in Touch",
+    "formEyebrow": "Send a Message",
+    "infoEyebrow": "Visit Our Showroom",
+    "getDirections": "Get directions"
   },
   "Gallery": {
     "title": "Gallery",
@@ -224,7 +246,8 @@
     "all": "All",
     "showroom": "Showroom",
     "installations": "Installations",
-    "gameRooms": "Game rooms"
+    "gameRooms": "Game rooms",
+    "eyebrow": "Our Work"
   },
   "Footer": {
     "about": "Long Island's most trusted name in pool tables and game rooms for over 40 years. Veteran-owned, family-operated.",
@@ -235,7 +258,8 @@
     "bcaMember": "Proud member of the Billiards Congress of America",
     "privacy": "Privacy policy",
     "terms": "Terms of service",
-    "copyright": "© {year} Regal Billiards. All rights reserved."
+    "copyright": "© {year} Regal Billiards. All rights reserved.",
+    "paymentMethods": "Visa / MC / Discover / Amex / Cash"
   },
   "Common": {
     "learnMore": "Learn more",
@@ -289,7 +313,11 @@
     "includesHeading": "What's included in our price",
     "includesList": "Our price includes delivery, professional installation, the option for fresh cloth, and accessories. You know exactly what you're getting at exactly what price. No surprises.",
     "brandsHeading": "Brands we typically stock",
-    "brandsText": "Brunswick, Olhausen, Connelly, Gandy, AMF, and more. Inventory changes frequently — call us or stop by to see what's available."
+    "brandsText": "Brunswick, Olhausen, Connelly, Gandy, AMF, and more. Inventory changes frequently — call us or stop by to see what's available.",
+    "includesDelivery": "Delivery",
+    "includesInstallation": "Professional Installation",
+    "includesCloth": "Fresh Cloth Option",
+    "includesAccessories": "Accessories"
   },
   "GameRoomFurniture": {
     "introText": "Complete your game room with furniture designed to complement your pool table. From spectator chairs to full bar setups, we carry pieces built to match the quality and style of your table.",
@@ -343,5 +371,13 @@
     "priceNote": "Prices vary by size and options. Visit the showroom or call for a quote.",
     "styleLabel": "Style",
     "authorizedDealer": "Authorized Dealer"
+  },
+  "Accessibility": {
+    "previousSlide": "Previous slide",
+    "nextSlide": "Next slide",
+    "slideNumber": "Slide {number}",
+    "previousTestimonial": "Previous testimonial",
+    "nextTestimonial": "Next testimonial",
+    "testimonialNumber": "Testimonial {number}"
   }
 }

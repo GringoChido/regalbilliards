@@ -84,7 +84,7 @@ export default function CategoryContent() {
     return (
       <main id="main-content" className="py-16">
         <Container>
-          <p className="text-center text-on-surface-variant">Category not found</p>
+          <p className="text-center text-on-surface-variant">{tCategory('notFound')}</p>
         </Container>
       </main>
     );
@@ -215,7 +215,7 @@ const UsedTableEducation = () => {
             <h2 className="font-headline text-3xl md:text-4xl italic mb-8">{t('includesHeading')}</h2>
             <p className="text-on-primary-container text-lg leading-[1.7] font-light mb-10">{t('includesList')}</p>
             <div className="flex flex-wrap justify-center gap-4">
-              {['Delivery', 'Professional Installation', 'Fresh Cloth Option', 'Accessories'].map((item) => (
+              {([t('includesDelivery'), t('includesInstallation'), t('includesCloth'), t('includesAccessories')] as string[]).map((item) => (
                 <span key={item} className="flex items-center gap-2 text-surface/80 font-label text-xs uppercase tracking-widest">
                   <CheckCircle className="w-4 h-4 text-secondary" />
                   {item}
@@ -287,6 +287,7 @@ const SubcategoryBlocks = ({
   categoryImage: string;
 }) => {
   const t = useTranslations(config.namespace);
+  const tCategory = useTranslations('Category');
   const locale = useLocale();
 
   return (
@@ -324,7 +325,7 @@ const SubcategoryBlocks = ({
                 {/* Text side — 5 cols */}
                 <div className={`lg:col-span-5 ${imageLeft ? 'lg:order-2' : 'lg:order-1'}`}>
                   <p className="font-label text-xs tracking-[0.3em] uppercase text-on-surface-variant mb-4">
-                    {filtered.length} {filtered.length === 1 ? 'product' : 'products'}
+                    {filtered.length} {filtered.length === 1 ? tCategory('productSingular') : tCategory('productPlural')}
                   </p>
                   <h2 className="font-headline text-3xl md:text-4xl lg:text-5xl text-primary -tracking-wide mb-6">
                     {t(key)}

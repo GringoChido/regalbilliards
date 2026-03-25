@@ -34,7 +34,7 @@ const CTASection = () => {
           className="text-center max-w-3xl mx-auto"
         >
           <p className="font-label text-xs tracking-[0.3em] uppercase text-surface/50 mb-6">
-            Visit Us
+            {t('eyebrow')}
           </p>
           <h2 className="font-headline text-4xl md:text-5xl lg:text-7xl text-surface leading-[1.1] mb-8 italic">
             {t('heading')}
